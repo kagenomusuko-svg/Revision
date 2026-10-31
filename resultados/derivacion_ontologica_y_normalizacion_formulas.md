@@ -1,7 +1,7 @@
 # Derivación ontológica y normalización de las fórmulas
 ## Documento de trabajo acumulativo
 
-**Versión:** 0.5  
+**Versión:** 0.6  
 **Fecha de inicio:** 31 de octubre de 2026  
 **Repositorio de trabajo:** `Revision`  
 **Marco normativo:** libros canónicos de ontología de Afrodita Areia y textos ontológicos asociados.
@@ -716,7 +716,7 @@ El “método de rondas” descrito por (R_i=\lambda^{-1}\sum_jw_{ji}R_j) es ite
 
 Queda revisado en este documento: núcleo de (I(t))/φ₂; (R^*), matrices y método de potencias; (S_{op}), (S_{est}), (S_{net}); definición y versiones de α; Δ y evolución; Fisher/CRLB/REC; TIC y Davis–Kahan; logits/predictibilidad; daño, beneficio, dinero/tiempo vital; Shapley; herencia; crédito, quiebra/ICRS, seguros, gobierno, confiabilidad, IA y educación; códigos/eigenvector y condiciones de operación.
 
-La última fase para dejar este documento en forma cerrada consiste en conciliar, fórmula por fórmula, las ediciones de *Metrología Causal*, *SDO*, *Transformación formal*, *Método Prometeo*, *Taxonomía General*, *ECO* e *HISTOS*: deduplicar sus versiones de las mismas variables, registrar los operadores realmente únicos y remitir cada fórmula repetida a las reglas de normalización de arriba. No se abrirá una línea de investigación nueva por cada aplicación; la decisión es conservar, corregir, etiquetar como modelo o retirar.
+La conciliación formula por fórmula de *Metrología Causal*, *SDO*, *Transformación formal*, *Método Prometeo*, *Taxonomía General*, *ECO* e *HISTOS* queda registrada en las secciones 29–31. Las variantes repetidas se remiten al glosario único y los operadores específicos se etiquetan como modelos o reglas de medición cuando no se derivan del canon.
 
 ## 29. Metrología causal, Transformación formal y documentos de normalización
 
