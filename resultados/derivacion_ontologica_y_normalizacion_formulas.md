@@ -734,7 +734,7 @@ El volumen ofrece varios contratos concurrentes; se registra el contrato recomen
 
 ### Transformación Formal
 
-El libro hace explícita la propuesta conceptual (R^*\leftrightarrow I(t)), (S\leftrightarrow v_t$ en φ₁, α\leftrightarrow φ₂ e IIC\leftrightarrow mediación colectiva. Deben presentarse como **puentes interpretativos**/hipótesis de medición, no identidad de tipos: (I(t)) es un objeto temporal en un espacio de colapsos; (R^*) es un vector sobre nodos; φ₂ es operador; α es escalar extraído de una observación o expediente. Para convertir una dimensión/operador en número hacen falta mapas de medición. La linealidad (F(af+bg)=aF(f)+bF(g)) de la integral es propiedad matemática de una integral lineal bajo condiciones; no implica que R* sea autovalor de la trayectoria de ego no lineal.
+El libro hace explícita la propuesta conceptual: $R^*\leftrightarrow I(t)$, $S\leftrightarrow v_t$ en $\varphi_1$, $\alpha\leftrightarrow\varphi_2$ e IIC $\leftrightarrow$ mediación colectiva. Deben presentarse como **puentes interpretativos** e hipótesis de medición, no como identidad de tipos: $I(t)$ es un objeto temporal en un espacio de colapsos; $R^*$ es un vector sobre nodos; $\varphi_2$ es un operador; $\alpha$ es un escalar extraído de una observación o expediente. Para convertir una dimensión u operador en número hacen falta mapas de medición. La linealidad $F(af+bg)=aF(f)+bF(g)$ de la integral es propiedad matemática de una integral lineal bajo condiciones; no implica que $R^*$ sea autovalor de la trayectoria de ego no lineal.
 
 ### Taxonomía General, SDO, ECO e HISTOS
 
