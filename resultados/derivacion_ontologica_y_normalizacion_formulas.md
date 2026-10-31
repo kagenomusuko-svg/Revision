@@ -410,3 +410,98 @@ La versión `R*_i−α_i` solo es comparable si el símbolo que se resta ya es u
 
 **Normalización adoptada en este registro:** usar `α_i) para integración interna relativa y `A_i=α_iR*_i) para la cuota integrada global; usar `Δ_i=R*_i(1−α_i)) para residuo causal no integrado; reservar una variable distinta como `L_i) para atribución externa y `Ω_i=L_i−R*_i) si se quiere medir sobreasignación. Estos símbolos separan las operaciones que el canon mantiene separadas.
 
+## 13. Escala de conocimiento, Fisher y Cramér–Rao
+
+La Parte VII de *Axiomatización* agrega un modelo estadístico de observación Bernoulli. No se deriva de la ontología: formaliza una hipótesis concreta sobre cómo se observa una de las posiciones (h_k).
+
+Si (X\sim\mathrm{Ber}(p(\theta))), la información de Fisher correcta para el parámetro escalar θ es
+\[
+\mathcal I_1(\theta)=\frac{[p'(\theta)]^2}{p(\theta)[1-p(\theta)]}.
+\]
+La expresión del libro (h_k(1-h_k)/\tau^2) solo coincide bajo el modelo logístico binario (p=h_k=\sigma((\theta-\theta_k)/\tau)), con pendiente (p'=p(1-p)/\tau). No se obtiene de una softmax de seis modos sin especificar el muestreo: tratar cada (h_k) como Bernoulli independiente ignora que las seis probabilidades suman uno y que las categorías son mutuamente excluyentes. Para una observación categórica (K\sim\mathrm{Categorical}(h_1,\ldots,h_6)), debe usarse la matriz de Fisher multinomial del vector de parámetros; sus componentes dependen de los gradientes de todos los logits.
+
+Bajo condiciones regulares, (n) observaciones independientes y el modelo Bernoulli anterior, son correctas las cotas marginales:
+\[
+\mathrm{Var}(\widehat\theta)\ge\frac{1}{n\mathcal I_1(\theta)},\qquad
+\mathrm{Var}(\widehat p)\ge\frac{p(1-p)}n.
+\]
+Al multiplicarlas se obtiene τ²/n² para ese modelo particular, y por tanto
+\[
+\sqrt{\mathrm{Var}(\widehat\theta)\mathrm{Var}(\widehat p)}\ge\frac{\tau}{n}.
+\]
+El libro luego presenta (n(\Delta I\,\Delta h)\ge4\tau^2). Esa desigualdad no se deriva: en la prueba la cota directa es (\tau), no (4\tau^2); el paso que introduce el factor 4 mezcla máximos separados y cambia además la potencia/unidad de τ. La corrección publicable es conservar la cota demostrada (\Delta I\Delta h\ge\tau/n), condicionada al modelo, o retirar la REC fuerte. τ_eff=τ/\sqrt n es una definición de escala compatible con el error de una media muestral, pero no convierte por sí misma (I(t)), una integral acumulativa, en promedio de (n) observaciones.
+
+## 14. Sustitución estructural y supuesta cota espectral
+
+El índice
+\[
+S_{est}(i)=1-\frac{D_{KL}(R^*\Vert R^{*(i)})}{\log m}
+\]
+es una medida de cambio de distribución al sustituir un nodo/fila. Su rango ([0,1]) no está garantizado: (D_{KL}) puede exceder λog (m), así que (S_{est}<0); KL también exige soporte compatible y una convención cuando hay ceros. El índice no equivale al contra-fáctico canónico “si retiro esta condición, ¿desaparece el daño?”. Debe renombrarse como sensibilidad de centralidad por sustitución, dejando separada la necesidad causal (N_i(D)).
+
+La cadena del Lema 8.1 no demuestra la cota (R^*(E)\le(1-S_{est})/(m-1)). La cota de Pinsker (con la convención usual) sí relaciona KL con distancia total; sin embargo, el Lema A.3 supone una relación Lipschitz entre cambio de fila y cambio del eigenvector sin probar una cota inferior de estabilidad, y escribe el factor del gap en el sentido incorrecto. Davis–Kahan aplica directamente a matrices simétricas/hermitianas bajo condiciones de separación espectral; (W) es generalmente no simétrica, de modo que ese teorema no se puede invocar tal cual. En A.5 la corrección ε no queda acotada por 0.01 a partir de las hipótesis indicadas, y se pasa de una estimación alrededor de (1/m) a una cota sin ese término. La tabla numérica no remedia el salto.
+
+**Normalización:** conservar (S_{est}) solo como descriptor calculado por perturbación y reportar (R^*(i)), (R^{*(i)}), KL, soporte, gap y método numérico. Eliminar del texto de resultados las cotas y teoremas 8.1–8.4 que dependen de A.5, salvo que se reemplacen por hipótesis y una demostración válidas para la clase de matrices efectivamente usada.
+
+El Lema 8.2 tampoco se sigue de (R^*(D)>R^*(E)): para inferir (R^*(D)>1/m) hay que saber que D es el máximo global entre los (m) nodos. Que D supere a un ejecutor particular no basta.
+
+## 15. Axiomas de visibilidad, TIC e índice de inversión
+
+Las reglas
+\[
+V(i)=n_{doc}(i)/n_{total},\quad \phi(V)=1-(1-V)^{1.54},\quad
+\psi(x)=0.21x^{-0.55}
+\]
+son operacionalizaciones/ajustes añadidos, no consecuencias de φ₁/φ₂. (V) mide proporción de documentos que mencionan al nodo, no fuerza causal ni evidencia independiente; el conteo es sensible a duplicados y tamaño del expediente. ψ diverge en (x=0) y el coeficiente 0.21 no garantiza que ψ permanezca en ([0,1]). Para uso numérico se necesita una función acotada, dominio explícito, regla de cero y una calibración identificable. Los valores α_vol, β, (h) y límites usados en los teoremas son supuestos de escenario; sin datos y procedimiento de estimación reproducibles, no son resultados demostrados.
+
+El TIC está condicionado por dichas reglas y por cotas que no quedaron probadas; por ello las conclusiones Δ(D)>0 y Δ(E)<0 no son teoremas generales. Pueden presentarse como **proposición condicional del modelo**: si se imponen cotas explícitas (R_D\ge r_D), (R_E\le r_E), α_D\le a_D), α_E\ge a_E), entonces la inversión se sigue exactamente cuando (r_D>a_D) y (r_E<a_E). Esto aísla las condiciones suficientes sin simular que la ontología fija sus números.
+
+La definición
+\[
+I_{inv}=\frac{|\Delta_D|}{|\Delta_E|}
+=\frac{R_D-\alpha_D}{\alpha_E-R_E}
+\]
+solo vale cuando la inversión ya existe (Δ_D>0, Δ_E<0) y el denominador es distinto de cero. Si no, usar el cociente de valores absolutos y etiquetarlo como razón de brechas, no como índice de inversión. La monotonía en (S_{est}) no sale de una cota superior: una cota no determina la derivada del valor real de (R_E). Tampoco “decrece en (V(D)/V(E))” se deduce de ser φ creciente; el cociente introduce dependencia no probada y (V(E)=0) lo hace indefinido. La expresión “fraude annona inevitable” es una definición/diagnóstico condicional, no un teorema ontológico.
+
+## 16. Modelo predictivo, logits y clausura
+
+La regresión logística
+\[
+P(y=1\mid\Psi,c)=\sigma(\beta^T\Phi(\Psi,c))
+\]
+es un modelo estadístico admisible si se definen observaciones, variables y estimación. La matriz de diseño puede contener Ψ; esto no vuelve a cada coeficiente una medida ontológica ni convierte la predicción en imputación causal.
+
+El Lema 9.1 afirma que (\ell_k=\logit(h_k)) es lineal en (I) cuando cada umbral θ_k es lineal. En softmax,
+\[
+\ell_k=z_k-\log\sum_j e^{z_j};
+\]
+el término log-suma-exp generalmente es no lineal en (I). Además, la afirmación de que ese término “no depende de (I)” contradice (z_j(I)). Solo en casos especiales (por ejemplo, dos modos, o pendientes iguales con cancelación apropiada) se obtiene linealidad. La normalización es retirar esa conclusión general y ajustar Φ explícitamente, usando logits como transformaciones observadas o una base no lineal.
+
+La tabla τ→error mínimo no es fórmula deducida ni cota universal. τ no determina por sí sola el error Bayes: también importan prevalencia, separación de logits, ruido y especificación del predictor. Mantenerla únicamente como calibración empírica con datos, tamaño muestral y protocolo.
+
+La clausura de (Ego(t)) (Teorema 10) es topología abstracta y no produce una fórmula de responsabilidad. Para usar compacidad/Bolzano–Weierstrass hacen falta acotación y espacio de dimensión finita (o hipótesis de compacidad en dimensión infinita); un conjunto cerrado en Hilbert no es por sí solo compacto. Esta parte puede quedar como resultado formal separado si las hipótesis se declaran correctamente.
+
+## 17. Fórmulas de daño y beneficio: unidad, partición y atribución
+
+El cálculo base del daño es
+\[
+D_{total}=T_{invertido}+T_{impedido}+\Delta T_{trayectoria}.
+\]
+Es una suma admisible solo si los tres términos se expresan en una misma unidad y corresponden a componentes mutuamente excluyentes del contrafáctico. Las etiquetas “daño emergente”, “lucro cesante” y “trayectoria” no demuestran que no haya solapamiento: una pérdida salarial futura puede aparecer en lucro cesante y trayectoria a la vez. Se debe definir cada componente como una partición de la diferencia entre trayectoria sin daño y trayectoria observada, con horizonte, descuento y regla anti doble conteo. La fórmula integral del §6.5 mezcla una diferencia instantánea (X(t_0^-)-X(t_0^+)), una integral de niveles y una integral descontada; sus unidades no coinciden si (D(t)) es nivel de bienestar, y los intervalos escritos tampoco garantizan que los rubros del libro sean disjuntos. Se normaliza como una única integral del déficit de bienestar más un salto inicial, o como una contabilidad por partidas, sin sumar ambos enfoques.
+
+La conversión (D_{vital}=M/w_{ref}) es aritméticamente válida si (w_{ref}) tiene unidades monetarias/hora y se fija periodo, moneda real, población y base temporal. Es una conversión de unidad por convención del libro; no es un número de horas efectivamente sustraídas a una persona ni una consecuencia de φ₁/φ₂. El componente generacional ΣL_esperada(k)p(k|j) exige definir una cohorte contrafáctica finita y evitar contar descendencia potencial de varias víctimas en común; de lo contrario crece sin cota al extender generaciones. El componente supervivientes (L(1-q_{real})) requiere una línea base (q_{sin,daño}): la fórmula adecuada de pérdida relativa sería (L\max(0,q_{sin,daño}-q_{real})), con escalas de calidad definidas.
+
+Para beneficio, (AD_{B,i}=R^*_{B,i}B_{total}) es una asignación proporcional añadida. (R^*_B) debe calcularse en un grafo específico del proceso de beneficio y sumar 1 en su población de nodos. La brecha Δ_B=R^*_B-β repite el problema dimensional de (R^*-α): si β es monto reembolsado, comparar primero montos (B_i^{causado}-B_i^{restituido}); si β es tasa relativa, definir (B_i^{restituido}/B_i^{causado}). Beneficio y daño son cuentas separadas y no se cancelan sin regla de compensación.
+
+## 18. Índices agregados y herencia
+
+El índice (J=1-\sum_i|R^*_i-\alpha_i|) está normalizado por ΣR*=1, pero el rango publicado es erróneo si α_i solo se restringe individualmente a [0,1]. Entonces (J\ge 1-m), y puede ser negativo (por ejemplo, (R^*=(1,0,0)), α=(0,1,1) da (J=-1)). (J=1) sí equivale a coincidencia componente a componente; (J=0) no significa “injusticia completa”: también ocurre para muchas configuraciones intermedias. Si se desea interpretar distancia entre distribuciones, exigir α en el simplex y usar (J_{TV}=1-\frac12\sum_i|R^*_i-\alpha_i|\in[0,1]). Si α representa asunción y no distribución, no normalizarla artificialmente: reportar (L_1) y Δ por nodo.
+
+El índice (I_d=(R_d^*-α_d)/\max(1-\bar\alpha_{ej},\varepsilon)) es una razón ad hoc de brechas. No es necesariamente 0 cuando α_d=R_d^*: el numerador sí da cero entonces; puede ser negativo si el diseñador sobreasume; diverge por convención al saturarse α_ej. α promedio ponderada por R* de ejecutores requiere definir qué nodos cuentan como ejecutores y renormalizar sus pesos. Conviene rotularlo “razón de brecha del diseñador” y reportar numerador, denominador y ε.
+
+Para herencia, (PH(t)=R^*_{hist}CI(t)HB(t)(1-RI(t))), las tres curvas exponenciales y (t_{presc}=\inf\{t\ge t_0:PH(t)<\varepsilon\}) son una dinámica propuesta, no derivación del canon. Los factores deben estar en [0,1], tener interpretación operacional, y no contar dos veces reformas dentro de (CI) y (RI). Con parámetros constantes, el umbral se obtiene resolviendo esa función; si las reformas son históricas, (\Delta RI(t)) debe ser una función acumulada definida. Las fechas numéricas de ejemplo dependen directamente de tasas escogidas, así que son escenarios, no estimaciones. “Prescripción ontológica” conviene tratar como nombre de indicador de umbral del modelo y no como conclusión de ontología.
+
+La ecuación unificada (\sum_iw_{pos,i}|\Delta_i|f(S_i,t_i,CI_i)) es una familia de puntuaciones. Los pesos (w_{pos}), el factor (f) y sus instancias por dominio requieren definición y calibración; además, multiplicar Δ ya calculado por (1-S) puede descontar dos veces la sustituibilidad si esta ya intervino para definir responsabilidad neta. Presentarla como índice exploratorio dependiente de parámetros, nunca como igualdad exacta de “la injusticia”.
+
+**Estado del cálculo hasta aquí:** del canon se extraen la cadena causal doblemente mediada, el análisis de condiciones necesarias, la atribución ordinal por posición y la distinción entre causalidad/asunción interna e imputación externa. La escala (R^*), los índices (S), (J), (I_d), las curvas históricas y la conversión monetaria son contratos de medición añadidos. Pueden operacionalizarse sin alterar la ontología, pero cada uno necesita unidades, reglas de entrada y una interpretación acotada. Para cerrar el inventario siguen pendientes las familias de fórmula por dominio (clínica, epidemiología, finanzas, historia/beneficio, diagnóstico/prometeo) y los algoritmos/casos numéricos que las instancian.
+
