@@ -56,7 +56,7 @@ Este apartado es un **mapa de lo que cada operación hace**; no define aún fór
 | Nodos `N` | Posiciones, sujetos, estructuras o condiciones pertinentes al evento. | [P] Distinguir candidato investigable de contribución acreditada. |
 | Relaciones `E` | Actos, habilitaciones, decisiones, omisiones y transmisiones que conectan nodos. | [P] Tipos, orientación, temporalidad y mecanismos. |
 | Matriz `W` | Representación ponderada de relaciones reconstruidas hacia el evento. | [V] Separar existencia y dirección de arista, respaldo probatorio e intensidad causal; fijar convención de filas/columnas. |
-| Convergencia `R*` | Participación relativa del nodo **respecto de `D`** bajo el modelo y la evidencia declarados. | [V] Precisar estimando, escala y operador; no identificar sin prueba un autovector con porcentaje de daño. |
+| Convergencia `R*` | Grado de convergencia del nodo hacia la **atribución del evento `D`** bajo criterios y evidencia declarados; no cuota de una responsabilidad total. | [V] Precisar escala y operador, sin asumir suma 1 entre nodos ni identificar un autovector normalizado con fracción de daño. |
 | Sustituibilidad `S` | Contrafáctico de reemplazo del ocupante de una posición y continuidad del resultado. | [V] Formalizar intervenciones admisibles y qué parte corresponde a diseño frente a ocupante. |
 | Contribución atribuible | Contribución asociada al nodo tras la operación de sustituibilidad. | [P] Distinguir descuento individual de eventual atribución estructural; prohibir doble contabilización. |
 | Asunción interna `δ_int` | Operación de reconocimiento constitutivo e integración egoica; segunda mediación. | [C] No identificar automáticamente con las consecuencias materiales soportadas. |
@@ -204,8 +204,8 @@ El teorema 2.1 de la *Axiomatización* epistemológica deduce $\|\int_{t_1}^{t_2
 
 ### 9.2. Deudas relativas a convergencia y sustituibilidad
 
-**DA-05 — Definición axiomática de contribución relativa al resultado. [Crítica, P/V]**  
-Definir qué debe preservar $R_D$ antes de seleccionar Perron–Frobenius, propagación de caminos u otro operador: referencia verificable al resultado, comportamiento bajo nodo acreditadamente irrelevante, invariancia ante renombrar nodos, sensibilidad a intervenciones y condiciones de ordenación o distribución. La igualdad $\sum_i R_i=1$ **sólo** puede adoptarse si existe una masa o puntaje total no nulo cuya distribución se haya definido; no equivale por sí misma a «porcentaje material del daño». Separar **puntaje de convergencia**, **contribución contrafáctica** y **cuota restaurativa** hasta demostrar conexiones.
+**DA-05 — Axiomatizar convergencia sin presupuesto de reparto total. [Crítica, P/V; rectificada 31-10-2026]**  
+El autor precisa que **el método no mide causalidad qua causalidad ni responsabilidad qua responsabilidad; mide convergencias de nodos hacia la atribución de un evento discriminado**. Es incorrecto tomar $R_D(i)$, por definición, como cuota de un total de responsabilidad igual a 100 %. Se exige referencia al evento, criterio de convergencia explícito, relación con el expediente, sentido de escala y sensibilidad a condiciones de investigación; **no se impone $\sum_i R_D(i)=1$**. Si eventualmente se expresa el índice individual en $[0,1]$, el 1 representa su extremo convencional de convergencia y no «el 100 % del evento causado por este nodo». Dos nodos podrían alcanzar alta convergencia respecto del mismo acontecimiento sin reparto forzoso. Definir cuándo una operación produce un **índice individual**, cuándo un **ranking comparativo** y cuándo una **distribución de cuotas**; son tres resultados matemáticos distintos. Las cuotas restaurativas, si se requieren, son operaciones posteriores y no redefinen $R_D$. Perron–Frobenius o la suma de caminos podrán ser herramientas candidatas, no fundamentos de una conservación que el método no postula.
 
 **DA-06 — Distinguir hecho ocurrido, relación causal y estado probatorio del expediente. [P/V; precisión de encuadre]**  
 Un daño, un suicidio o una lesión **no aparecen ni desaparecen según el expediente los conozca o los demuestre**. Una atribución o ausencia de prueba tampoco altera retroactivamente un colapso. *El cálculo*, apéndice B, propone pesos sobre relaciones investigadas; la deuda consiste en declarar **qué permite afirmar o cuantificar la evidencia**, no en decidir si los acontecimientos existen. Distinguir: (1) acontecimiento ocurrido; (2) relación causal que puede o no haberlo producido; (3) lo que el investigador ha logrado reconstruir acerca de esa relación. Una arista no acreditada no es por ello ontológicamente inexistente; una relación con peso numérico provisional cero no demuestra ausencia causal. A su vez, la mera ocurrencia acreditada del daño no prueba automáticamente la conexión causal específica con cualquier nodo investigado. La calibración debe expresar los límites de la **inferencia y el resultado del método**, nunca borrar los hechos. Evaluar por separado la fuerza probatoria de un documento y la fuerza causal del acto que documenta.
@@ -226,8 +226,8 @@ La asunción egoica es reconocimiento constitutivo; las consecuencias materiales
 **DA-10 — La sobreasunción es asimetría repercusiva y no condición fundante de causalidad. [D/V; corrección de encuadre]**  
 La comparación $\Delta_i=C_i-A_i$ (con escalas declaradas) señala sobreasunción si $A_i>C_i$. **No exige** que exista otro sujeto con déficit ni que alguien haya «descargado» su responsabilidad sobre el primero. El hecho causal original y su pertenencia están establecidos independientemente de la carga que cada sujeto soporte. El signo de $\Delta_i$ no crea ni traslada la responsabilidad original. La *Axiomatización* epistemológica, Proposición 5.2, contiene una **afirmación suplementaria**: si $\Delta_i<0$ con grafo completo, existiría $j\ne i$ con $\Delta_j>0$. Esa afirmación no se deduce de las hipótesis allí declaradas: $R^*=(0.5,0.5)$, $\alpha=(0.8,0.5)$ producen $\Delta=(-0.3,0)$ sin déficit ajeno. La corrección editorial debe **desvincular la definición de sobreasunción de cualquier transferencia forzosa**; el mecanismo de descarga o externalización institucional será objeto de una investigación adicional únicamente cuando haya evidencia de que sucedió. No debe elevarse esa inferencia suplementaria a axioma general del método.
 
-**DA-11 — Propiedades efectivas de $J$. [Alta, D]**  
-En *El cálculo*, cap. 4, la fórmula $J=1-\sum_i|R_i^*-\alpha_i|$ convive con la afirmación «$J<0$ imposible» y ejemplos posteriores con $J<0$. Contraejemplo documentado en N-04. Redefinir intervalo y semántica según las condiciones reales de $\alpha$, sin destruir el indicador sólo porque la cota publicada sea errónea.
+**DA-11 — Propiedades efectivas de $J$ y dependencia de la normalización. [Alta, D/V]**  
+En *El cálculo*, cap. 4, la fórmula $J=1-\sum_i|R_i^*-\alpha_i|$ convive con la afirmación «$J<0$ imposible» y ejemplos posteriores con $J<0$. Contraejemplo documentado en N-04. **Además**, si la convergencia no es una cuota normalizada de una totalidad causal, deben reexaminarse la interpretación y las cotas de cualquier indicador global que dependa de $\sum_i R_i^*=1$. No eliminar el índice anticipadamente: reconstruir qué quiere medir y cuáles condiciones permiten agregarlo, sin inferir un 100 % de responsabilidad general.
 
 **DA-12 — Delta del daño y su dimensionalidad. [Alta, V]**  
 El libro propone $D_{\rm total}=T_{\rm invertido}+T_{\rm impedido}+\Delta T_{\rm trayectoria}$ y una representación contrafáctica por diferencias de trayectorias. Para una suma legítima, cada sumando ha de expresarse en **la misma unidad** o convertirse explícitamente. Si un salto $X(t_0^-)-X(t_0^+)$ mide unidades de $X$ y una integral $\int (X^{(0)}-X^{(1)})\,dt$ mide unidades de $X\cdot\mathrm{tiempo}$, **no se pueden sumar sin definir qué significa $X$ o cómo se convierten**. Separar pérdida inmediata, flujo impedido y futuro no superpuesto; fijar horizonte y descuento con hipótesis declaradas.
@@ -298,3 +298,64 @@ Estas correcciones sustituyen la lectura anterior de DA-04, DA-06, DA-08, DA-10 
 **Consecuencia para DA-09 y DA-10:** la definición general de sobreasunción es una **comparación relativa al evento y al atributo examinado**, no un mecanismo distributivo. La sobreasunción puede darse por atribución favorable voluntaria o por consecuencias adversas impuestas. Será necesario precisar si la misma letra $\alpha$ puede codificar estas manifestaciones sin perder información, o si el aparato de medición debe distinguirlas como coordenadas/modalidades de un objeto repercusivo más amplio. **No se aprueba todavía una nueva fórmula ni se altera la ontología.**
 
 **Regla de auditoría:** ante cualquier exceso de asunción, no preguntar automáticamente «¿a quién se descargó la responsabilidad?», sino primero «¿qué resultado fue asumido, qué tipo de participación se atribuye y qué participación muestra el expediente?». La eventual distribución de otros nodos pertenece al análisis causal independiente.
+
+
+## 13. Rectificación principal: el índice R mide convergencias, NO cuotas de responsabilidad total (31-10-2026)
+
+**[R: aclaración expresa del autor sobre el objeto del método; P/V: formalización matemática aún por construir]**
+
+### 13.1. Afirmación de alcance que debe prevalecer sobre el uso anterior de R*
+
+**El método NO calcula causalidad qua causalidad. NO calcula responsabilidad qua responsabilidad. Estudia la convergencia de los nodos hacia la atribución causal de un EVENTO discriminado mediante las relaciones y evidencia investigadas.** La causalidad y responsabilidad totales no se postulan como masas conocidas, cerradas y disponibles para reparto exhaustivo.
+
+No está justificada, como axioma ontológico ni epistemológico general, la igualdad
+$$
+\sum_{i\in N_D}R_D(i)=1.
+$$
+
+Si se usa una escala individual $R_D(i)\in[0,1]$, el extremo de esa escala **no** debe confundirse con propiedad o fracción del 100 % de la causalidad del evento. Por ello, varias convergencias pueden ser simultáneamente elevadas: la convergencia relativa a un acontecimiento no está por definición regida por una suma conservativa entre nodos. Tampoco se adopta el axioma opuesto «la suma nunca puede ser uno»: puede coincidir con uno accidentalmente o por convención de un análisis particular, sin que sea ley general.
+
+**Cuidado:** el índice de convergencia tampoco se identifica de antemano con una probabilidad estadística $P(i\text{ causó }D)$; su definición, sus extremos, orden y escala deben justificarse por la operación propuesta.
+
+### 13.2. Caso de control documental: expediente Madoff de la biblioteca
+
+*Expediente EP-1777319755497*, «Fraude piramidal institucional — esquema Bernard Madoff» (27-04-2026), presenta los siguientes **valores producidos por su procedimiento anterior**:
+- SEC: «índice de convergencia» 38.10 %;
+- Bernard Madoff: 22.63 %;
+- Empresas del grupo: 15.48 %;
+- Bancos custodios y entidades relacionadas: 13.16 %;
+- Feeder funds: 6.86 %; modelos y reportes: 3.77 %; inversionistas institucionales: 0.00 %.
+
+El mismo expediente explica su operación: $\mathrm{influencia}(i)$ suma productos ponderados de caminos al nodo final y luego
+$$
+R_i^*=\frac{\mathrm{influencia}(i)}{\sum_{j\in N_{\rm activos}}\mathrm{influencia}(j)}.
+$$
+Por ello, los porcentajes **suman 100 % por definición de la normalización**, no por una demostración de que la causalidad de la pérdida global se distribuye como masa de responsabilidad cerrada. **Este hecho revela una deuda del instrumento, no una propiedad del canon.** Los valores se citan únicamente para cotejar el problema semántico/operacional; **no se toman aquí como medidas verificadas de la participación causal histórica de los sujetos**.
+
+La frase del glosario de ese expediente «fracción del resultado total que se explica por la posición del nodo» deberá reconsiderarse: una cuota del puntaje agregado no demuestra una fracción del daño real.
+
+### 13.3. Tres objetos que NO debemos fusionar
+
+1. **Convergencia hacia el acontecimiento:** $R_D(i)$ — correspondencia atribuible del nodo $i$ con $D$ bajo un contrato de investigación explícito. Índice por nodo, no necesariamente aditivo.
+2. **Comparación o ranking de convergencias:** orden relativo entre $R_D(i)$ y $R_D(j)$ bajo la misma especificación. No exige cuotas globales ni demuestra que el máximo sea «culpable» o que haya producido cierta fracción material del daño.
+3. **Distribución restaurativa de una magnitud definida:** si un daño cuantificado y una regla de reparto aplicable justifican cuotas que sumen una cantidad determinada, será una **operación posterior y distinta**. Que ese reparto sume un daño medido no convierte $R_D$ en una partición de la causalidad.
+
+Por tanto, las interpretaciones de $R^*$, $S$, $\alpha$, $\Delta$, $J$, $\mathrm{AD}$ y las notas anteriores que presupongan «una masa global de responsabilidad» deben cotejarse contra este criterio antes de entrar en la axiomatización.
+
+### 13.4. Deudas matemáticas concretas, correctamente encuadradas
+
+**DC-01 — Definir el estimando de convergencia.** Precisar qué significa «se acerca a la atribución del evento» para cada nodo, cómo se ordena o cuantifica y bajo qué condiciones un valor extremo es admisible. No convertir un índice de cercanía en probabilidad ni en fracción de daño sin demostración independiente.
+
+**DC-02 — Separar escala individual de normalización colectiva.** Llevar cada índice al intervalo $[0,1]$, si corresponde, no requiere dividirlo entre la suma de índices. La normalización $R_i=r_i/\sum_jr_j$ altera la interpretación: produce una **cuota relativa del puntaje** y obliga a suma uno aunque nada demuestre un reparto exhaustivo de causalidad.
+
+**DC-03 — Evitar perturbaciones de significado por agregar actores.** Una cuota colectiva disminuye si se agrega otro nodo de puntaje positivo aunque no se modifique la relación del nodo original con el evento. Determinar qué tipo de dependencia contextual entre nodos sí exige la convergencia causal y cuál es mero efecto del denominador de normalización.
+
+**DC-04 — Comparación repercusiva sin hipótesis de suma cero.** Si la asunción de méritos y de consecuencias no requiere conservación global, $\Delta_i=R_D(i)-\alpha_i$ se interpretará sólo con ambos términos en escalas comparables y respecto del mismo atributo/evento, **sin inferir déficits de terceros ni un reparto universal de cargas**.
+
+**DC-05 — Condiciones de uso de técnicas de centralidad.** La centralidad normalizada, el autovector de Perron, Shapley y la suma de caminos no definen por su nombre la convergencia que busca el método. Se examinarán sólo después de formular las propiedades de $R_D$.
+
+### 13.5. Prioridad de reconstrucción corregida
+
+**La primera definición matemática pendiente es «índice de convergencia de un nodo respecto de un evento discriminado» sin presupuesto de normalización a una masa total.** A partir de esta definición se podrá especificar $W$ y el contrafáctico de sustituibilidad y después revisar las operaciones repercusivas y restaurativas.
+
+**Advertencia editorial:** esta rectificación prevalece sobre pasajes previos del cuaderno que llamen a $R^*$ «distribución de responsabilidad», «fracción del resultado», «porcentaje material del daño» o postulen conservación/reasignación como reglas generales. Se conservan las expresiones publicadas como objetos a cotejar, no como afirmaciones automáticamente aprobadas.
