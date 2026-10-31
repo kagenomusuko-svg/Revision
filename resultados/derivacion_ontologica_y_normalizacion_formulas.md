@@ -773,3 +773,15 @@ Las fórmulas repetidas quedan normalizadas bajo un único glosario:
 
 El criterio de cierre editorial para cada fórmula queda fijado: se conserva en el libro derivado solo con su significado, supuestos, intervalo/unidades y condición de uso; se corrige si hay una identidad aritmética mal aplicada; se llama “índice/modelo” si agrega elección; se elimina la palabra “teorema/derivación” cuando las premisas no prueban la conclusión. Esta regla completa la normalización sin crear una deuda de exploración abierta.
 
+
+## 32. Puente formal entre la aritmética de Prometeo y Perron–Frobenius
+
+Se añadió un [desarrollo técnico independiente](puente_aritmetico_espectral_prometeo.md) y su [verificación numérica reproducible](verificacion_puente_espectral_prometeo.py), partiendo del ejemplo bancario de *El método Prometeo* (§3.4, pp. impresas 74–78). Ambos recursos amplían el cotejo de §§7, 22 y 26, sin modificar el canon.
+
+La reconstrucción distingue **tres objetos**:
+
+1. **Operador de rondas publicado:** la ronda 1 calcula y normaliza influencia entrante, y la ronda 2 combina los valores resultantes con las aristas hacia el daño, introduciendo separadamente el peso directo del nodo diseñador. Su cálculo se reproduce: B ≈ 57.95 %, R ≈ 11.32 %, A ≈ 17.23 % y P ≈ 13.50 %. **No es literalmente un autovector de Perron–Frobenius.**
+2. **Operador propuesto de propagación por caminos:** para matriz de actor a actor $W$ (fila origen, columna destino) y vector de conexiones directas $d$, un DAG admite $c=\sum_{k=0}^{L}W^kd=(I-W)^{-1}d$. Este puntaje expresa alcance propagado hacia el resultado, no una fracción demostrada del daño. En el ejemplo sus cuotas normalizadas son diferentes de las publicadas; no se sustituyen silenciosamente.
+3. **Límite espectral condicional:** si $W$ es no negativa e irreducible, con radio espectral positivo, entonces la resolvente $c_\beta=(I-\beta W)^{-1}d$, normalizada y al acercarse $\beta$ a $1/\rho(W)$ por debajo, converge al **autovector derecho** de Perron–Frobenius. Para el grafo acíclico original, $\rho(W)=0$ y tal límite crítico no aplica. No se introducen retroalimentaciones ficticias para invocar el teorema.
+
+**Resultado editorial:** la elección de una medida de alcance causal está motivada por la posición causal descrita en *Areópago*, pero su equivalencia con una cuota de daño requiere una identificación adicional. La reconstrucción no elimina Perron–Frobenius; determina cuándo tiene fundamento matemático, qué dirección del grafo mide y por qué no debe confundirse con las rondas originales. Quedan pendientes los ensayos de invariancia ante refinamiento del grafo, solapamiento de rutas, separación de certeza documental y fuerza causal, y asignación conservativa de cuotas de instrumentos sin voluntad.
