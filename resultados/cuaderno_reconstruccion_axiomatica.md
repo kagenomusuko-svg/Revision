@@ -478,3 +478,24 @@ Reglas de admisión:
 Distinguir cuidadosamente **nuevo operador**, **nueva formalización**, **nueva proposición demostrada** y **nueva teoría matemática**: no son equivalentes, y la novedad no se proclamará sin prueba. En cualquier caso, el criterio de éxito es la adecuación operacional al canon y a la pregunta investigativa, con validez lógica explícita.
 
 **Regla editorial:** la explicación de cómo se ensamblaron las herramientas se documenta en el cuaderno; el libro de *Axiomatización* expondrá solamente las definiciones, axiomas, hipótesis y demostraciones indispensables. No añadir al canon propiedades por conveniencia de las herramientas.
+
+
+## 17. Principio rector: subordinación instrumental de la matemática a la ontología (31-10-2026)
+
+**[R — decisión metodológica explícita del autor; sin modificar el canon publicado]**
+
+> La ontología establece qué es y qué relaciones constituyen el sistema. La matemática no decide el objeto ontológico ni corrige la ontología para ajustar sus estructuras a técnicas disponibles: **operacionaliza el modelo ontológico y formaliza las relaciones que se siguen de él**.
+
+**Jerarquía de trabajo:**
+1. **Ontología canónica:** determina los objetos, relaciones, actos, mediaciones y límites conceptuales del sistema. Su contenido publicado no se modifica para acomodar el cálculo.
+2. **Axiomatización epistemológica:** especifica los objetos matemáticos y sus tipos; separa definiciones, hipótesis instrumentales, axiomas formalizadores, identidades derivadas y resultados demostrables. Explicita cuál relación del canon pretende representar cada expresión.
+3. **Herramientas matemáticas:** se seleccionan, ajustan, componen, crean o descartan por su capacidad para realizar esas operaciones bajo hipótesis verificadas; ninguna propiedad de una herramienta se convierte automáticamente en principio ontológico.
+4. **Instrumentación y aplicación:** calibración, investigación de expedientes, grados de convergencia, repercusiones y restauraciones cuando corresponda. La precisión instrumental nunca equivale a conocimiento exhaustivo de la causalidad.
+
+**Criterio para un aparente conflicto:** si una representación matemática no cumple el canon, revisar primero su tipado, las hipótesis, el dominio, el operador y la demostración. Dejar constancia de una limitación no resuelta si aún no existe formalización adecuada. **No trasladar la deuda del instrumento al canon.** Esto no dispensa de rigor: una fórmula sigue siendo inválida si su demostración falla y no se la debe publicar como teorema hasta corregirla.
+
+**Ejemplo de aplicación:** que un vector propio se normalice a suma 1 no hace que el acontecimiento posea una «responsabilidad total» divisible en porcentajes ni que los índices de convergencia tengan que sumar 1. Una identidad formal de normalización no modifica la definición ontológica del objeto investigado.
+
+**Distinción necesaria:** «la ontología establece el objeto» no implica «cualquier fórmula propuesta sobre el objeto está matemáticamente demostrada». La verdad o consistencia matemática de una formalización se somete a su propia prueba; lo que está subordinado es la **selección e interpretación del aparato matemático**, no la exigencia de validez lógica.
+
+**Regla de continuidad editorial:** esta sección prevalece sobre cualquier formulación de la reconstrucción que trate como axioma una convención técnica sólo porque simplifica la aplicación de una teoría conocida. El cuaderno documentará la traducción entre las relaciones canónicas y los instrumentos; el libro de axiomatización presentará las relaciones formales estrictamente necesarias.
