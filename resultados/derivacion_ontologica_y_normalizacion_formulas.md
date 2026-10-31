@@ -36,23 +36,23 @@ El término *contabilidad causal/ontológica*, así como sus usos en imputación
 La fórmula canónica de la mediación bis es:
 
 $$
-Ego(t)=\\varphi_2\!\left(\\varphi_1(v_t,c_t),I(t)\right).
+Ego(t)=\varphi_2\!\left(\varphi_1(v_t,c_t),I(t)\right).
 $$
 
 Definimos, como abreviatura de lectura y no como concepto nuevo,
 
 $$
-a_t:=\\varphi_1(v_t,c_t).
+a_t:=\varphi_1(v_t,c_t).
 $$
 
 Entonces:
 
 $$
-Ego(t)=\\varphi_2(a_t,I(t)).
+Ego(t)=\varphi_2(a_t,I(t)).
 $$
 
-- $\\varphi_1$ orienta la voluntad en el campo y produce el acto/colapso $a_t$.
-- $\\varphi_2$ retorna ese acto al sujeto que lo asume y opera respecto de la trayectoria acumulada $I(t)$.
+- $\varphi_1$ orienta la voluntad en el campo y produce el acto/colapso $a_t$.
+- $\varphi_2$ retorna ese acto al sujeto que lo asume y opera respecto de la trayectoria acumulada $I(t)$.
 - (I(t)) nombra la trayectoria que entra como condición histórica del ciclo; (Ego(t)) nombra el resultado egoico de la operación. No son intercambiables.
 
 **Fuentes canónicas:** *Afrodita Areia I: Sobre la pasión*, fórmula de mediación bis y glosario “Integral del ego” (pp. 190–191); *Ágape*, formulación de la fórmula Ego(t); *Areópago*, cap. V, pp. 36–37.
@@ -66,12 +66,12 @@ Ego(t)=\int f(v)\,dv,\qquad \frac{d}{dt}Ego(t)=f(v_t).
 $$
 
 $
-El glosario precisa que (f) representa la contribución de cada ciclo de doble mediación: el acto orientado por (\\varphi_1) y retornado como propio mediante (\\varphi_2), en sus circunstancias y desde la trayectoria previa. Por tanto, la integral no acumula sin distinción todo lo que ocurrió: representa la trayectoria constituida por la operación egoica de asunción.
+El glosario precisa que (f) representa la contribución de cada ciclo de doble mediación: el acto orientado por (\varphi_1) y retornado como propio mediante (\varphi_2), en sus circunstancias y desde la trayectoria previa. Por tanto, la integral no acumula sin distinción todo lo que ocurrió: representa la trayectoria constituida por la operación egoica de asunción.
 
 Como representación recursiva, la relación puede anotarse así:
 
 $$
-I_{t+1}=\operatorname{Actualizar}\!\left(I_t,\\varphi_2(a_t,I_t)\right),\qquad a_t=\\varphi_1(v_t,c_t).
+I_{t+1}=\operatorname{Actualizar}\!\left(I_t,\varphi_2(a_t,I_t)\right),\qquad a_t=\varphi_1(v_t,c_t).
 $$
 
 
@@ -84,9 +84,9 @@ Esta escritura conserva la estructura canónica. **No impone todavía** una suma
 *Areópago* separa dos operaciones:
 
 - La pertenencia causal del acto se establece por la primera mediación: el acto ocurrió a través del ego y la cadena causal pasa por él.
-- La asunción ante sí mismo corresponde a la segunda mediación (\\varphi_2).
+- La asunción ante sí mismo corresponde a la segunda mediación (\varphi_2).
 
-La imputación desde la alteridad puede identificar la posición causal sin requerir que el sujeto haya asumido internamente el acto. En consecuencia, la evasión o bloqueo de (\\varphi_2) no borra la producción causal ya atribuida mediante (\\varphi_1).
+La imputación desde la alteridad puede identificar la posición causal sin requerir que el sujeto haya asumido internamente el acto. En consecuencia, la evasión o bloqueo de (\varphi_2) no borra la producción causal ya atribuida mediante (\varphi_1).
 
 Esta distinción impide usar un indicador de asunción como sustituto de la atribución causal. Puede modular una operación posterior que el sistema defina, pero no cambia retrospectivamente quién produjo el acto.
 
@@ -114,27 +114,27 @@ El canon también afirma que la responsabilidad se distribuye según la posició
 
 | Fórmula/operación en los libros de trabajo | Relación canónica que pretende expresar | Cotejo y normalización |
 |---|---|---|
-| $I(t)=\int_0^t c(\tau)w(\tau)\,d\tau$ | Trayectoria acumulada por los colapsos asumidos | Es una formalización compatible si el integrando representa la contribución que $\\varphi_2$ efectivamente integra. Si $c$ contiene todo colapso producido, la fórmula debe distinguir los colapsos asumidos de los rechazados. No declarar esa equivalencia sin fijar el dominio de $c$ y la función de $w$. |
-| $\\varphi_2(a,I)=I+\delta(a)\mathbf{1}\{\operatorname{eval}(a,I)>\theta\}$ | Actualización de la trayectoria por segunda mediación | *Axiomatización* introduce una regla binaria de evaluación, umbral e incremento aditivo. Es una operación formal añadida; debe cotejarse con la posibilidad canónica de grados/procesos de asunción. No se obtiene de la fórmula de doble mediación por sustitución algebraica. |
+| $I(t)=\int_0^t c(\tau)w(\tau)\,d\tau$ | Trayectoria acumulada por los colapsos asumidos | Es una formalización compatible si el integrando representa la contribución que $\varphi_2$ efectivamente integra. Si $c$ contiene todo colapso producido, la fórmula debe distinguir los colapsos asumidos de los rechazados. No declarar esa equivalencia sin fijar el dominio de $c$ y la función de $w$. |
+| $\varphi_2(a,I)=I+\delta(a)\mathbf{1}\{\operatorname{eval}(a,I)>\theta\}$ | Actualización de la trayectoria por segunda mediación | *Axiomatización* introduce una regla binaria de evaluación, umbral e incremento aditivo. Es una operación formal añadida; debe cotejarse con la posibilidad canónica de grados/procesos de asunción. No se obtiene de la fórmula de doble mediación por sustitución algebraica. |
 | $RSC(t)=\{c(\tau):0\le\tau\le t\}$ | Registro de todo lo producido | Compatible como inventario de colapsos, separado de la trayectoria que resulta de asumirlos. |
 | (RSC(t)\\setminus I(t)) | Supuesta brecha entre colapsos y trayectoria integrada | No está bien tipada: (RSC(t)) es un conjunto de colapsos e (I(t)) es un vector/estado acumulado. La brecha debe expresarse entre el conjunto de colapsos producidos y el subconjunto/proceso de los integrados; luego, si se requiere una magnitud, definir una operación de agregación sobre esa diferencia. |
-| $R^*=\operatorname{eigvec}_{dom}(W^T)$, normalizado en el simplex | Distribución cuantitativa de influencia/responsabilidad sobre nodos | *Axiomatización* usa $W^T$; otros pasajes de *El cálculo* emplean $W$ o describen el vector de forma distinta. El canon sustenta pertenencia causal por $\\varphi_1$, contrafáctico específico y proporcionalidad a la posición causal. El puente entre esa proporcionalidad y eigenvector requiere derivación explícita desde la definición canónica; la elección de $W$ o $W^T$ es parte de esa operación. |
+| $R^*=\operatorname{eigvec}_{dom}(W^T)$, normalizado en el simplex | Distribución cuantitativa de influencia/responsabilidad sobre nodos | *Axiomatización* usa $W^T$; otros pasajes de *El cálculo* emplean $W$ o describen el vector de forma distinta. El canon sustenta pertenencia causal por $\varphi_1$, contrafáctico específico y proporcionalidad a la posición causal. El puente entre esa proporcionalidad y eigenvector requiere derivación explícita desde la definición canónica; la elección de $W$ o $W^T$ es parte de esa operación. |
 | $S_{op}(t)=\frac{\|c\|}{\|c\|+\|a_t\|}$ | Sustituibilidad del nodo por el campo | Es una razón construida a partir de dos normas. Comparar normas en espacios distintos exige una escala común; la fórmula no equivale por sí misma al contrafáctico canónico de sustitución. Registrar como índice operacional separado hasta demostrar la correspondencia semántica. |
 | $S_{est}(i)=1-\frac{D_{KL}(R^*\Vert R^{*(i)})}{\log m}$ | Efecto de sustituir estructuralmente al nodo | Operación de sensibilidad sobre el grafo: reemplaza una fila y compara distribuciones espectrales. Debe distinguirse de la sustituibilidad contrafáctica del actor y justificar la intervención “promedio de las otras filas”. |
 | (R^*_{mathrm{neta},i}=R^*_i(1-S_i)) | Parte no sustituible/idiosincrática de la posición causal | Es una descomposición propuesta por los libros de trabajo. Para derivarla, deben fijarse las escalas y establecer qué significa “parte idiosincrática” a partir de la posición causal canónica; no confundirla con el criterio de nodo necesario. |
-| $\alpha(t)=\frac{\int_0^t \mathbf{1}_{int}(\tau)w(\tau)p(\tau)\,d\tau}{\int_0^t w(\tau)\,d\tau}$ | Asunción/integración de los actos | La ontología funda $\\varphi_2$ como asunción e integración en la trayectoria. La fórmula incorpora indicador, pesos y grado $p$; hay que normalizar si $\alpha$ mide grado de asunción o fracción de responsabilidad $R^*$. No usar ambos sentidos con la misma unidad sin transformación definida. |
+| $\alpha(t)=\frac{\int_0^t \mathbf{1}_{int}(\tau)w(\tau)p(\tau)\,d\tau}{\int_0^t w(\tau)\,d\tau}$ | Asunción/integración de los actos | La ontología funda $\varphi_2$ como asunción e integración en la trayectoria. La fórmula incorpora indicador, pesos y grado $p$; hay que normalizar si $\alpha$ mide grado de asunción o fracción de responsabilidad $R^*$. No usar ambos sentidos con la misma unidad sin transformación definida. |
 | (Delta_i=R^*_i-alpha_i) | Brecha entre posición causal y asunción | Requiere que (alpha_i) se exprese en la misma escala que (R^*_i). |
-| $\Delta_i=R^*_i(1-\alpha_i)$ | Responsabilidad causal no integrada | Es dimensionalmente coherente si $\alpha_i\in[0,1]$ es una proporción de $R^*_i$. No equivale a $R^*_i-\alpha_i$ cuando $\alpha_i$ es una magnitud absoluta. La forma canónica se determinará conforme a qué significa $\\varphi_2$ y a cómo *Areópago* distingue imputación externa de asunción interna. |
+| $\Delta_i=R^*_i(1-\alpha_i)$ | Responsabilidad causal no integrada | Es dimensionalmente coherente si $\alpha_i\in[0,1]$ es una proporción de $R^*_i$. No equivale a $R^*_i-\alpha_i$ cuando $\alpha_i$ es una magnitud absoluta. La forma canónica se determinará conforme a qué significa $\varphi_2$ y a cómo *Areópago* distingue imputación externa de asunción interna. |
 
 ## 5. Primeras normalizaciones que se desprenden del cotejo
 
-1. Mantener separados el acto producido por (\\varphi_1), el acto asumido por (\\varphi_2), el registro de colapsos y la trayectoria (I(t)).
+1. Mantener separados el acto producido por (\varphi_1), el acto asumido por (\varphi_2), el registro de colapsos y la trayectoria (I(t)).
 2. No restar conjuntos de eventos y vectores acumulados. Definir primero los objetos y sus tipos.
-3. Tratar la regla de umbral binario de (\\varphi_2) como formalización añadida, no como consecuencia automática de la fórmula ontológica.
+3. Tratar la regla de umbral binario de (\varphi_2) como formalización añadida, no como consecuencia automática de la fórmula ontológica.
 4. Derivar la asignación cuantitativa (R^*) desde el criterio canónico de causalidad y distribución proporcional antes de fijar centralidad espectral como cálculo.
 5. Fijar la orientación de (W) y justificar el uso de (W) o (W^T) en relación con esa derivación.
 6. Separar (S) como medida contrafáctica de sustituibilidad de las aproximaciones normativas o estructurales que se usen para calcularlo.
-7. Fijar si (alpha) es grado de asunción de (\\varphi_2), proporción de (R^*) ya asumida, o una variable de otro dominio; no mezclarlo.
+7. Fijar si (alpha) es grado de asunción de (\varphi_2), proporción de (R^*) ya asumida, o una variable de otro dominio; no mezclarlo.
 8. Elegir una única definición de (Delta) compatible con la definición de (alpha) resultante y propagar esa convención a los demás libros y al código.
 
 Estas son operaciones de normalización del material existente. No obligan a conservar cada fórmula ni cada libro: cuando una formalización no se desprenda del canon o no resulte necesaria para el método, se podrá sustituir, retirar o dejar para otra línea de trabajo.
@@ -145,7 +145,7 @@ El siguiente análisis desarrollará, en este orden:
 
 1. la fórmula de (R^*) de *El cálculo de la responsabilidad* y la definición 6.1 de *Axiomatización* frente al criterio del nodo necesario y la distribución proporcional de *Areópago*;
 2. la derivación de (S), separando contrafáctico de sustitución y sustitución del grafo;
-3. las versiones de (alpha) como registro de (\\varphi_2) y su correspondencia con la escala de (R^*);
+3. las versiones de (alpha) como registro de (\varphi_2) y su correspondencia con la escala de (R^*);
 4. la normalización de (Delta), (R^*_{mathrm{neta}}) y las magnitudes derivadas;
 5. los teoremas de existencia, unicidad, estabilidad, Cramér–Rao y Davis–Kahan de *Axiomatización*, comprobando cada hipótesis y cada paso algebraico desde las definiciones ya normalizadas.
 
@@ -319,7 +319,7 @@ Para conectar una aplicación con E, el Axioma 0 postula `emb: Outputs→E` y pi
 
 ### 10.2. Tipo de φ₁
 
-La fórmula canónica es $\\varphi_1(v_t,c_t)\to a_t$; la historia acumulada aparece como argumento de $\\varphi_2(a_t,I(t))$. *Axiomatización* amplía $\\varphi_1$ a $\\varphi_1:V\times C\times H\to A$ y, además, incluye una referencia a $I(t)$ dentro de $v_t$. Esa versión puede ser un modelo computacional expandido, pero no es una mera reescritura de la firma canónica: coloca historia en el input de $\\varphi_1$ y puede contarla dos veces.
+La fórmula canónica es $\varphi_1(v_t,c_t)\to a_t$; la historia acumulada aparece como argumento de $\varphi_2(a_t,I(t))$. *Axiomatización* amplía $\varphi_1$ a $\varphi_1:V\times C\times H\to A$ y, además, incluye una referencia a $I(t)$ dentro de $v_t$. Esa versión puede ser un modelo computacional expandido, pero no es una mera reescritura de la firma canónica: coloca historia en el input de $\varphi_1$ y puede contarla dos veces.
 
 **Normalización:** conservar como firma ontológica `φ₁:V×C→A`. Si un modelo concreto requiere que la historia afecte la producción del acto, explicitar si esa historia forma parte de v_t o si se introduce una extensión de φ₁; no incluirla en ambos sitios de manera implícita. La actualización egoica posterior sigue pasando por `φ₂`.
 
@@ -525,7 +525,7 @@ es un modelo económico de escenario, no una consecuencia ontológica. Debe fija
 
 ### Clínica y trayectoria terapéutica
 
-El vector del síntoma $\psi_S=(I_S,v_S,c_S,s_S)$ añade un estado clínico útil como esquema, pero $s_S$ (“sesgo narrativo”) y la métrica de integración requieren definiciones operacionales propias. La ecuación $\frac{d\psi_S}{dt}=F(\psi_S,G,\text{intervención},\\varphi_2)$ es una forma general de modelo dinámico: F no queda especificada por la ontología, por lo que no predice hasta fijar variables, parámetros y datos.
+El vector del síntoma $\psi_S=(I_S,v_S,c_S,s_S)$ añade un estado clínico útil como esquema, pero $s_S$ (“sesgo narrativo”) y la métrica de integración requieren definiciones operacionales propias. La ecuación $\frac{d\psi_S}{dt}=F(\psi_S,G,\text{intervención},\varphi_2)$ es una forma general de modelo dinámico: F no queda especificada por la ontología, por lo que no predice hasta fijar variables, parámetros y datos.
 
 La regla del manuscrito $W(t+\Delta t)=W(t)(1-\eta\Delta\alpha(t))$ necesita redefinición. Si $\Delta\alpha$ es vectorial, el producto no está definido sin especificar si es elemento a elemento, por fila o matriz; si es escalar, puede volver negativos los pesos cuando $\eta\Delta\alpha>1$. Tampoco se deriva que integrar internamente reduzca necesariamente la fuerza causal objetiva del antecedente. Como modelo clínico explícito se puede parametrizar, por ejemplo, $W_{ij}(t+\Delta t)=W_{ij}(t)e^{-\eta_{ij}\max(0,\Delta\alpha_i)}$, que conserva no negatividad, pero sigue siendo una hipótesis de cambio a estimar, no fórmula canónica.
 
