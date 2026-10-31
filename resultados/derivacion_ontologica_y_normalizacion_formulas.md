@@ -565,3 +565,42 @@ Las mismas cinco preguntas resuelven la lectura del resto de aplicaciones del li
 
 **Resultados clínicos, epidemiológicos, actuariales o financieros.** Las ecuaciones de evolución (Markov, SIR, valor presente, scores, curvas de supervivencia) se mantienen en sus modelos propios. El análisis canónico puede informar qué nodos/contextos entran en el grafo y qué condiciones se contrastan, pero no reemplaza las ecuaciones del dominio ni hace que sus parámetros salgan de φ₁/φ₂.
 
+## 21. Apéndice D de Axiomatización: discretización, contrafáctico y estabilidad
+
+La suma discreta
+\[
+I_d(k)=\sum_{i=1}^{k}c(\tau_i)w(\tau_i)
+\]
+aproxima una integral solo si incorpora el ancho temporal, por ejemplo Σ c(τ_i)w(τ_i)Δτ_i, o si (w(τ_i)) ya incluye ese ancho y sus unidades lo declaran. Sin Δτ, al refinar la malla la suma generalmente crece en vez de converger. La convergencia de sumas de Riemann-Bochner a la integral es correcta bajo particiones cuya malla tiende a cero, funciones apropiadas y una regla consistente de muestreo.
+
+La condición (c_k=f_k(I_d(k-1),v_k,C_k)) da una representación de estado reducida, pero la propiedad de Markov probabilística no se sigue hasta especificar el proceso aleatorio y asumir que ((v_k,C_k)) condicionado a (I_d(k-1)) no conserva información adicional de la historia pasada. El libro afirma esa independencia en el paso 2 sin haberla postulado. Normalizar el enunciado como: la secuencia es Markov **si** la distribución condicional de las entradas actuales depende del pasado solo a través del estado acumulado.
+
+La descomposición del apéndice,
+\[
+R^*_{struct,i}=R^{*(i)}_i,\qquad
+R^*_{net,i}=R^*_i-R^{*(i)}_i,
+\]
+es una opción de baseline contrafáctico. (R^*_{net}) puede ser negativa o positiva; “exceso idiosincrático” no garantiza signo ni la cota reclamada, que depende del Lema 8.1 no demostrado. Δ_net = R*_net-α_vol es una definición consistente como brecha de ese baseline y de la asunción voluntaria, si ambas cantidades son fracciones compatibles. No reemplaza la brecha total Δ y no debe llamarse imputación total.
+
+La Proposición D.2 de identificabilidad promete un intervalo de anchura ≤0.10 a partir de pesos de certeza B, sin derivar cómo la escala E0–E8 limita (W) ni propaga incertidumbre al eigenvector. Debe expresarse como requerimiento de entrada (“reportar intervalo obtenido”) hasta especificar regla de pesos e incertidumbre.
+
+El operador contrafáctico ((G,i,W'_i)\mapsto R^*(G')) es una definición útil si (R^*(G')) existe y se fija orientación y normalización. Restringir (W'_i) a filas estocásticas mientras la matriz original (W) usa pesos de fuerza no normalizados cambia unidades/semántica de la arista; normalizar ambas de la misma forma antes de comparar. La métrica (\|R^*(G')-R^*(G)\|_1) es válida como distancia entre distribuciones ya calculadas, pero no prueba que el nodo sea “más causal”: solo cuantifica sensibilidad de ese índice.
+
+La cota D.2 hereda las mismas fallas de la demostración A: la cota invocada es para matrices simétricas con condiciones específicas, mientras W suele ser no simétrica. Debe retirarse el teorema generalizado hasta derivar una cota válida para matrices no negativas no simétricas bajo condiciones enunciadas. El corolario D.3 depende de esa cota; su desigualdad triangular solo es correcta una vez válidas las cotas de ambos eigenvectores de base y contrafáctico.
+
+El Teorema D.3 de dominancia sí es álgebra correcta desde las dos desigualdades componente a componente estipuladas: mayor (R^*_{net}) y menor α_vol implican mayor Δ_net. Es una condición suficiente, no asegura que exista un único nodo dominante.
+
+El Teorema D.4 no demuestra estabilidad dinámica. Que todos tengan (S_{est}\to1) o α_vol\to R^*_{net} describe valores límite de brecha, pero no controla cuánto cambia Δ_net ante perturbaciones de la matriz (W); las premisas de robustez son distintas. Mantener “estable/frágil/dominada” como etiquetas descriptivas definidas por umbrales explícitos, no como teorema de sensibilidad.
+
+La bifurcación de soporte es una definición calculable bajo el eigenvector elegido. El Teorema D.5 requiere más que añadir una arista: que (j) no tenga ya acceso/influencia desde otras componentes y que el nuevo grafo satisfaga las condiciones de existencia. Además, bajo irreducibilidad estricta todos los nodos ya tienen componente positiva, así que no puede haber cambio de soporte de un vector PF positivo. La posibilidad de soporte cambiante exige trabajar con una definición para grafos reducibles/componentes activas, no simultáneamente con la hipótesis de irreducibilidad global.
+
+## 22. Auditoría transversal de consistencia algebraica
+
+1. **Orientación de aristas.** Fijar si (W_{ij}) representa (i\to j). Entonces elegir una sola ecuación de centralidad (por ejemplo (W^TR^*=λ R^*) para acumular influencia entrante) y usarla en texto, código y ejemplos. (WR=λ R) calcula otra convención.
+2. **Sumidero.** No se puede exigir que todo nodo llegue al resultado y tratar el resultado como nodo de salida con grado cero a la vez que se exige irreducibilidad de toda la matriz. Para PF usar una submatriz/componentes claramente seleccionadas o un modelo de transición con teletransporte declarado; no rellenar ceros con aristas causales artificiales.
+3. **Pesos y filas.** La normalización por filas borra la magnitud total de la influencia saliente. Conservar por separado fuerza de aristas y proporción de flujo si ambas importan.
+4. **Probabilidad vs. grado.** α, S, h y R* son fracciones solo si se define su denominador. No llamar “probabilidad” a h o V sin un proceso de muestreo generador.
+5. **Ceros y restricciones.** Softmax produce positivos para logits finitos; φ₂ binaria de umbral produce una dinámica discontinua. Las integrales requieren medibilidad/integrabilidad; las derivadas requieren diferenciabilidad; los índices KL requieren soporte.
+6. **Dos clases de residuo.** La brecha de asunción Δ compara responsabilidad causal con integración/asunción; el daño material (D) y el beneficio (B) se calculan por trayectoria/contrafáctico. No convertir Δ en dinero con (D_{total}) sin una regla de reparto definida.
+7. **Precisión de cifras.** Los ejemplos de números deben propagarse desde matrices y entradas completas, y verificar normalización, unidades y signos. Un número de caso no valida el teorema que se invoca para producirlo.
+
