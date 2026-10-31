@@ -674,3 +674,47 @@ El modelo (A_{ij}=eta_j+gamma X_i+epsilon_{ij}) es una forma lineal de valor ag
 
 (IAS=J_{política,actual}-J_{política,Coleman}) resta dos índices calculados en tiempos/modelos posiblemente distintos. Es indicador interpretable solo si la definición de J, datos, población y escala son invariantes; el signo por sí mismo no demuestra aprendizaje histórico.
 
+## 26. Jerarquía final de derivación desde los libros canónicos
+
+Este es el punto de control para revisar todos los libros anteriores. La ontología sí fija: (a) ego como resultado de doble mediación (Ego(t)=\phi_2(\phi_1(v_t,c_t),I(t))); (b) distinción entre acto producido y su integración/asunción; (c) evaluación contrafáctica de condiciones necesarias para un daño específico; y (d) una relación ordinal de posiciones causales según su capacidad para determinar condiciones de operación. En *Afrodita Areia I* (apéndice, p. 165; glosario, pp. 190–191) (I(t)), trayectoria integrada, y (Ego(t)), resultado, no son intercambiables; en *Areópago* (pp. 36–37) la imputación externa no depende de que el agente acepte internamente el acto, y (pp. 49–54) la prueba es contrafáctica y específica al daño. La proporcionalidad de posición causal es ordinal; no requiere que sus distancias sean números exactos.
+
+De ello se deriva la obligación de preservar estas **distinciones**. No se deriva una única función numérica para (R^*), (S) ni α. En particular, los manuscritos de *Transformación formal* y *Método Prometeo* afirman que (R^*) es “lectura exterior” de (I(t)) y que el eigenvector dominante es su fórmula derivada. Eso salta de un objeto temporal/interno a una centralidad de grafo sin un teorema puente canónico. (I(t)) acumula colapsos del ego; (R^*) en el cálculo existente se obtiene de un grafo actor–resultado. Pueden relacionarse en un modelo de medición añadido, pero no son idénticos por la ontología. La formulación publicable debe decir “operacionalizamos la posición causal con…”, y declarar la regla de asignación.
+
+**Derivación válida de responsabilidad en dos niveles:**
+
+1. **Nivel canónico (hecho (D)):** registrar actos y condiciones; formular el contrafáctico individualizado (D_{do(N_i=0)}); marcar si (D) habría ocurrido sin (N_i). Mantener para cada nodo el resultado cualitativo de necesidad y la evidencia que lo respalda. Esa es la conexión directa con el criterio canónico.
+2. **Nivel cuantitativo convencional:** cuando se requiera una cuota que sume 1, elegir y declarar un operador de reparto sobre el grafo. El eigenvector, Shapley, efectos marginales normalizados o una regla legal son alternativas diferentes, con distintos axiomas. Informar sensibilidad y no traducir automáticamente una cuota en necesidad ontológica.
+3. **Nivel de asunción:** estimar por separado evidencia de que la doble mediación integró el acto como propio (α interno, inaccesible directamente a tercero) y actos/documentos de reconocimiento o sanción (α_ext o (L_i)). La evidencia externa apoya una inferencia, no observa φ₂ directamente.
+4. **Brecha:** conservar Δ solo tras fijar un contrato de escala. Si α es grado interno relativo a la propia cuota, usar (A_i=R_i^*\alpha_i) y Δ_i=R_i^*(1-α_i)). Si α ya es cuota de asunción en la distribución general, usar (R_i^*-α_i). No mezclar los contratos.
+
+### Lo que expresan las fórmulas ante el canon
+
+| Objeto | Base canónica | Regla del manuscrito | Calificación |
+|---|---|---|---|
+| (I(t)) | Trayectoria acumulada de colapsos/actos integrados por φ₂ | Integral con pesos temporales | Formalización válida bajo condiciones de integración y elección del peso; no es cuota de actor |
+| (Ego(t)) | Resultado de la doble mediación | Vector de estado extendido Ψ | Modelo formal añadido |
+| (N_i(D)) | Condición necesaria para un daño definido | Booleano de ablación/contrafáctico | Consecuencia directa si se fija intervención y mundo de comparación |
+| Posición causal | Capacidad ordinal de determinar condiciones | Eigenvector normalizado | Proxy/modelo elegido; no equivalencia demostrada |
+| (S_i) | Comparar qué cambiaría al sustituir posición/condición | Promedio de tres ítems; cociente de normas; KL/correlación | Operacionalizaciones distintas; no intercambiables ni fijadas por canon |
+| α_i | Grado de integración interna por φ₂ | Promedio ponderado de documentos, sanciones y compromisos | Proxy externo; no observación directa ni equivalente sin modelo de medición |
+| Δ_i | Distancia operativa entre cuota causal y asunción | R*−α o R*(1−α) | Definición formal condicionada a escala y denominador |
+| (D_{total}), (B_{total}) | Consecuencias de trayectoria | Partidas monetarias/vitales y Shapley | Contabilidad/medición de dominio, no resultado de la doble mediación |
+
+La consecuencia para la edición es acotada: estos cálculos pueden formar una ciencia de medición aplicada, pero el texto debe distinguir “principio canónico” de “operador adoptado”. Eso evita atribuir a la ontología un teorema que no contiene y permite que Prometeo siga siendo una herramienta computable bajo sus propias reglas explícitas.
+
+## 27. Fórmulas del Método Prometeo y escalas de evidencia
+
+El método Prometeo agrega flujo de expediente (E0–E8), matriz de pesos (W), tres rondas y documentos de salida. Son procedimientos de construcción/registro, no fórmulas canónicas. El orden publicable es: definir hecho y daño → identificar condiciones/eventos → registrar cada arista y su evidencia con intervalo/peso → calcular cada modelo elegido en esos intervalos → presentar resultado y sensibilidad → evaluar asunción y daño en carriles separados.
+
+La escala ordinal E0–E8 no debe convertirse automáticamente en cardinal suponiendo intervalos iguales: el salto E0→E1 no es necesariamente el mismo cambio de fuerza causal que E7→E8. Si se mapea certeza documental a (w_{ij}\in[a,b]), debe publicarse la tabla de traducción y distinguir (w) como confianza/certeza de (w) como magnitud de influencia. Una arista puede estar muy bien documentada y tener efecto pequeño; puede estar pobremente documentada y ser causalmente fuerte. Son variables distintas: (q_{ij}) para confianza evidencial y (c_{ij}) para fuerza causal.
+
+El “método de rondas” descrito por (R_i=\lambda^{-1}\sum_jw_{ji}R_j) es iteración espectral si se fija matriz, orientación, normalización y condiciones de convergencia. No calcula por sí mismo necesidad contrafáctica ni (S). En código de referencia, errores ya detectados en las fórmulas repetidas en los capítulos aplicados también deben corregirse centralmente una sola vez: orientación (W) vs. (W^T), uso de Pearson como sustitución, fila promedio, sumidero cero y supuesto de Perron–Frobenius.
+
+(B_i^*=B_i/B_{total}) es una cuota de beneficio observada si (B_i) es atribuible, neta y el total es positivo; si (B_{total}=0), queda indefinida. (B^*) es un vector distinto de (R^*), no una “cara simétrica” en sentido matemático: que cause y obtenga beneficio son relaciones separadas. La comparación entre ellos puede orientar preguntas de investigación, pero una diferencia (R_i^*-B_i^*) solo es dimensionalmente válida si ambos son cuotas sobre universos comparables.
+
+## 28. Estado del inventario de fórmulas
+
+Queda revisado en este documento: núcleo de (I(t))/φ₂; (R^*), matrices y método de potencias; (S_{op}), (S_{est}), (S_{net}); definición y versiones de α; Δ y evolución; Fisher/CRLB/REC; TIC y Davis–Kahan; logits/predictibilidad; daño, beneficio, dinero/tiempo vital; Shapley; herencia; crédito, quiebra/ICRS, seguros, gobierno, confiabilidad, IA y educación; códigos/eigenvector y condiciones de operación.
+
+La última fase para dejar este documento en forma cerrada consiste en conciliar, fórmula por fórmula, las ediciones de *Metrología Causal*, *SDO*, *Transformación formal*, *Método Prometeo*, *Taxonomía General*, *ECO* e *HISTOS*: deduplicar sus versiones de las mismas variables, registrar los operadores realmente únicos y remitir cada fórmula repetida a las reglas de normalización de arriba. No se abrirá una línea de investigación nueva por cada aplicación; la decisión es conservar, corregir, etiquetar como modelo o retirar.
+
