@@ -505,3 +505,63 @@ La ecuación unificada (\sum_iw_{pos,i}|\Delta_i|f(S_i,t_i,CI_i)) es una familia
 
 **Estado del cálculo hasta aquí:** del canon se extraen la cadena causal doblemente mediada, el análisis de condiciones necesarias, la atribución ordinal por posición y la distinción entre causalidad/asunción interna e imputación externa. La escala (R^*), los índices (S), (J), (I_d), las curvas históricas y la conversión monetaria son contratos de medición añadidos. Pueden operacionalizarse sin alterar la ontología, pero cada uno necesita unidades, reglas de entrada y una interpretación acotada. Para cerrar el inventario siguen pendientes las familias de fórmula por dominio (clínica, epidemiología, finanzas, historia/beneficio, diagnóstico/prometeo) y los algoritmos/casos numéricos que las instancian.
 
+## 19. Aplicaciones históricas y clínicas
+
+### Herencia histórica
+
+El operador propuesto
+\[
+PH_i=R^*_{hist,i}\,CI_i\,HB_i(1-RI_i)
+\]
+es un índice multiplicativo de posición heredada. No se deriva del canon ni es una probabilidad/porción de R*: puede sumar más de uno al acumular sucesores, y sus cuatro factores requieren escalas comunes, reglas de atribución y control de doble conteo. Mantenerlo como **score de herencia institucional**. Separar el vector causal del hecho histórico, el beneficio retenido, la continuidad y la reparación en columnas distintas; sumar scores de sucesores solo si su población de beneficiarios no se solapa.
+
+La identidad Δ_total = R*_hist + Σ(PH_i-α_i) combina una cuota causal, posiciones heredadas y asunciones que pueden ser escalas distintas. Además, declarar Δ_hist original = R*_hist permanente como deuda “irreducible” es una convención normativa: no se puede inferir de que el actor histórico murió. Para calcular saldo histórico, expresar las cuentas en unidad común y definir qué pago o reparación reduce cada cuenta. La afirmación Δ_total≥Δ_hist requiere que cada saldo diferido sea no negativo; no queda garantizada por la fórmula, pues PH_i-α_i puede ser negativo.
+
+La trayectoria contrafáctica
+\[
+X_{libre}(t)=X_{real}(t_0)(1+g_{conv})^{t-t_0},\quad
+L=\int_{t_{ind}}^T[X_{libre}(t)-X_{real}(t)]e^{-r(t-t_{ind})}dt
+\]
+es un modelo económico de escenario, no una consecuencia ontológica. Debe fijar (X) (PIB por persona, consumo, riqueza), moneda real, tasa de descuento, grupo comparable, ventana temporal y tratamiento de crecimiento negativo. Si el integrando puede ser negativo, “pérdida” neta no siempre es positiva. Reportar intervalo de escenarios con incertidumbre de (g_{conv}), (r) y contrafáctico; no atribuir el monto a una causa única sin un modelo de identificación causal explícito.
+
+### Clínica y trayectoria terapéutica
+
+El vector del síntoma ψ_S=(I_S,v_S,c_S,s_S) añade un estado clínico útil como esquema, pero (s_S) (“sesgo narrativo”) y la métrica de integración requieren definiciones operacionales propias. La ecuación (dpsi_S/dt=F(psi_S,G,intervención,phi_2)) es una forma general de modelo dinámico: F no queda especificada por la ontología, por lo que no predice hasta fijar variables, parámetros y datos.
+
+La regla del manuscrito (W(t+Δt)=W(t)(1-ηΔα(t))) necesita redefinición. Si Δα es vectorial, el producto no está definido sin especificar si es elemento a elemento, por fila o matriz; si es escalar, puede volver negativos los pesos cuando ηΔα>1. Tampoco se deriva que integrar internamente reduzca necesariamente la fuerza causal objetiva del antecedente. Como modelo clínico explícito se puede parametrizar, por ejemplo, (W_{ij}(t+Δt)=W_{ij}(t)e^{-eta_{ij}max(0,Deltaalpha_i)}), que conserva no negatividad, pero sigue siendo una hipótesis de cambio a estimar, no fórmula canónica.
+
+La entropía (H(p)=-sum_h p_hlog p_h) está bien definida para una distribución de seis posiciones y queda entre 0 y λog 6. Sin embargo, alta entropía no equivale matemáticamente a salud ni la terapia debe necesariamente aumentarla; la distribución depende del contexto y el objetivo terapéutico es clínico, no una propiedad de Shannon. Registrar (P(Harmonía)) y otros modos como métricas del modelo de estado, sin universalizar dirección de cambio. La ecuación publicada (P(h|psi,c)=sigma((
+abla_c v\cdot u_h-	heta_h(I))/T)) da seis sigmoides independientes, que no suman uno; para categorías mutuamente excluyentes usar softmax (p_h=e^{z_h}/sum_j e^{z_j}) y definir los logits.
+
+### Epidemiología
+
+(R_0=ho(K)) es el radio espectral de la matriz de siguiente generación en un modelo epidemiológico especificado. (R_e(t)) en general se calcula con susceptibilidad, contacto, transmisibilidad e intervenciones; (R_0S(t)/N) es solo el caso homogéneo estándar. Ninguno es igual al vector causal (R^*), que depende de otro grafo y convención. La aproximación (R_0=sum_iR_i^*\,transmisibilidad_i) solo funciona si se define la transmisibilidad por nodo en escala compatible y la agregación reconstruye el operador epidemiológico; no se sigue de que (R^*) sume uno.
+
+Las igualdades (Var(k)/E(k)\gg1\Rightarrow superpropagación) y (Var(R^*)\propto1/p) son heurísticas/modelos añadidos, no teoremas: (k) de una binomial negativa describe dispersión de contagios, mientras (R^*) del grafo es una centralidad normalizada. Una traducción requiere estimar la relación sobre datos y especificar nodos/unidad. La fórmula
+\[
+FA_{epi}=R^*_{Estado}D_{total}(1-alpha_{Estado})
+\]
+sí puede operar como monto imputado de daño no asumido si (R^*_{Estado}) es la suma de cuotas causales del Estado, α es su proporción integrada en la misma base y D_total mide el mismo brote. No es una nueva cantidad de daño ontológico; es una regla de asignación. No multiplicar otra vez por (1-S) si la cuota usada ya es (R^*_{net}).
+
+### Crédito y sesgo algorítmico
+
+El score ajustado (SCAC_i=FICO_i+γDelta Context_i-β Sesgo_{dataset,i}) requiere calibrar unidades, signo, objetivo predictivo y validación fuera de muestra; preservar poder predictivo no implica justicia causal. “Eliminar el componente causal del sistema” exige una estrategia de identificación y una regla de atribución que el scorecard por sí solo no proporciona.
+
+El código del libro presenta un (S_i=1-max_j|corr(R^*,R^{*(i)})|). Correlación de Pearson entre vectores normalizados no mide cambio de distribución (puede dar 1 ante distinta magnitud/estructura relativa, o ser indefinida con varianza cero) y “max” sobre perturbaciones necesita conjunto fijado. Si se quiere sensibilidad de centralidad, usar una distancia explícita, por ejemplo (1-\frac12\|R^*-R^{*(i)}\|_1), y mantenerla como métrica de perturbación; si se quiere sustituibilidad ontológica, aplicar el contrafáctico de condición necesaria a resultado específico.
+
+El código de R* itera (R\leftarrow WR/\sum WR), pero el libro define en otros sitios (W^TR^*). Hay que decidir convención de orientación una sola vez. La iteración puede fallar ante vector nulo, periodicidad o reducibilidad; un grafo con sumidero y filas cero puede extinguir el vector. La función debe validar las hipótesis, normalizar filas/columnas según el sentido causal y avisar si el autovector no es único. El ajuste
+(R^*_{efectivo,directivo}=R^*_{directivo}+R^*_{dataset}P_{detección})
+es una reasignación ad hoc que puede romper ΣR*=1 y duplicar cuota del dataset; no usar sin una regla de transferencia conservativa y evidencia de detección.
+
+## 20. Normalización transversal de fórmulas por dominio
+
+Las mismas cinco preguntas resuelven la lectura del resto de aplicaciones del libro: (1) ¿qué objeto ontológico representan las entradas?, (2) ¿qué unidad tiene cada entrada/salida?, (3) ¿qué contrafáctico o población fija el universo?, (4) ¿la suma/producto conserva cuotas o duplica casos?, (5) ¿qué enunciado es definición, hipótesis, estimación o teorema? El nombre de un dominio (PLD, terapia, salud, seguro, deuda) no altera las reglas algebraicas de (R^*,alpha,Delta).
+
+**Asignación de daño y beneficio.** En cualquier capítulo, (AD_i=R_i^*D_{total}) o (AD_{B,i}=R_{B,i}^*B_{total}) es consistente si el vector de reparto suma uno en su universo y todos los montos comparten periodo, moneda y contrafáctico. Si se usa (R^*_{net}=R^*(1-S)), sus componentes ya no suman uno; por tanto (AD_i=R^*_{net,i}D) deja parte de D sin distribuir deliberadamente. Es un residuo ajustado, no reparto completo. Para una asignación exhaustiva, separar masa imputada (q_i=R_i^*(1-S_i)) y masa reasignada al diseño u otros nodos con regla explícita, de modo que Σq_i=1.
+
+**Opacidad del grafo.** (Op(G)=\sum_{i\in N_{visible}}R_i^*S_i) puede ser una puntuación ponderada, entre 0 y 1 solo si (R^*) está normalizado y (S_i\in[0,1]). No es probabilidad de ocultamiento ni demuestra intención deliberada. Comparar expedientes exige universo visible, umbral y tratamiento de nodos inferidos constantes.
+
+**Desigualdad e indicadores externos.** Diferencias como disparate impact, tasas de sanción, mortalidad, pérdida de ingreso o volumen de beneficio son resultados del dominio; no son medidas sustitutas de (R^*) sin una conexión causal identificada. Fórmulas tipo “fracción sesgo = (DI_observado−1)/DI_observado” solo son una transformación descriptiva del ratio bajo referencia 1, no la fracción causal atribuible al sesgo.
+
+**Resultados clínicos, epidemiológicos, actuariales o financieros.** Las ecuaciones de evolución (Markov, SIR, valor presente, scores, curvas de supervivencia) se mantienen en sus modelos propios. El análisis canónico puede informar qué nodos/contextos entran en el grafo y qué condiciones se contrastan, pero no reemplaza las ecuaciones del dominio ni hace que sus parámetros salgan de φ₁/φ₂.
+
