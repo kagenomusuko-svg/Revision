@@ -1,5 +1,7 @@
 # Puente entre la aritmética de Prometeo y Perron–Frobenius
 
+> **Nota de vigencia (31-10-2026):** véase la [revisión axiomática actual](revision_del_estado_axiomatico_tras_acuerdos_2026-10-31.md). El puente aritmético/espectral conserva cálculos comprobables, pero los puntajes normalizados de Prometeo son **cuotas del procedimiento**, no definiciones de la convergencia ni fracciones probadas de causalidad total. Perron–Frobenius es herramienta condicional, no mandato de la ontología.
+
 **Estado:** reconstrucción matemática verificable; no constituye modificación del canon ontológico.  
 **Fecha:** 31 de octubre de 2026.  
 **Destino:** documento técnico complementario de la *Derivación ontológica y normalización de las fórmulas*.  
