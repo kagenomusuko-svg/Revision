@@ -604,3 +604,47 @@ La bifurcación de soporte es una definición calculable bajo el eigenvector ele
 6. **Dos clases de residuo.** La brecha de asunción Δ compara responsabilidad causal con integración/asunción; el daño material (D) y el beneficio (B) se calculan por trayectoria/contrafáctico. No convertir Δ en dinero con (D_{total}) sin una regla de reparto definida.
 7. **Precisión de cifras.** Los ejemplos de números deben propagarse desde matrices y entradas completas, y verificar normalización, unidades y signos. Un número de caso no valida el teorema que se invoca para producirlo.
 
+## 23. Riesgo sistémico, seguros y Shapley
+
+### ICRS y predicción de quiebra
+
+El “ICRS” se define como (ICRS_i=R_i^*), así que es un renombre contextual del mismo vector, no un índice nuevo. (ICRS_{total}=\sum_i\max(\Delta_i,0)) es una agregación distinta: cuantifica suma de brechas positivas bajo el modelo, puede crecer con el número de nodos y no es una probabilidad ni necesariamente “riesgo total”. Para comparar sistemas, fijar universo y escala, y reportar también componentes sin truncar.
+
+La probabilidad (P(\text{quiebra},T)=1-e^{-\lambda ICRS_{total}T}) equivale a asumir una tasa de riesgo constante λ·ICRS_total durante todo el horizonte. Matemáticamente es la supervivencia de un hazard exponencial constante; no sale de centralidad ni del grafo. λ requiere estimación y validación por sector/periodo, mientras ICRS_total puede variar en el tiempo. Si cambia, usar (1-e^{-\int_0^T\lambda(t)ICRS_{total}(t)dt}). El modelo de cascada (x_i(t+1)=1[\sum_jw_{ji}x_j(t)\ge\theta_i]) es una dinámica threshold plausible, pero estados iniciales, signo/dirección de aristas, actualización síncrona y umbrales determinan el resultado. Su contrafáctico (D(x_L=1)-D(x_L=0)) es un efecto marginal del escenario de default y no automáticamente la cuota normalizada (R^*); sumar efectos marginales de actores puede sobrepasar el total cuando hay interacciones.
+
+La regla (\Delta ICRS=-ICRS_{nodo}(1-corr)) no se deriva: correlación estadística entre CDS no es proporción causal que permanece tras eliminar un nodo. Recalcular el grafo/dinámica contrafáctica, manteniendo demás parámetros, para cada rescate. La sensibilidad (\partial ICRS_i/\partial S_j) solo existe si se define una función diferenciable (S\mapsto W(S)\mapsto R^*); su signo no está fijado en general.
+
+El ROI ((D_{total}\Delta P-Costo)/Costo) es correcto cuando ΔP significa reducción positiva de probabilidad y D_total es pérdida condicional al evento, descontada al mismo periodo. En tablas se anota la reducción con signo negativo; hay que usar ΔP=P_{antes}-P_{después}>0), para evitar una inversión del signo. La función del código (1/(1+rT)) es descuento simple aproximado y no coincide con capitalización compuesta ((1+r)^{-T}); declarar convención. El monto esperado evitado requiere multiplicar por exposición/pérdida condicional si D_total no está definido como pérdida completa del evento.
+
+### Seguros
+
+La prima convencional (P(evento)E[D]+carga) es la prima pura más carga, si los costos y periodos se definen. La PAC por actor publicada (P(evento)E[D]R_i^*(1-S_i)+carga) no asigna el mismo costo administrativo a cada nodo y no puede sumarse como si cada prima individual formara una única tarifa de cartera; si el riesgo idiosincrático no suma uno, el remanente debe presentarse como componente estructural y cargarse según regla explícita. En seguros de cartera hay que evitar prima negativa/desincentivos injustificados por un S inestable y separar tarificación actuarial de imputación causal.
+
+Las brechas de beneficio (\Delta B_{asegurado}=B_{siniestro}-\alpha_{asunción}) y (\Delta B_{aseguradora}=B_{primas}+B_{diseño}-\alpha_{reconocimiento}R^*) mezclan dinero con fracciones/cuotas. Homogeneizar: beneficios, indemnizaciones y restituciones en moneda y periodo; luego comparar montos. Una resta de tasas es admisible solo si ambas son proporciones del mismo beneficio base. La regla “multa mínima disuasoria ≥ ΔB” añade un objetivo regulatorio; no es una consecuencia matemática y no establece por sí misma disuasión óptima.
+
+### Extensión de Shapley en causalidad acumulativa
+
+Para una función característica (v:2^N\to\mathbb R), el valor de Shapley correcto es
+\[
+\phi_i(v)=\sum_{S\subseteq N\setminus\{i\}}
+\frac{|S|!(n-|S|-1)!}{n!}[v(S\cup\{i\})-v(S)].
+\]
+Su eficiencia Σφ_i=v(N)-v(\varnothing) (el libro asume (v(\varnothing)=0)) es teorema del juego cooperativo. No exige superaditividad ni comparabilidad sustantiva; sí exige una función (v) bien definida y el mismo juego/población para todos. No convierte causalidad normativa en hecho: (v(S)) debe representar daño contrafáctico de la coalición S y requiere un procedimiento de identificación. Para los casos acumulativos donde la prueba de nodo necesario da cero a cada fuente individual, Shapley puede servir como **regla alternativa de reparto de contribuciones marginales**, preservando la etiqueta “asignación Shapley” y sin presentarla como la misma medida que (R^*) del canon.
+
+La aproximación por permutaciones Monte Carlo estima el promedio de contribuciones marginales de cada actor en orden aleatorio; converge con muestreo, pero “error inferior al 2% con 10,000 muestras” no es universal. Reportar error estándar y convergencia según dispersión de las contribuciones. El código de Shapley exacto del capítulo tiene un fallo de tipos: la variable sub proviene de itertools.combinations como tupla y la operación sub | {i} no está definida; convertir antes a conjunto/frozenset. El enunciado “2^n−1 coaliciones” describe el orden de magnitud, pero para cada i se visitan (2^{n-1}) subconjuntos y el valor exacto requiere evaluar (v(S)) sobre coaliciones (con reutilización posible).
+
+## 24. Capítulos 8–18 del Cálculo: qué se deriva y qué se parametriza
+
+Los capítulos 8 (crédito), 9 (quiebra), 10 (seguros), 11 (gobierno corporativo), 12 (confiabilidad), 13 (algoritmos), 14 (ecología), 15 (educación), 16 (historia), 17 (deporte) y 18 (literatura) reutilizan la misma estructura (G\to R^*\to S/\alpha/\Delta\to) asignación de daño/beneficio. Sus ecuaciones de dominio se normalizan así:
+
+- **Crédito:** la redistribución (R^*_{impago}=R^*_{deudor}+R^*_{dataset}+R^*_{institución}+\cdots) solo es identidad contable si los componentes vienen del mismo vector y suman uno. (AD_i=R^*_{net,i}D) es monto ajustado parcial; no sustituye un modelo regulatorio de pérdida. El riesgo individual, el sesgo del dataset y la responsabilidad institucional deben permanecer nodos separados.
+- **Quiebra/gobierno corporativo/confiabilidad:** concentración de riesgo es una lectura de posición en un grafo de dependencias; no equivale a probabilidad de fallo. El modelo de cascada/umbral, tiempo a fallo y valores presentes son módulos de ingeniería/finanzas calibrados. El orden causal canónico sirve para revisar qué condiciones determinan las salidas.
+- **Inteligencia artificial:** el nodo dataset/modelo/diseño puede analizarse como condición estructural y la salida como resultado; métricas de disparidad (por ejemplo, cociente de tasas de selección) no son cuotas causales. Scores contrafácticos deben especificar la intervención de fila/protocolo y recomputar resultados.
+- **Ecología:** usar Shapley cuando el daño es acumulativo y no hay condición individual necesaria; usar (R^*) para la atribución de necesidad/posición cuando esa prueba sí aplica. No equiparar ambos índices.
+- **Educación y clínica:** índices de “progreso”, desempeño y estado terapéutico son escalas de resultado independientes. No usar la severidad del resultado como sinónimo de responsabilidad del docente, estudiante, paciente o familia.
+- **Historia/geopolítica:** la continuidad y beneficio heredado se miden aparte de la responsabilidad causal del evento histórico; el operador H y las curvas de crecimiento son escenarios trazables, no proporciones ontológicas.
+- **Deporte:** el aporte al triunfo es un juego con valor (v(S)); Shapley es natural cuando el resultado surge de coalición e interacciones. Separar valoración deportiva de causalidad necesaria, que puede asignar cero a una estrella que no es indispensable.
+- **Literatura:** la función de éxito narrativo (v(S)), contribución de personajes y prominencia narrativa son definiciones de análisis cultural; el canon ayuda a leer diseño/ejecución/disposición del agente, pero no fija un valor numérico universal para una obra.
+
+Esta normalización evita repetir una falsa derivación capítulo por capítulo: cuando la ecuación solo cambia el nombre del dominio, rigen las condiciones generales de unidades, base y normalización de las secciones 17–22. Las fórmulas restantes de cada capítulo deben listarse solo si añaden operador matemático distinto; las tablas de casos que reutilizan esas fórmulas son instancias numéricas, no nuevos axiomas.
+
