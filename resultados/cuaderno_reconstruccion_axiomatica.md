@@ -178,14 +178,8 @@ La primera operación a formalizar será **la discriminación de un acontecimien
 
 ### 9.1. Deudas fundacionales / orden obligatorio
 
-**DA-01 — Especificar qué estructura será axiomatizada. [Prioridad crítica, P]**  
-La entidad primaria del método epistemológico es una **investigación relativa a un evento determinado**. Propuesta de firma provisional (sin adoptar todavía un estimador):
-$$
-\mathcal C_D=(D,N,E,\mathcal E,\mathcal K),
-$$
-donde $D$ es el acontecimiento seleccionado, $N$ contiene posiciones candidatas a intervención, $E$ relaciones de causalidad propuestas, $\mathcal E$ información probatoria y $\mathcal K$ reglas de discriminación, contexto y contrafácticos admisibles. La firma completa será objeto de revisión. Una imputación no calcula la causalidad universal, sino una **atribución condicionada por $D$, por el modelo y por la evidencia disponible**.
-
-Preguntas de tipado: ¿el resultado $D$ es nodo sumidero o un objeto distinguido? ¿Los nodos representan sujetos, roles, condiciones, actos o todos, con clases tipadas? ¿Qué ocurre si dos actos de un mismo sujeto son nodos diferentes? ¿Cuándo un nodo candidato pasa a «acreditado»? ¿Qué representa una omisión? ¿Cómo se registra una atribución como acto ulterior?
+**DA-01 — Cotejar estructuras ya presentes antes de agregar notación nueva. [Rectificado 31-10-2026]**  
+La propuesta original de introducir una firma o tupla general de investigación **no quedó justificada por una necesidad operativa ni por un pasaje canónico específico**. Se retira como requisito previo. Partir de las operaciones que ya aparecen en los libros: $G=(N,E,W)$, las distintas definiciones de $R^*$, $S$, $\alpha$, $\Delta$, y las mediaciones; examinar qué hace cada una, cuál es su propósito canónico, qué propiedades necesita y qué se puede demostrar con la notación ya existente. **Sólo** introducir tipos, estructuras o símbolos nuevos si resuelven un problema matemático concreto que no pueda expresarse adecuadamente con los actuales.
 
 **DA-02 — Formular el puente entre doble mediación y atribución exterior. [Crítica, P/V]**  
 *Sobre la pasión* y *Areópago* distinguen $\varphi_1$, $\varphi_2$, $\delta_{\rm int}$ y $\delta_{\rm ext}$. Se necesita una construcción que identifique **qué relación conserva** la atribución interior/exterior, sin exigir que la experiencia egoica, la atribución probatoria y el resultado escalar sean idénticos. La fórmula ontológica
@@ -524,3 +518,14 @@ Distinguir cuidadosamente **nuevo operador**, **nueva formalización**, **nueva 
 **Ejemplo rector:** si se propone $R_D(i)$ como índice de convergencia hacia la atribución del evento, la axiomatización debe definir su estructura y deducir las propiedades que verdaderamente se siguen. No debe imponer $\\sum_iR_D(i)=1$ por facilidad técnica ni declarar probado, por obtener un número, que se agotó la causalidad de $D$.
 
 **Decisión editorial:** las pruebas formales necesarias van en la *Axiomatización*. Los debates sobre su origen ontológico, pruebas de ingeniería, calibraciones, expedientes y verificación empírica futura se documentan aquí o en los instrumentos epistemológicos correspondientes.
+
+
+## 19. Retirada de formalización preliminar innecesaria (31-10-2026)
+
+**[R — corrección a instancia del autor]** En la revisión del estado se había propuesto la tupla $\mathcal I_D=(D,N_D,\Gamma_D,\mathcal R_D)$ y una relación nueva $N_i\preceq_{D,\Gamma_D}N_j$ como etapa inicial. **No se derivaron de un postulado ni resolvían una deuda funcional identificada.** Se retiran como punto de partida. La mención canónica de ordenación de posiciones causales no exige crear una relación de orden independiente: si es necesaria, la propiedad debe surgir de las operaciones investigadas o justificarse por función específica.
+
+Esta corrección se aplica también a la firma $\mathcal C_D$ propuesta provisionalmente en la versión anterior de DA-01: **no es requisito del método**. Ninguna de estas notaciones será trasladada al libro de axiomatización salvo demostración posterior de su necesidad.
+
+**Procedimiento sustituido:** leer la fórmula que ya se propone, localizar su finalidad canónica, comprobar cada operación, sus tipos, hipótesis y consecuencias, y conservar/modificar/descartar según utilidad y rigor. **No inventar andamiajes generales de presentación antes de diagnosticar la función matemática que falta.**
+
+Véase el informe vigente: [revisión del estado axiomático](revision_del_estado_axiomatico_tras_acuerdos_2026-10-31.md), sección 6.
