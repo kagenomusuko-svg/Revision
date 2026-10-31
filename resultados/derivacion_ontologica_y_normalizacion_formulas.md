@@ -1,4 +1,6 @@
 # Derivación ontológica y normalización de las fórmulas
+
+> **Nota de vigencia (31-10-2026):** [Revisión axiomática actual](revision_del_estado_axiomatico_tras_acuerdos_2026-10-31.md). Esta derivación es inventario técnico histórico; las expresiones de «distribución causal», suma uno y transferencia de cuotas quedan **pendientes de reinterpretación** como índices de convergencia, no como porcentajes del total causal. Se conservan fórmulas y pruebas para cotejo; no son axiomas ya aprobados.
 ## Documento de trabajo acumulativo
 
 **Versión:** 0.6  
