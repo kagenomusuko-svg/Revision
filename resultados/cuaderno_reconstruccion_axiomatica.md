@@ -359,3 +359,47 @@ Por tanto, las interpretaciones de $R^*$, $S$, $\alpha$, $\Delta$, $J$, $\mathrm
 **La primera definición matemática pendiente es «índice de convergencia de un nodo respecto de un evento discriminado» sin presupuesto de normalización a una masa total.** A partir de esta definición se podrá especificar $W$ y el contrafáctico de sustituibilidad y después revisar las operaciones repercusivas y restaurativas.
 
 **Advertencia editorial:** esta rectificación prevalece sobre pasajes previos del cuaderno que llamen a $R^*$ «distribución de responsabilidad», «fracción del resultado», «porcentaje material del daño» o postulen conservación/reasignación como reglas generales. Se conservan las expresiones publicadas como objetos a cotejar, no como afirmaciones automáticamente aprobadas.
+
+
+## 14. Límite epistémico de la convergencia y prohibición de inferencia normativa automática (31-10-2026)
+
+**[R: delimitación del autor; P: fórmulas y condiciones futuras]**
+
+**Premisa rectora declarada por el autor:** la investigación no accede a «la causalidad *qua* causalidad» ni, por consiguiente, calcula «responsabilidad *qua* responsabilidad». El método examina **convergencias atribuibles hacia un acontecimiento discriminado** a partir de la reconstrucción de relaciones y la evidencia disponible. La elección de un grafo no acredita que éste contenga el conjunto de todas las condiciones causales del acontecimiento. El acontecimiento no depende de ser conocido por el investigador; las imputaciones fundamentadas sí dependen de lo que puede reconstruirse.
+
+### 14.1. Distinciones obligatorias
+
+1. **Evento ocurrido:** $D$ no se produce ni desaparece según el analista lo represente.
+2. **Relaciones causales reales:** no se presupone que sean completamente cognoscibles o enumerables en el expediente. No se afirma tampoco, sin prueba, que no exista causalidad objetiva.
+3. **Reconstrucción causal:** $G_D$ es una representación investigativa con criterios, alcance, fuentes y convenciones declaradas. La completitud relativa al expediente no implica completitud causal absoluta.
+4. **Convergencia:** $R_D(i;G_D,\mathcal E_D,\mathcal K_D)$ se refiere a la atribución de un evento **en las condiciones del procedimiento**. No es por definición la probabilidad de que $i$ haya causado $D$, una fracción ontológica del acontecimiento ni una cuota de responsabilidad total.
+5. **Obligación/restitución:** cualquier conclusión normativa o de exigibilidad requiere premisas adicionales; no se deriva automáticamente del índice numérico.
+
+### 14.2. Dos inferencias prohibidas por falta de premisa
+
+**Error epistémico / ontológico:**
+$$
+G_D \not\Rightarrow \text{«totalidad de la causalidad de }D\text{»}.
+$$
+
+**Error normativo («ser» → «deber ser»):**
+$$
+R_D(i)=r \not\Rightarrow \text{«el nodo }i\text{ debe soportar o pagar la cuota }r\text{»}.
+$$
+
+La **guillotina de Hume en sentido estricto** corresponde al segundo paso (*Treatise of Human Nature*, III.1.1: no derivar un «debe» de proposiciones puramente descriptivas sin una premisa normativa). La **cuestión humeana del conocimiento de conexiones necesarias y de la inducción** corresponde a la cautela del primer paso (*Enquiry concerning Human Understanding*, IV y VII). Hay una conexión metodológica entre ambos límites, pero no deben confundirse en el libro. Lecturas de referencia para cotejo filosófico externo: Stanford Encyclopedia of Philosophy, «Hume's Moral Philosophy», §5; «David Hume», sección sobre causalidad.
+
+### 14.3. Consecuencias directas para la axiomatización
+
+- **No universalizar el 100 %:** el evento discriminado puede codificarse como ocurrido ($\chi_D=1$), pero esa convención **no demuestra** que $\sum_i R_D(i)=1$. Son objetos distintos: indicador de ocurrencia y colección de índices.
+- **No agotar la causalidad por definición:** «grafo completo» sólo puede significar **completo bajo un criterio explícito del expediente**, nunca prueba de conocimiento exhaustivo de la causalidad universal.
+- **No inferir deberes por aritmética:** aunque un operador produjese un número preciso, no determina por sí solo culpabilidad, sanción o cuota restaurativa. El ajuste *debitor* pertenece a una fase ulterior que debe declarar las condiciones de restauración aplicables.
+- **No reificar la calibración:** aunque el índice tenga escala porcentual, sus valores son dependientes de la definición del operador y su calibración. Se necesita justificar qué significa «convergencia = 1» o «convergencia = 0» sin interpretar que el nodo «posee» la totalidad del hecho.
+- **La precisión de medida no supera el límite de objeto:** un cálculo reproducible y numéricamente estable puede ser útil sin constituir una medida de la totalidad causal.
+- **No escéptico radical por defecto:** el límite de inferencia no obliga a concluir que toda relación causal es mera ilusión ni que no puedan formularse atribuciones justificadas. El método conserva finalidad investigativa y criterios explícitos de reconstrucción.
+
+### 14.4. Próxima cuestión formal
+
+Definir el índice de convergencia **como una función relativa a un acontecimiento y a una reconstrucción declarada**, determinar cuáles son sus propiedades necesarias (orden, sensibilidad, invariancia, valores extremos) y separar **ocurrencia de $D$**, **índice de convergencia** y **reparación exigible**. No escoger primero el algoritmo ni usar la normalización como sustituto de esa definición.
+
+**Advertencia sobre material previo:** donde la documentación anterior haya confundido un vector normalizado con la «responsabilidad causal real total» o el valor 1 con exhaustividad ontológica, esta nota corrige aquella inferencia y tiene prioridad en la reconstrucción. No se modifica el canon.
