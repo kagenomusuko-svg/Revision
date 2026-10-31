@@ -1,7 +1,7 @@
 # Derivación ontológica y normalización de las fórmulas
 ## Documento de trabajo acumulativo
 
-**Versión:** 0.3  
+**Versión:** 0.4  
 **Fecha de inicio:** 31 de octubre de 2026  
 **Repositorio de trabajo:** `Revision`  
 **Marco normativo:** libros canónicos de ontología de Afrodita Areia y textos ontológicos asociados.
@@ -307,4 +307,63 @@ La fórmula continua de Axiomatización describe α como proporción ponderada d
 No se debe usar una forma u otra indistintamente. La elección aquí es coherente si el objetivo es medir qué parte de la cuota externa R* aún no está integrada por φ₂. Los usos donde α significa valor monetario, pago, reparación o acto legal requieren una transformación por dominio; no se pueden insertar directamente en la misma resta.
 
 **Resultado de este tramo:** `α` es un resumen escalar compatible con la operación canónica de `φ₂` bajo una definición por evento; para el déficit de la cuota causal, `Δ=R*(1−α)` expresa el residuo proporcional. `R*−α` solo corresponde a otro contrato, donde α ya es una cuota absoluta comparable.
+
+
+
+## 10. Espacios formales, φ₁ y distribución de modos
+
+### 10.1. Espacio de Hilbert y embedding
+
+Axiomatización adopta un espacio de Hilbert separable E para definir normas, productos internos, la integral de Bochner y la convergencia del método de potencias. La completitud, separabilidad y elección de producto interno son **estructura matemática añadida para formalizar operaciones**; no se deducen por sí mismas de la ontología del ego.
+
+Para conectar una aplicación con E, el Axioma 0 postula `emb: Outputs→E` y pide que preserve relaciones de orden/similitud relevantes. Esta es una condición de modelado explícita. En la normalización, toda cantidad que entre en una fórmula vectorial debe declarar qué dato representa, qué regla lo inserta en E y qué propiedad del dato conserva.
+
+### 10.2. Tipo de φ₁
+
+La fórmula canónica es `φ₁(v_t,c_t)	o a_t`; la historia acumulada aparece como argumento de `φ₂(a_t,I(t))). Axiomatización amplía φ₁ a `φ₁:V×C×H→A` y, además, incluye una referencia a I(t) dentro de v_t. Esa versión puede ser un modelo computacional expandido, pero no es una mera reescritura de la firma canónica: coloca historia en el input de φ₁ y puede contarla dos veces.
+
+**Normalización:** conservar como firma ontológica `φ₁:V×C→A`. Si un modelo concreto requiere que la historia afecte la producción del acto, explicitar si esa historia forma parte de v_t o si se introduce una extensión de φ₁; no incluirla en ambos sitios de manera implícita. La actualización egoica posterior sigue pasando por `φ₂`.
+
+### 10.3. Softmax sobre los seis modos
+
+Axiomatización propone logits `z_k` y:
+
+`h_k(v_t)=exp(z_k)/Σ_{j∈K}exp(z_j)`, `K={1,…,6}`.
+
+De la fórmula sí se derivan positividad y normalización `Σ_k h_k=1`. El cambio de las sigmoides independientes a softmax corrige correctamente el defecto de que seis sigmoides puedan sumar cualquier valor entre 0 y 6. Esa corrección algebraica no demuestra que las seis posiciones ontológicas sean probabilidades empíricas. La interpretación de `h_k` como distribución probabilística requiere definir la correspondencia de cada logit con una posición de la voluntad y qué significan los parámetros.
+
+**Normalización:** conservar softmax como formalización de una distribución sobre seis modos cuando ese sea el objeto que se pretende modelar; distinguir “distribución del modelo” de “probabilidad observada/estimada” y fijar los parámetros por la semántica del sistema. La suma uno de softmax no convierte por sí sola puntuaciones en frecuencias o probabilidades validadas.
+
+## 11. Integral de Bochner y actualización de φ₂
+
+### 11.1. Existencia de la integral
+
+Axiomatización define:
+
+`I(t)=∫₀ᵗ c(τ)w(τ)dτ∈E`.
+
+La existencia de la integral de Bochner se sigue si E es Banach, c es fuertemente medible e integrable, w es medible y el producto es integrable. Las hipótesis del libro (c esencialmente acotada, w medible y acotada, intervalo temporal finito) bastan para esa existencia. Es un teorema matemático válido **dentro de esas hipótesis**.
+
+Su correspondencia con el I(t) canónico requiere que `c(τ)w(τ)` represente el aporte de cada ciclo que φ₂ integró. Si c representa todos los colapsos producidos, el integrando debe incluir la operación de integración correspondiente; de otra forma, I acumula también lo que la ontología distingue de lo asumido. La integral de Bochner formaliza la suma continua de vectores; no determina por sí misma qué eventos acepta φ₂.
+
+### 11.2. Irreversibilidad
+
+El Teorema 2.1 de Axiomatización intenta derivar que `||I(t₂)−I(t₁)||>0` si `w>0` y `c
+e0` en un conjunto de medida positiva. Ese paso no se desprende de la no nulidad puntual del integrando: en un espacio vectorial, contribuciones no nulas pueden cancelarse en la integral. Por ejemplo, en E=ℝ, `c=1` en la primera mitad del intervalo y `c=−1` en la segunda, con w=1, produce integral cero aunque c nunca sea cero en esos tramos.
+
+La ontología de irreversibilidad histórica no equivale automáticamente a monotonía de la norma de un vector integral. Si I es una trayectoria acumulada de historia, su representación debe preservar que los actos asumidos ocurrieron incluso cuando sus componentes vectoriales se compensen. El teorema actual afirma una propiedad más fuerte que la que sus hipótesis demuestran.
+
+### 11.3. Registro RSC y diferencia
+
+`RSC(t)={c(τ):0≤τ≤t}` es llamado conjunto de colapsos producidos. Como imagen de una función, un conjunto pierde multiplicidad y orden cuando dos tiempos producen el mismo c; la integral temporal, en cambio, depende de esos tiempos y pesos. Para conservar la historia necesaria, el registro debe ser una secuencia/medida de eventos identificados por tiempo, actor y aporte, no solo el conjunto de valores de c.
+
+Tampoco se puede formar `RSC(t)\I(t)` cuando RSC es un conjunto de eventos y I un vector acumulado. La operación correcta debe separar el conjunto de eventos producidos del de eventos integrados y reservar I para su agregación. Así se puede calcular α sobre eventos sin confundir inventario con suma.
+
+### 11.4. Regla de umbral para φ₂
+
+Axiomatización postula la actualización:
+
+`φ₂(a,I)=I+δ(a)·1_{eval(a,I)>θ}`.
+
+Esta es una formalización discreta de aceptación/rechazo: si se cumple el umbral, añade δ(a); si no, deja I igual. La aritmética es válida si `δ(a)∈E` y `eval` es una función bien definida. Pero la forma aditiva y la decisión binaria son supuestos de modelo; la ontología canónica presenta φ₂ como integración/asunción y la fórmula general no impone ese umbral binario. Para usarla como instancia, `eval`, `θ` y `δ` deben representar esa operación, y la historia rechazada debe permanecer registrada sin incorporarse a I.
 
