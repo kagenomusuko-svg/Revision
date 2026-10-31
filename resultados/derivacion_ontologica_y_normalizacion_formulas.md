@@ -1,7 +1,7 @@
 # Derivación ontológica y normalización de las fórmulas
 ## Documento de trabajo acumulativo
 
-**Versión:** 0.1  
+**Versión:** 0.2  
 **Fecha de inicio:** 31 de octubre de 2026  
 **Repositorio de trabajo:** `Revision`  
 **Marco normativo:** libros canónicos de ontología de Afrodita Areia y textos ontológicos asociados.
@@ -150,3 +150,68 @@ El siguiente análisis desarrollará, en este orden:
 4. la normalización de (Delta), (R^*_{mathrm{neta}}) y las magnitudes derivadas;
 5. los teoremas de existencia, unicidad, estabilidad, Cramér–Rao y Davis–Kahan de *Axiomatización*, comprobando cada hipótesis y cada paso algebraico desde las definiciones ya normalizadas.
 
+
+
+## 7. Derivación de la distribución causal R*
+
+### 7.1. Qué establece la ontología
+
+Para un daño específico D y un nodo Nᵢ, *Areópago* establece el criterio contrafáctico mínimo:
+
+`N_i es necesario para D ⇔ ¬N_i → ¬D`.
+
+Ese criterio identifica una relación nodo–resultado bajo una reconstrucción de la cadena. Para varios nodos que concurren, el libro no propone equivalencia automática entre ellos: la distribución debe seguir la **posición causal**, entendida como la capacidad de determinar las condiciones dentro de las cuales operan los demás nodos. El nodo que fija el marco tiene una posición más pesada que quienes actúan dentro de él (*Areópago*, cap. 4, pp. 49–54).
+
+La forma más fuerte que se obtiene directamente del canon es, por tanto, una relación ordinal contextual:
+
+`Pos_i(D) > Pos_j(D)  ⇒  Responsabilidad_i(D) > Responsabilidad_j(D)`,
+
+cuando ambos son relevantes para la misma cadena/daño y la reconstrucción sostiene esa diferencia de posición. No se obtiene por esa relación una escala cardinal única, ni que todas las posiciones deban sumar 1. *Areópago* dice expresamente que la proporcionalidad exige ordenar las posiciones y que no requiere cuantificarlas con precisión matemática (p. 54). La ontología sí exige una atribución proporcional; no fija por sí sola el algoritmo de cuantificación.
+
+### 7.2. Operación de los libros epistemológicos
+
+**El cálculo de la responsabilidad**, §6.2, define `R*` como eigenvector principal de `W`:
+
+`W R* = ρ(W) R*,   R*_i > 0,   Σ_i R*_i = 1`.
+
+**Axiomatización**, Def. 6.1, elige `Wᵀ`:
+
+`Wᵀ R* = λ R*,   R*_i > 0,   Σ_i R*_i = 1`.
+
+Axiomatización declara que `Wᵀ` recoge la influencia que los predecesores ejercen sobre cada nodo; el texto anterior usa `W` en la ecuación y el Método de potencias. Con la convención `W_{ij}=w(i→j)` (fila = origen, columna = destino), ambas operaciones miden centralidades distintas. El canon permite ordenar posición causal, pero no resuelve esta orientación matricial por sí solo.
+
+### 7.3. Compatibilidad con el criterio canónico
+
+El eigenvector normalizado produce una distribución numérica de centralidad estructural para la matriz que se le entrega. Esa salida puede servir como formalización de posición causal **si** las aristas y pesos representan la capacidad de cada nodo para determinar las condiciones de los demás, y si la operación conserva el orden causal exigido por *Areópago*. La ecuación eigenvectorial, sin ese puente semántico, no demuestra que `R*_i` sea una fracción del daño o del resultado que transitó causalmente por i. Menos aún demuestra por sí sola el contrafáctico `¬N_i → ¬D`.
+
+La normalización `Σ_i R*_i=1` convierte el vector en una distribución de centralidad relativa. No se deriva del criterio del nodo necesario: es una convención matemática añadida para comparar componentes. Por ello, las lecturas “52% de la responsabilidad causal” o “esta fracción del daño” no se siguen solo de normalizar el eigenvector. La forma directamente defendible por el cálculo, antes de establecer la equivalencia, es “participación relativa en la centralidad estructural calculada bajo G y W”.
+
+### 7.4. Incompatibilidad entre las condiciones de G y el teorema invocado
+
+Axiomatización define el nodo final n+1 como sumidero sin aristas salientes, y define la última fila de W como cero (Def. 6, pp. 38–39). El mismo teorema de R* requiere irreducibilidad/irreducibilidad del grafo para garantizar eigenvector estrictamente positivo y único. Un grafo con sumidero sin salida no es fuertemente conexo con los demás nodos; por tanto, la condición de irreducibilidad falla en el G definido.
+
+Si el grafo causal es un DAG sin lazos, su matriz de adyacencia ponderada es nilpotente tras ordenar los nodos topológicamente y tiene radio espectral cero; la conclusión de un eigenvector dominante positivo no aplica. Añadir perturbaciones `W(ε)=(1−ε)W+εJ/n` puede crear conectividad matemática, pero añade transiciones que no estaban en la cadena causal reconstruida. Esa perturbación no deriva una conexión ontológica; cambia el objeto modelado.
+
+Además, normalizar cada fila de actores para que sume 1 transforma los pesos en cuotas de salida condicionadas a cada nodo. Si una fila contiene una sola arista, su peso será 1 incluso si la evidencia de esa arista es débil. Por eso las cuotas de salida no pueden llamarse automáticamente intensidad causal absoluta.
+
+### 7.5. Normalización provisional de R*
+
+Para conservar separadas las operaciones que el texto mezcla, el registro usa dos objetos:
+
+- `Nec_i(D)`: resultado del criterio contrafáctico de nodo necesario, cuando la cadena y la evidencia permiten determinarlo.
+- `R*_i(G,W)`: componente del índice numérico calculado sobre el grafo y la matriz especificados.
+
+No se identifica `R*_i` con `Nec_i(D)`, ni con una fracción del daño, hasta que el método establezca una derivación entre ellos. Esto no elimina el uso de R*: obliga a nombrar con exactitud qué calcula y a hacer que la normalización elegida sea consistente con la posición causal canónica.
+
+**Resultado de este tramo:** la jerarquía/proporcionalidad de posiciones causales se deriva del canon; el eigenvector y la suma uno son operaciones añadidas. La definición actual del grafo de Axiomatización impide invocar simultáneamente irreducibilidad y sumidero sin salida. La normalización posterior debe fijar el objeto de grafo y la interpretación de W antes de propagar R* a S, α, Δ o montos.
+
+## 8. Registro de normalización pendiente
+
+| Familia | Análisis siguiente | Pregunta formal que debe cerrarse |
+|---|---|---|
+| Grafo y pesos W | Convención de arista, dominio de actores y resultado, significado de w | ¿w codifica cuota de transición, intensidad causal, evidencia o capacidad de determinar condiciones? |
+| Sustituibilidad S | S operacional, S estructural y sustitución contrafáctica | ¿Qué reemplazo se modela y qué resultado se compara? |
+| Asunción α | Fórmulas continua y discreta de Axiomatización | ¿Qué operación de φ₂ se registra y cómo se expresa en escala comparable con R*? |
+| Déficit Δ | `R*−α` y `R*(1−α)` | ¿α es cantidad absoluta o proporción de la posición causal? |
+| Consecuencias de R* | `R*_neta`, AD, D_total, beneficios, Shapley, índices y predictores | ¿Qué interpretación se conserva después de fijar la escala de R*? |
+| Teoremas de Axiomatización | Perron–Frobenius, irreversibilidad, Cramér–Rao, Davis–Kahan, Markov | ¿Las hipótesis se cumplen en el modelo y cada conclusión se sigue de ellas? |
