@@ -209,3 +209,39 @@ La contabilidad ontológica conserva su finalidad de **comprender fenómenos** a
 - No se han editado los PDF publicados ni los libros ontológicos.
 
 **Resultado:** no está pendiente «demostrar la ontología» ni «validar empíricamente todas las fórmulas». La tarea actual es **construir el lenguaje mínimo y demostrar las propiedades de los operadores epistemológicos que representen fielmente el canon**, comenzando por convergencia de un nodo hacia un evento discriminado.
+
+
+## 10. Rectificación de estado de avance: el trabajo sobre G, W y R ya estaba realizado (31-10-2026)
+
+**[R — cotejo directo de informes ya disponibles; corrección de la presentación anterior que volvía a empezar desde cero]**
+
+No corresponde proponer nuevamente «partir de $G=(N,E,W)$» ni abrir desde cero la pregunta sobre la orientación y propiedades de $W$. **Estas tareas ya se trabajaron**, con diferencias entre conclusiones demostradas y validación del objeto que se quiere medir.
+
+### 10.1. Establecido y documentado
+
+**En [derivacion_ontologica_y_normalizacion_formulas.md](derivacion_ontologica_y_normalizacion_formulas.md):**
+
+- §§3.4 y 7.1: la necesidad contrafáctica es relativa a un daño/evento específico; se distingue necesidad de puntuación de centralidad.
+- §§7.2–7.4: confrontación de $WR^*=\rho(W)R^*$ con $W^\top R^*=\lambda R^*$; orientación y consecuencias distintas.
+- §7.4 y §22: sumidero incompatible con irreducibilidad global; un DAG tiene matriz nilpotente; normalizar cada fila no equivale a medir fuerza causal.
+- §§26 y 32: distinción entre las operaciones canónicas, proxies de centralidad y el puente desarrollado para Prometeo.
+
+**En [puente_aritmetico_espectral_prometeo.md](puente_aritmetico_espectral_prometeo.md):**
+
+- §2: reconstrucción exacta de $W$ con filas de origen y columnas de destino y vector $d$ de aristas hacia el acontecimiento; reproducción aritmética de las dos rondas: $B=57.9466\%$, $R=11.3221\%$, $A=17.2293\%$, $P=13.5021\%$; esas cifras son **cuotas del puntaje**, no cuotas probadas de causalidad.
+- §3: $W^3=0$ en el grafo del ejemplo; la operación por rondas no es el eigenvector de Perron; $W^\top$ mide influencia recibida y dejaría en cero al banco, que es nodo fuente.
+- §4: construcción **ya realizada** del puntaje de alcance por rutas $c_\beta=\sum_{k=0}^{L}\beta^k W^kd$, incluyendo demostración de $(I-\beta W)c_\beta=d$ para $W$ nilpotente. Con $\beta=1$: $c=(2.56264,0.70,0.49,0.9536)$; sus cuotas normalizadas, usadas sólo como comparación auxiliar, no coinciden con las rondas originales.
+- §5: demostración **condicional** del límite espectral de la resolvente normalizada hacia el autovector de Perron bajo irreducibilidad y radio positivo; no aplica a la DAG usada en el caso.
+- §§6–8: distinción probada de orientación $W$/$W^\top$; restricciones de doble conteo, sensibilidad a subdividir rutas, evidencia frente a fuerza causal, instrumentos y necesidad contrafáctica específica.
+
+### 10.2. Lo verdaderamente pendiente
+
+1. **Semántica de cada peso en el cálculo definitivo:** aunque la convención fila-origen/columna-destino está **fijada en el caso estudiado**, la unificación entre libros debe resolver si $w_{ij}$ expresa intensidad inferida, grado de influencia, relación documental u otra magnitud y cómo distinguirla del respaldo probatorio. No confundir «orientación ya analizada» con «peso ya completamente axiomatizado».
+2. **Aptitud del operador ya propuesto:** determinar si la propagación por rutas calcula la convergencia que el autor ha definido, y estudiar las propiedades de solapamiento de caminos, redundancia, subdivisión de instrumentos y dependencia de la representación. **No inventar otro operador hasta evaluar el existente.**
+3. **Conexión canónica y formal:** precisar qué consecuencias de las relaciones de *Areópago* sí son preservadas por los operadores ya examinados y qué parte permanece como hipótesis matemática adicional. No necesitar cuantificar la totalidad causal ni imponer suma uno.
+4. **Comparación entre variantes:** conservar la operación literal de Prometeo y distinguirla de la propagación finita y del resultado espectral condicional; justificar las diferencias. El mero hecho de obtener puntajes computables no identifica aún una definición formal válida de convergencia.
+5. **Dependencias posteriores:** al aclarar $R^*$, revisar $S$, $\alpha$, $\Delta$ y el resto del sistema. Estas operaciones ya están inventariadas; no partir de cero.
+
+**Corrección editorial de la sección 8 anterior:** «cotejar operaciones» debe significar **continuar el cotejo técnico de lo que ya se derivó**, no repetir la construcción de $G$, reabrir desde cero la dirección de $W$ ni proponer un nuevo lenguaje base. Los resultados anteriores válidos se conservan, incluidos cálculos y demostraciones; sólo se corrigen las interpretaciones que confunden convergencia con repartición de causalidad total.
+
+**Fuente primaria del resultado ya avanzado:** [puente aritmético-espectral](puente_aritmetico_espectral_prometeo.md), especialmente §§2–8, y [verificación numérica reproducible](verificacion_puente_espectral_prometeo.py). No se altera el canon ni el código del instrumento.
