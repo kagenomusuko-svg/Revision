@@ -743,3 +743,34 @@ En estas obras las fórmulas cuantitativas reutilizan la cadena anterior como da
 
 **Normalización editorial para estos textos:** centralizar una sola hoja de definiciones, símbolos, orientación de W, significado de α y fórmulas oficiales. En cada manual derivado, usar sus códigos E/M/V/T como descriptores de estado y remitir las cantidades causales al protocolo Prometeo. Así se evitan múltiples ecuaciones rivales en cada aplicación y no se presenta la taxonomía como validación matemática del cálculo.
 
+## 30. Revisión de la versión “La ciencia de la medición causal”
+
+Esta versión afirma expresamente que (R^*) es un operador universal de eigenvector sobre (W), y deriva sus salidas (S,α,Δ,IIC). En relación con los canónicos, sus aportes más útiles son el protocolo de medición, la separación de series y la declaración de robustez. Sus “derivaciones” requieren las calificaciones de §26: la igualdad conceptual entre φ₁/φ₂/(I(t)) y los escalares no es una igualdad formal hasta definir mapas de medición; la centralidad de eigenvector es una regla añadida y el vector normalizado satisface suma uno por construcción, no porque el total ontológico se haya medido directamente.
+
+- **Δ en la versión nueva:** define (A_i=alpha_iR^*_i) y Δ_i=(R^*_i(1-alpha_i)). Esa definición hace Δ_i no negativa por construcción. Es una normalización válida si α_i es fracción interna de integración de la cuota de i. No vale con α_i como cuota externa ya expresada en la misma distribución, donde la resta puede ser negativa. La frase de que Δ_total mide “el daño total que nadie asumió” solo se cumple si (R^*) reparte el daño completo, no si es solo proxy de centralidad, y si α está referida a cada cuota de forma compatible. En el modelo canónico externo, conservar separada la brecha (L_i-R_i^*).
+- **(S) desde (P(Hijos)):** los rangos (S_{min}=Σ_hP(h)S_{min,h}) y (S_{max}=Σ_hP(h)S_{max,h}) son propagación correcta de intervalos si (P(h)ge0), ΣP=1 y cada rango por hijo está calibrado para el mismo acto/contexto. Si las distribuciones P son juicio experto, el intervalo expresa incertidumbre del juicio, no un intervalo de confianza frecuentista. Los puntajes por hijo y sus rangos son una rúbrica, no deducción del canon.
+- **IIC y ajuste de aristas:** (IIC=n^{-1}Σ corr(declarado,observable)) es promedio de asociaciones. Correlaciones entre protocolos distintos pueden no ser comparables; c puede ser negativa o indefinida. “IIC bajo implica más peso causal del diseño” no se sigue. La fórmula de ajuste (w_{ij}^{adj}=w_{ij}(1+k(1-IIC))) comparte el mismo factor por fila y, tras normalizar la fila, cancela. Si se pretende corregir una arista concreta por una falla concreta del protocolo, se necesita la relación medida entre ese protocolo y esa arista; la escala global IIC no identifica la modificación.
+- **Fraude annona** (F=R_D^*(1-alpha_D)(1-IIC_D)): producto de tres fracciones solo produce un score dimensionalmente consistente bajo α∈[0,1] e IIC en [0,1]. El IIC definido por correlación está en [-1,1]; con valores negativos F puede exceder uno. Aplicar una transformación acotada explícita (si ese significado se desea) y estimar umbrales. La métrica fue introducida en ese manuscrito y es índice propio, no teorema de canon.
+- **Matriz de riesgo y determinación de D:** la declaración de robustez ρ depende de intervalos por evidencia y el hipercubo de pesos; si el mismo nivel E determina intervalos iguales para todos los arcos, se asume comparabilidad que debe hacerse explícita. Los escenarios deben preservar las restricciones del grafo (no negatividad, normalización, aristas inexistentes) en toda la región muestreada.
+
+La ecuación de balance contable (sum_iR_i^*=1) es condición de normalización si se emplea el vector de probabilidad; (sum_iAD_i=D_{total}) se sigue de (AD_i=R_i^*D_{total}). Este balance garantiza cierre aritmético, no validez causal de la distribución. Si se usa responsabilidad neta, (sum_iR^*_{net,i}<1) generalmente y el resto debe estar nombrado como estructural/no asignado; no afirmar a la vez cierre completo y descuento neto sin una regla de reasignación.
+
+## 31. Unificación de contradicciones entre los libros
+
+Las fórmulas repetidas quedan normalizadas bajo un único glosario:
+
+| Símbolo normalizado | Significado adoptado en el documento | Fórmulas anteriores que se conservan solo bajo condición |
+|---|---|---|
+| (N_i(D)) | Necesidad contrafáctica de la condición i para daño D | Prueba de eliminación/intervención con daño y mundo de comparación especificados |
+| (R_i^{*}(G)) | Cuota de un operador cuantitativo explícitamente declarado sobre grafo G | Eigenvector PF, Shapley, efecto marginal; reportar cuál y no llamarlos idénticos |
+| (S_{op}) | Indicador operativo basado en entradas comparables | Cociente de normas (||c||/(||c||+||a||)), solo con escalas y denominador justificados |
+| (S_{est}) | Sensibilidad de centralidad a una sustitución definida | KL normalizada, Pearson u otra distancia solo nombrada con su métrica real |
+| (R^*_{net}) | Componente ajustada por sustitución bajo una sola regla | O bien (R^*(1-S)), o bien (R^*-R^{*(i)}_i); no equivalentes sin prueba |
+| α_internal | Grado relativo de integración/asunción por el actor | Estimadores documentales son proxies con incertidumbre, nunca lectura directa de φ₂ |
+| (A_i) | Cuota global asumida por i | (R_i^*α_{internal,i}), si α es tasa sobre cuota propia |
+| Δ_i | Residuo causal no integrado en escala común | (R_i^*(1-α_{internal,i})) o (R_i^*-alpha_{global,i}), según contrato |
+| (L_i) | Carga/imputación externa observada | Separada de asunción interna y de necesidad causal |
+| (D,B) | Magnitudes de daño y beneficio en unidad y horizonte definidos | No se obtienen de Δ sin regla de asignación y contrafáctico |
+
+El criterio de cierre editorial para cada fórmula queda fijado: se conserva en el libro derivado solo con su significado, supuestos, intervalo/unidades y condición de uso; se corrige si hay una identidad aritmética mal aplicada; se llama “índice/modelo” si agrega elección; se elimina la palabra “teorema/derivación” cuando las premisas no prueban la conclusión. Esta regla completa la normalización sin crear una deuda de exploración abierta.
+
