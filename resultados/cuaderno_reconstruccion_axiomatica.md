@@ -459,3 +459,22 @@ Para cada objeto u operación (incluidos $W$, $R^*$, $S$, $\alpha$, $\Delta$, da
 - **Explicación de ingeniería** no equivale a **contenido de la axiomatización publicable**: los ejemplos, comparativas y decisiones se documentan en este cuaderno; el libro final contendrá solamente las relaciones y pruebas necesarias.
 
 **Primer entregable operativo siguiente:** la ficha de requisitos de la convergencia $R_D$ —pregunta, objetos, relación con el canon, propiedades requeridas/prohibidas, escenarios de verificación— **antes** de escoger un algoritmo y **sin imponer $\\sum_i R_D(i)=1$**.
+
+
+## 16. Reutilización, composición y creación de herramientas (31-10-2026)
+
+**[R — criterio metodológico acordado; no constituye axioma ontológico ni teorema]**
+
+El propósito de la reconstrucción **no es inventar una matemática** ni obtener originalidad por sí misma. Se utilizarán resultados existentes cuando sirvan a las propiedades requeridas por los postulados, sin comprometer el alcance epistemológico del método. Cuando una herramienta aislada sea insuficiente, se podrá combinar propiedades o procedimientos procedentes de distintas áreas, siempre que sus dominios, hipótesis y resultados sean compatibles. Si tampoco existe una construcción adecuada, se formulará un operador nuevo **únicamente porque resuelve el problema** y se lo someterá a pruebas.
+
+Reglas de admisión:
+
+1. **Reutilizar:** una herramienta conocida que satisface las propiedades requeridas puede incorporarse sin modificación.
+2. **Adaptar:** conservar lo útil, modificar los supuestos instrumentales admisibles y demostrar las nuevas propiedades.
+3. **Componer:** conectar operaciones de diferentes áreas especificando claramente dominio, codominio, orden de aplicación y condiciones de compatibilidad.
+4. **Construir:** definir una operación nueva cuando las anteriores no representen el objeto o no produzcan las conclusiones requeridas; explicitar sus propiedades y demostrar los resultados enunciados.
+5. **Descartar:** una construcción matemáticamente impecable pero ajena al objeto investigado no se conserva por elegancia, prestigio o tradición.
+
+Distinguir cuidadosamente **nuevo operador**, **nueva formalización**, **nueva proposición demostrada** y **nueva teoría matemática**: no son equivalentes, y la novedad no se proclamará sin prueba. En cualquier caso, el criterio de éxito es la adecuación operacional al canon y a la pregunta investigativa, con validez lógica explícita.
+
+**Regla editorial:** la explicación de cómo se ensamblaron las herramientas se documenta en el cuaderno; el libro de *Axiomatización* expondrá solamente las definiciones, axiomas, hipótesis y demostraciones indispensables. No añadir al canon propiedades por conveniencia de las herramientas.
