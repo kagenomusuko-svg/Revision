@@ -156,33 +156,26 @@ La suma 100 % **procede de esa regla algebraica**, no de una prueba de que el 10
 
 Se recomienda conservar la construcción del grafo y el análisis de rutas como material útil, pero reexaminar **qué magnitud anterior a la división mide la relación hacia el evento** y si una transformación individual de ese valor expresa las propiedades de convergencia buscadas. No declarar automáticamente que la suma no normalizada sea ya el índice correcto: puede haber sobreconteo por rutas solapadas, sensibilidad a la representación y dependencia de las hipótesis de pesos.
 
-## 6. Arquitectura matemática mínima que merece investigarse
+## 6. Rectificación: retirada de la arquitectura preliminar propuesta sin necesidad funcional demostrada
 
-**Esto es una propuesta de investigación, no una nueva ontología ni axiomas aprobados.** Conservar un nivel de tipos y relaciones antes de adoptar el índice cardinal:
+**[Rectificado a solicitud del autor, 31-10-2026]**
 
-- $\mathfrak D$: clase de acontecimientos discriminables; $D\in\mathfrak D$.
-- $N_D$: conjunto de nodos **propuestos para reconstrucción**; distinguir posición, ocupante, acto, diseño, instrumento y evento final.
-- $\Gamma_D$: expediente y reglas de reconstrucción que sustentan o no determinadas atribuciones. Su contenido no constituye los acontecimientos.
-- $\mathcal R_D$: relaciones de intervención/contribución propuestas o acreditadas en el marco de $\Gamma_D$.
-- $\preceq_{D,\Gamma_D}$: **relación de comparación de posiciones** respecto de $D$, cuando la reconstrucción permite hacerlo. No se presume que sea un orden total; puede haber incomparabilidades.
-- $\kappa_{D,\Gamma_D}$: **operador candidato** de convergencia, cuyo codominio deberá determinarse después de aclarar si es ordinal, cardinal o admite ambos niveles.
+Se retira **como punto de partida recomendado** la propuesta de introducir la tupla $\mathcal I_D=(D,N_D,\Gamma_D,\mathcal R_D)$ y una relación nueva $N_i\preceq_{D,\Gamma_D}N_j$. No son fórmulas extraídas del canon ni se ha probado que sean instrumentos necesarios para calcular alguna operación del método.
 
-Un punto de partida puede ser especificar qué condiciones permitirían:
-$$
-N_i\preceq_{D,\Gamma_D} N_j,
-$$
-sin exigir aún números. Sólo después de justificar una representación cardinal tendría sentido preguntar por $\kappa_{D,\Gamma_D}(N_i)\in[0,1]$ y por el significado de sus extremos; **nada de ello impone suma uno**.
+**Procedencia del error:** se aplicó por inercia una técnica general de formalización —agrupar objetos en una estructura y postular una relación de comparación— antes de establecer qué función operativa nueva satisfacía. El hecho de que *Areópago* permita ordenar posiciones no prueba que necesitemos **inventar una relación ordinal independiente**; podría ser una propiedad derivable de las operaciones que ya existen.
 
-Propiedades candidatas para probar, sin elevarlas todavía a axiomas:
+**Lo que sí está disponible:** el grafo $G=(N,E,W)$, los planteamientos de $R^*$, sustituibilidad $S$, asunción/repercusión $\alpha$, asimetría $\Delta$, la estructura de las mediaciones y las fórmulas de daño/beneficio. La tarea inmediata es cotejar **cada operación efectivamente propuesta en los libros** con el canon y determinar:
+1. Qué función realiza y en qué pasaje canónico se fundamenta.
+2. Cuáles son sus entradas, operaciones y salidas **tal como están ya escritas**.
+3. Qué propiedades lógicas deben cumplirse, y si la definición existente las cumple.
+4. Qué demostraciones actuales son válidas o inválidas y bajo qué hipótesis.
+5. Si se conserva, modifica, compone con otra herramienta o descarta.
 
-1. **Especificidad:** el resultado se refiere a $D$, no a cualquier consecuencia genérica ni a causalidad en abstracto.
-2. **Fidelidad de la atribución externa:** modificar sólo la segunda mediación/asunción interna de un sujeto no cambia retrospectivamente el acto producido ni su relación causal investigada.
-3. **Respeto de la posición:** el modelo debe poder distinguir influencia del diseño, acto del ocupante y especificidad de resultados sin reducir todo a proximidad temporal.
-4. **Invariancia representacional condicional:** renombrar sin alterar relaciones pertinentes no debería alterar la comparación atribuible; habrá que precisar el isomorfismo que se exige.
-5. **Independencia de conservación colectiva:** ninguna deducción exige $\sum_i\kappa_i=1$ por el hecho de que $D$ ocurrió.
-6. **Alcance lógico:** una reconstrucción coherente y un resultado calculado no prueban causalidad total ni deberes jurídicos; tampoco deshacen los acontecimientos si la prueba es incompleta.
+No se establecerá **ningún objeto formal nuevo** por mera conveniencia de presentación. Sólo se construirá si una deuda de operación o demostración concreta lo exige y se justifica su necesidad.
 
-**Advertencia:** la propuesta de relación ordinal anterior debe cotejarse también con los límites de sobredeterminación, comparación de diseños y grados de sustituibilidad expresamente reconocidos en *Areópago*. No imponer monotonicidad universal por añadir cualquier arista, ni una topología, una probabilidad o una métrica hasta conocer qué función requiere la operación.
+La pregunta productiva no es «¿cómo inventamos una representación general de la investigación?», sino «¿qué debe hacer exactamente el cálculo de convergencia que el método ya plantea, qué relaciones representa y qué propiedades podemos demostrar de su operación?».
+
+**Regla editorial:** conservar esta sección como constancia de la retractación; el planteamiento retirado no es axioma, ni deuda ontológica, ni paso metodológico obligatorio.
 
 ## 7. Qué pertenece a la Axiomatización y qué debe quedar fuera por ahora
 
@@ -196,9 +189,9 @@ La contabilidad ontológica conserva su finalidad de **comprender fenómenos** a
 
 **Paso 1 — Tabla de trazabilidad del canon.** Para cada relación en *Areópago* y los demás volúmenes canónicos pertinentes, extraer enunciado exacto y ubicarlo como objeto, relación, definición, restricción o consecuencia. Debe distinguirse lo que está publicado de lo propuesto por la axiomatización anterior.
 
-**Paso 2 — Primera ficha formal: «acontecimiento y posición causal».** Especificar clases, relaciones y condiciones de comparación sin elegir matriz o eigenvector. Demostrar resultados elementales de tipado, independencia de asunción interna y consistencia de representación donde proceda.
+**Paso 2 — Cotejo de las operaciones ya propuestas.** Empezar por las fórmulas de convergencia presentes en *El cálculo de la responsabilidad*, *Axiomatización* y Prometeo; establecer qué entradas usan, qué operación ejecutan y qué resultado dicen producir. Contrastar esto con la especificidad del evento y la reconstruibilidad establecidas en *Areópago*. No introducir estructuras nuevas sin función demostrada.
 
-**Paso 3 — Primera ficha del operador de convergencia.** Definir semánticamente *qué aporta el índice* (convergencia hacia la atribución de $D$) y qué propiedades le corresponden. Intentar construcciones existentes y combinadas; crear operador si sirve mejor. Rechazar operadores que introduzcan exhaustividad causal o reparto de suma 1 sin fundamento.
+**Paso 3 — Normalización o reconstrucción de convergencia.** Una vez cotejadas las fórmulas existentes y demostrada una deuda concreta, determinar las propiedades indispensables del cálculo; conservar las partes válidas, ajustar su interpretación y construir únicamente el operador que haga falta. Rechazar normalizaciones que transformen convergencia en reparto de responsabilidad total sin fundamento.
 
 **Paso 4 — Sustituibilidad y relación diseño/ocupante.** Traducir el test canónico de tres pasos y preservar la causalidad del acto específico incluso cuando el rol sea sustituible. No trasladar puntajes al diseñador sólo por una identidad algebraica.
 
