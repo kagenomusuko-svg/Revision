@@ -648,3 +648,29 @@ Los capítulos 8 (crédito), 9 (quiebra), 10 (seguros), 11 (gobierno corporativo
 
 Esta normalización evita repetir una falsa derivación capítulo por capítulo: cuando la ecuación solo cambia el nombre del dominio, rigen las condiciones generales de unidades, base y normalización de las secciones 17–22. Las fórmulas restantes de cada capítulo deben listarse solo si añaden operador matemático distinto; las tablas de casos que reutilizan esas fórmulas son instancias numéricas, no nuevos axiomas.
 
+## 25. Fórmulas de gobierno, confiabilidad, IA y educación
+
+### Gobierno corporativo
+
+El predictor (P=\sigma(\beta_0+\beta_1S_{consejo}+\beta_2(1-IIC)+\beta_3P_{Anteros}+\beta_4R^*_{cultura,neta})) es regresión logística escogida como modelo. Requiere una muestra definida, outcome, ventana temporal, ajuste de coeficientes y validación externa; coeficientes ilustrativos/copiados no prueban causalidad ni predicen “inevitabilidad”. El escalamiento temporal del manuscrito (logit_N=logit(N/5)) (multiplicación por (N/5)) no conserva una probabilidad de riesgo acumulada. Bajo hazard constante sería (P_N=1-(1-P_5)^{N/5}); más apropiado estimar supervivencia/hazard con censura y riesgo dependiente del tiempo. Los ejemplos “Enron 86%” son resultados del modelo condicionado a esos coeficientes, no inferencias canónicas.
+
+El contrafáctico (R^*_{d,CF}=R^*_{base}e^{-gammaalpha_{consejo,CF}}) y (D_{CF}=D_{real}(R^*_{CF}/R^*_{real})) supone una relación exponencial elegida entre asunción y centralidad y proporcionalidad entre centralidad y daño. No se deriva de φ₂; si el grafo cambia, recomputar resultado desde un modelo estructural en vez de escalar D automáticamente.
+
+El índice de integridad corporativa (IIC), entropía de hijos y (P_{Anteros}) son mediciones de constructos adicionales. Para usarlos como features, definir formulario, confiabilidad entre evaluadores y denominador común. El enunciado (P(fraude)\propto1-IIC) es hipótesis de asociación hasta estimar su función y calibrarla.
+
+### Confiabilidad e ingeniería
+
+(Prioridad_i=P_{FTA}(N_i)\,INCF_i(1-alpha_i)) es una puntuación de priorización. Combina probabilidad de fallo, importancia causal contrafáctica y brecha de asunción si todas las entradas están en [0,1], pero no tiene unidades de riesgo esperado ni orden universal de inversión. Si (INCF=R^*), conviene rotularlo con una sola notación; multiplicarlo por (1-alpha) solo representa pérdida esperada no asumida bajo un modelo de fallo común. El umbral (h_{dominante}=Harmonía) si presión<θ, y Fobos/Potós si presión≥θ es regla dinámica discreta; estimar umbrales por contexto y no tratarla como consecuencia necesaria de los hijos canónicos.
+
+### IA y fairness
+
+Las definiciones de calibración y balance FPR/FNR son probabilidades condicionales válidas de métricas. La incompatibilidad de sus igualdades bajo tasas base distintas aplica a métricas binarias y condiciones del teorema; no determina qué causa el diferencial de base ni asigna automáticamente (R^*) al diseñador de la métrica. La suma (DI_{total}=DI_{métrica}+DI_{dataset}+DI_{modelo}) no es una identidad de descomposición causal: las razones de impacto no son aditivas en general, y los efectos dependen de interacciones y contrafácticos. Definir outcomes comparables y estimar una descomposición por intervenciones (orden explícito o Shapley sobre una función de valor) si se desea asignar componentes.
+
+Las cuotas (R^*_{diseñador}\propto DI_{métrica}/DI_{total}) etc. necesitan normalizador y no se justifican por el ratio observado. Separar el resultado desigual, la contribución causal de decisiones de diseño/datos y la evaluación normativa.
+
+### Educación
+
+El modelo (A_{ij}=eta_j+gamma X_i+epsilon_{ij}) es una forma lineal de valor agregado, pero estimar β_j como efecto docente requiere asignación/ajuste suficiente de estudiantes, efectos de cohorte, medición previa y supuestos de ausencia de confusión. La corrección propuesta (\beta_{j,cal}=eta_j/(1-S_{j,entorno})) no “compara” automáticamente docentes y diverge cuando S se acerca a 1; además S del entorno y el porcentaje de resultado debido al docente no son intercambiables. Mantener la salida ajustada (Resultado_{real}-Resultado_{esperado|entorno}) como residuo predictivo, reportar error y no llamarlo causal sin identificación.
+
+(IAS=J_{política,actual}-J_{política,Coleman}) resta dos índices calculados en tiempos/modelos posiblemente distintos. Es indicador interpretable solo si la definición de J, datos, población y escala son invariantes; el signo por sí mismo no demuestra aprendizaje histórico.
+
