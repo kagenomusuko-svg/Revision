@@ -403,3 +403,59 @@ La **guillotina de Hume en sentido estricto** corresponde al segundo paso (*Trea
 Definir el índice de convergencia **como una función relativa a un acontecimiento y a una reconstrucción declarada**, determinar cuáles son sus propiedades necesarias (orden, sensibilidad, invariancia, valores extremos) y separar **ocurrencia de $D$**, **índice de convergencia** y **reparación exigible**. No escoger primero el algoritmo ni usar la normalización como sustituto de esa definición.
 
 **Advertencia sobre material previo:** donde la documentación anterior haya confundido un vector normalizado con la «responsabilidad causal real total» o el valor 1 con exhaustividad ontológica, esta nota corrige aquella inferencia y tiene prioridad en la reconstrucción. No se modifica el canon.
+
+
+## 15. Criterio de ingeniería para la reconstrucción: función primero, herramienta después (31-10-2026)
+
+**[R — Directriz metodológica expresa del autor; no es axioma ontológico ni teorema matemático]**
+
+La investigación de la axiomatización debe proceder **desde el problema y la función del instrumento hacia sus propiedades**, y sólo después hacia los teoremas, técnicas y algoritmos posibles. No se seleccionará una matemática para imponer luego su estructura al método. La dirección de trabajo es:
+
+$$
+\text{problema delimitado}
+\;\longrightarrow\;
+\text{operación requerida}
+\;\longrightarrow\;
+\text{propiedades indispensables}
+\;\longrightarrow\;
+\text{consecuencias demostrables}
+\;\longrightarrow\;
+\text{herramienta admisible (si la hay)}.
+$$
+
+La exigencia de rigor subsiste íntegra, pero se aplica a **la definición de la propiedad, las hipótesis y las inferencias que realmente pueden probarse**, no al prestigio de un teorema o a la conveniencia de un modelo existente.
+
+### 15.1. Prueba de utilidad de cada herramienta
+
+Para cada objeto u operación (incluidos $W$, $R^*$, $S$, $\alpha$, $\Delta$, daño, beneficio y *debitor*), registrar:
+
+1. **Qué pregunta concreta responde** en relación con un evento discriminado.
+2. **Qué aspecto del canon realiza**, indicando texto/pasaje y sin añadir presupuestos no expresados.
+3. **Qué propiedades matemáticas necesita** para cumplir esa función, cuáles son opcionales y cuáles contradicen su alcance.
+4. **Qué resulta lógicamente demostrable**, bajo qué premisas, y qué no puede concluirse.
+5. **Qué instrumento propuesto las satisface**, con una construcción y prueba o contraejemplo verificable.
+6. **Qué gana y qué pierde** al aplicarlo (sensibilidad al expediente, evidencia, coste de complejidad, interpretabilidad, posible información omitida).
+7. **Decisión:** conservar, conservar bajo condiciones, sustituir, crear un operador, o descartar. No rescatar una herramienta por familiaridad o elegancia formal.
+
+**Regla de descarte:** si la operación matemática exige aceptar una propiedad ajena o contraria al canon para funcionar, se **descarta como definición de esa operación**, aunque siga siendo matemáticamente válida en otros dominios. La incompatibilidad no reabre la ontología.
+
+### 15.2. Ejemplo inmediato: convergencia $R_D(i)$
+
+**Necesidad:** investigar hasta qué punto un nodo se aproxima a la atribución del evento $D$ conforme a una reconstrucción contextual y evidencial.
+
+**No se exige:** una masa total de causalidad conocida; sumar 1 entre nodos; equiparar convergencia con causalidad o responsabilidad *qua* tales; que el índice numérico determine culpabilidad o una obligación *debitor*.
+
+**Por examinar:** cómo depende de $D$ y de las relaciones reconstruidas; qué información expresa; qué cambios resultan pertinentes al cambiar evidencia, nodo o campo; qué significa una escala, si existe; qué conclusiones de orden o magnitud pueden sostenerse.
+
+**Consecuencia:** Perron–Frobenius, una suma de caminos, una función de similitud, una medida contrafáctica u otro operador no se adoptarán por su notoriedad: se probará si realizan exactamente esas funciones. La normalización al simplex puede servir para una **comparación de cuotas del puntaje**, pero no es constitutiva ni obligatoria para **convergencia por nodo**.
+
+### 15.3. Distinciones editoriales vinculantes
+
+- **Propiedad necesaria** no equivale a **teorema escogido**: distintas construcciones pueden realizar una misma propiedad.
+- **Identidad algebraica** no equivale a **principio ontológico**: una igualdad comprobada entre símbolos no autoriza interpretaciones causales adicionales.
+- **Existencia de un valor calculado** no equivale a **validez del índice**: una fórmula puede producir números y no medir el objeto pretendido.
+- **Consistencia formal** no equivale a **exhaustividad causal**: los expedientes no agotan el acontecimiento.
+- **Resultado descriptivo** no equivale a **obligación normativa**: la reparación, sanción y exigibilidad requieren sus propias premisas.
+- **Explicación de ingeniería** no equivale a **contenido de la axiomatización publicable**: los ejemplos, comparativas y decisiones se documentan en este cuaderno; el libro final contendrá solamente las relaciones y pruebas necesarias.
+
+**Primer entregable operativo siguiente:** la ficha de requisitos de la convergencia $R_D$ —pregunta, objetos, relación con el canon, propiedades requeridas/prohibidas, escenarios de verificación— **antes** de escoger un algoritmo y **sin imponer $\\sum_i R_D(i)=1$**.
