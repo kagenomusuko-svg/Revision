@@ -1,5 +1,7 @@
 # Cuaderno de reconstrucción axiomática y normalizaciones epistemológicas
 
+> **Diagnóstico técnico vigente (31-10-2026):** [Revisión del estado axiomático tras los acuerdos](revision_del_estado_axiomatico_tras_acuerdos_2026-10-31.md). Sus criterios de convergencia, alcance lógico y prioridades sustituyen las interpretaciones incompatibles de las secciones históricas de este cuaderno. No se modifica el canon.
+
 **Estado:** cuaderno de trabajo; no es el manuscrito de *Axiomatización*.  
 **Inicio:** 31 de octubre de 2026.  
 **Ámbito:** reconstrucción de la epistemología derivada de la ontología canónica.  
