@@ -1,7 +1,7 @@
 # Derivación ontológica y normalización de las fórmulas
 ## Documento de trabajo acumulativo
 
-**Versión:** 0.2  
+**Versión:** 0.3  
 **Fecha de inicio:** 31 de octubre de 2026  
 **Repositorio de trabajo:** `Revision`  
 **Marco normativo:** libros canónicos de ontología de Afrodita Areia y textos ontológicos asociados.
@@ -215,3 +215,96 @@ No se identifica `R*_i` con `Nec_i(D)`, ni con una fracción del daño, hasta qu
 | Déficit Δ | `R*−α` y `R*(1−α)` | ¿α es cantidad absoluta o proporción de la posición causal? |
 | Consecuencias de R* | `R*_neta`, AD, D_total, beneficios, Shapley, índices y predictores | ¿Qué interpretación se conserva después de fijar la escala de R*? |
 | Teoremas de Axiomatización | Perron–Frobenius, irreversibilidad, Cramér–Rao, Davis–Kahan, Markov | ¿Las hipótesis se cumplen en el modelo y cada conclusión se sigue de ellas? |
+
+
+## 9. Derivación y normalización de S, α y Δ
+
+### 9.1. Sustituibilidad S
+
+#### Base canónica
+
+*Areópago* incorpora las alternativas disponibles al contrafáctico: al quitar un nodo de la cadena, hay que reconstruir si otro actor/factor habría ocupado esa posición y si el mismo daño específico habría ocurrido. La sustituibilidad es, por tanto, relativa a una posición, una cadena, un resultado y unas condiciones concretas; no es una propiedad fija del actor. La pregunta canónica es contrafáctica: qué habría pasado en ausencia de i y qué alternativa real existía (*Areópago*, cap. 4, pp. 50–51).
+
+#### Operaciones de los libros de trabajo
+
+1. **El cálculo de la responsabilidad** usa `S_i=(A+B+C)/3), con indicadores de formalización del procedimiento, consecuencias de desobedecer y proporción de pares que actuarían igual. Esa media solo tiene interpretación si A, B y C son mediciones comparables y están codificadas en la misma escala; el libro no define una regla homogénea para ello. Además, la respuesta de compañeros puede informar sobre una alternativa típica, pero no equivale por sí sola al contrafáctico del daño específico.
+2. **Axiomatización, S operacional**, usa
+   `S_op(t)=||c||_C/(||c||_C+||a_t||_E)`.
+   Es una razón entre dos normas para estimar la parte atribuible a configuración heredada. El canon distingue campo y voluntad dentro de `φ₁(v_t,c_t)`, pero no deriva esta razón ni identifica esas normas como magnitudes aditivas de contribución. Como c y a_t pertenecen a espacios distintos, dividir cada norma por máximos observados no constituye una escala común invariante: el resultado depende de la muestra y de cómo se eligieron esos máximos.
+3. **Axiomatización, S estructural**, reemplaza la fila de W del actor i por el promedio de las otras filas, calcula R* y R*^(i), y define
+   `S_est(i)=1−D_KL(R* || R*^(i))/log(m)`.
+   Esta operación mide cuánto cambia una centralidad calculada al hacer una sustitución específica en la matriz. El reemplazo por la fila promedio es una intervención modelada; no demuestra que represente un sustituto real ni el resultado bajo ausencia del actor.
+
+#### Normalización derivada
+
+Conservar S como **índice contrafáctico de sustituibilidad contextual**: la pregunta que lo define es si, sin i, otro nodo/factor disponible habría producido el mismo daño específico bajo las condiciones reconstruidas. Los códigos S_op y S_est deben mantenerse como operaciones auxiliares diferentes hasta demostrar la correspondencia con esa pregunta. No promediarlas ni sustituir una por otra por compartir el nombre S.
+
+El puente `S_op≈g(S_est)` de la Proposición 3.3 no queda demostrado por el texto. La desigualdad de Pinsker da una cota superior entre distancia de distribuciones y KL; no convierte por sí sola el orden de divergencias KL en el orden de las perturbaciones de filas ni prueba monotonicidad entre dos métricas distintas. Además, la demostración invierte el orden al pasar de mayor desviación a menor S_op. Por tanto, la afirmación de que S_op puede usarse como proxy de S_est no se sigue de esa prueba.
+
+La cota `D_KL≤log(m)` tampoco es general para dos distribuciones: KL puede superar log(m) y crecer sin cota cuando algún q_k se aproxima a cero con p_k>0. En consecuencia, la fórmula actual no garantiza `S_est∈[0,1]`; puede dar valores negativos. El rango solo podría fijarse tras especificar restricciones adicionales o una transformación cuyo significado esté definido.
+
+**Resultado de este tramo:** el contrafáctico contextual de sustitución tiene fundamento canónico; las tres fórmulas actuales son distintas operacionalizaciones y ninguna se deduce del canon por sí sola.
+
+### 9.2. Coeficiente de asunción α
+
+#### Base canónica
+
+La ontología define `φ₂` como la operación que retorna el acto al sujeto y modifica la trayectoria acumulada. `α` puede servir para registrar el grado/proporción en que la historia de actos queda integrada, siempre que se mantenga ligado a esa operación y se indique a qué actos, sujeto y período se refiere.
+
+#### Fórmula continua de Axiomatización
+
+El libro propone:
+
+`α(t)= [∫₀ᵗ 1_int(τ) w(τ) p(τ)dτ] / [∫₀ᵗ w(τ)dτ]`,
+
+con `1_int∈{0,1}`, `p∈[0,1]`, `w≥0`. Si el denominador es finito y estrictamente positivo, entonces la expresión es un promedio ponderado de `1_int p` y cumple `0≤α(t)≤1`. Esa cota sí se deriva de la fórmula y de sus hipótesis.
+
+La expresión es compatible con la ontología como **resumen escalar del registro de integración** si:
+- `1_int` se asigna a cada evento/collapse mediante la operación de `φ₂`, no por comparar un evento con el vector I(t);
+- `p` está definido como grado de integración del evento y no como otro concepto;
+- `w` pondera la relevancia temporal sin contar como asumido lo que la ontología clasifica como no integrado.
+
+En Axiomatización, `RSC(t)\I(t)` vuelve a usarse para definir `1_int`; la dificultad de tipos señalada en §4 sigue vigente. La regla debe referirse a un subconjunto de eventos integrados o a una variable de integración por evento.
+
+#### Fórmula discreta
+
+Para un solo colapso, con `w(τ)=δ(τ−t_i)`, la propiedad de muestreo de Dirac reduce la media continua a:
+
+`α(a_i)=p_pres·p(t_i)`.
+
+Si `p(t_i)=f(t_i)g(t_i)`, resulta:
+
+`α(a_i)=p_pres·f(t_i)·g(t_i)`.
+
+Esta reducción es algebraicamente válida bajo las condiciones de borde de la delta y si la definición de `p=f g` se mantiene. Para múltiples eventos discretos, la versión de sistema es:
+
+`α(t)= [Σ_i w_i·p_pres,i·f_i·g_i] / [Σ_i w_i]`.
+
+No es igual a la media aritmética simple de los `α(a_i)` salvo que todos los eventos tengan igual peso. La agregación por dominio `α_D=(1/|A_D|)Σ_i α(a_i)` es, por tanto, una decisión de ponderación distinta de la integral general.
+
+#### Normalización
+
+Mantener `α_i` como índice de integración/asunción de los actos del nodo i en un expediente y período especificados. La ontología sí justifica que α se refiera a `φ₂`; no convierte automáticamente el valor en porcentaje de responsabilidad causal externa. Para comparar α con R* hay que fijar una transformación y la misma unidad/denominador.
+
+### 9.3. Déficit Δ
+
+Los libros proponen dos expresiones incompatibles:
+
+`Δ_i=R*_i−α_i`,
+
+y
+
+`Δ_i=R*_i(1−α_i)`.
+
+No son identidades algebraicamente equivalentes. Si `α_i` es una **fracción interna de la cuota causal de i**, la cantidad asumida en la escala global es `R*_i α_i`; su complemento resulta:
+
+`Δ_i=R*_i−R*_iα_i=R*_i(1−α_i)`.
+
+Si, en cambio, `α_i` ya es una magnitud absoluta en la misma escala global que R*, la resta `R*_i−α_i` es dimensionalmente posible, aunque el significado de α y las condiciones para interpretarla como “asunción” deben estar definidos de esa manera.
+
+La fórmula continua de Axiomatización describe α como proporción ponderada de colapsos del actor que han sido integrados; no como cuota absoluta del resultado total. Por eso, **la normalización más directa para un déficit proporcional es** `Δ_i=R*_i(1−α_i)`, con `α_i∈[0,1]`. En esta lectura `0≤Δ_i≤R*_i`; no puede ser negativo. La lectura de Δ negativo como “sobreasunción” pertenece a la forma de diferencia absoluta y no se conserva en la forma multiplicativa.
+
+No se debe usar una forma u otra indistintamente. La elección aquí es coherente si el objetivo es medir qué parte de la cuota externa R* aún no está integrada por φ₂. Los usos donde α significa valor monetario, pago, reparación o acto legal requieren una transformación por dominio; no se pueden insertar directamente en la misma resta.
+
+**Resultado de este tramo:** `α` es un resumen escalar compatible con la operación canónica de `φ₂` bajo una definición por evento; para el déficit de la cuota causal, `Δ=R*(1−α)` expresa el residuo proporcional. `R*−α` solo corresponde a otro contrato, donde α ya es una cuota absoluta comparable.
+
