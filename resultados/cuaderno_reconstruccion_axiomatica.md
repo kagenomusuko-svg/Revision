@@ -499,3 +499,26 @@ Distinguir cuidadosamente **nuevo operador**, **nueva formalización**, **nueva 
 **Distinción necesaria:** «la ontología establece el objeto» no implica «cualquier fórmula propuesta sobre el objeto está matemáticamente demostrada». La verdad o consistencia matemática de una formalización se somete a su propia prueba; lo que está subordinado es la **selección e interpretación del aparato matemático**, no la exigencia de validez lógica.
 
 **Regla de continuidad editorial:** esta sección prevalece sobre cualquier formulación de la reconstrucción que trate como axioma una convención técnica sólo porque simplifica la aplicación de una teoría conocida. El cuaderno documentará la traducción entre las relaciones canónicas y los instrumentos; el libro de axiomatización presentará las relaciones formales estrictamente necesarias.
+
+
+## 18. Alcance lógico de la axiomatización y separación de validación empírica (31-10-2026)
+
+**[R — aclaración metodológica expresa del autor; no es axioma nuevo]**
+
+**Objetivo central:** traducir a símbolos y relaciones matemáticas las construcciones lógicas establecidas por la ontología canónica y determinar con rigor **si la formalización es correcta en sus propios términos**. El propósito inmediato **no es demostrar empíricamente la verdad de la ontología ni validar todos los valores que después producirán los instrumentos**; ese trabajo pertenece a etapas ulteriores.
+
+**Niveles que se mantendrán separados:**
+
+1. **Contenido ontológico de partida (canon):** establece el objeto y las relaciones que requieren representación. No se modifica para salvar un modelo.
+2. **Formalización y demostración:** construcción de dominios, símbolos, definiciones, hipótesis, axiomas, operadores, identidades, pruebas y contraejemplos; verificación de que las conclusiones se siguen realmente de las premisas. Debe examinar también la **fidelidad de la traducción**: coherencia interna de la matemática no basta si se formalizó un objeto diferente.
+3. **Adecuación empírica futura:** evaluación de calibraciones, calidad probatoria, capacidad explicativa, repetibilidad, sensibilidad y correspondencia de resultados con expedientes y fenómenos observados. No confundir una demostración condicional con una validación empírica.
+
+**Criterios de rigor de la fase axiomática:** enunciados sin ambigüedad; dominio y codominio tipados; ausencia de usos incompatibles de un mismo símbolo; hipótesis declaradas; deducciones válidas; consistencia examinada; ejemplos matemáticos de existencia cuando se requieran; separación entre axiomas, teoremas y modelos; identificación de límites y supuestos instrumentales. Una afirmación sobre un caso concreto no se vuelve teorema por usar notación matemática.
+
+**Precisión sobre «si puede pensarse, puede operacionalizarse»:** se adopta como orientación constructiva la búsqueda de una **representación formal** para las relaciones pensadas; no se supone de antemano que toda representación implique computabilidad efectiva, medición cardinal única o identificación empírica. Esa diferencia no bloquea la axiomatización: si un operador todavía no tiene procedimiento numérico, se pueden investigar formalmente sus propiedades y condiciones de existencia, sin inventar resultados.
+
+**Regla de ingeniería:** seleccionar o construir el instrumental mínimo que modele fielmente las relaciones canónicas y que permita derivaciones matemáticamente correctas. La prueba formal verifica una consecuencia **dadas las premisas**; la investigación empírica futura verificará el alcance y utilidad de la representación en fenómenos concretos.
+
+**Ejemplo rector:** si se propone $R_D(i)$ como índice de convergencia hacia la atribución del evento, la axiomatización debe definir su estructura y deducir las propiedades que verdaderamente se siguen. No debe imponer $\\sum_iR_D(i)=1$ por facilidad técnica ni declarar probado, por obtener un número, que se agotó la causalidad de $D$.
+
+**Decisión editorial:** las pruebas formales necesarias van en la *Axiomatización*. Los debates sobre su origen ontológico, pruebas de ingeniería, calibraciones, expedientes y verificación empírica futura se documentan aquí o en los instrumentos epistemológicos correspondientes.
