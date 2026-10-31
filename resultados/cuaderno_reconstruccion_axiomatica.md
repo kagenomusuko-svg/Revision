@@ -275,3 +275,26 @@ Esta nota corrige el **encuadre del diagnóstico anterior**, no los textos ontol
 4. **Regla de trabajo:** antes de señalar una «deuda ontológica», localizar el postulado canónico exacto que la exige. Si la exigencia aparece sólo en el libro epistemológico, anotarla como deuda de ese **instrumento o demostración**, no de la ontología. Evitar introducir condiciones adicionales para satisfacer teoremas conocidos.
 
 Estas correcciones sustituyen la lectura anterior de DA-04, DA-06, DA-08, DA-10 y DA-17 y tienen prioridad sobre los enunciados previos del cuaderno cuando entren en conflicto.
+
+
+## 12. Caso de control: gerente bancario y sobreasunción favorable (31-10-2026)
+
+**[R: precisión conceptual incorporada por el autor; P: notación operativa]**
+
+**Supuesto:** una sucursal cumple y supera la meta de ventas de seguros. El superior felicita al gerente por «todos los seguros que vendiste»; el gerente acepta con satisfacción una atribución referida al resultado de la sucursal aunque no haya ejecutado personalmente todas las ventas.
+
+**Qué establece el ejemplo:**
+
+1. El evento discriminado —ventas realizadas por la sucursal— es real y está separado de los actos de atribuir y aceptar el reconocimiento.
+2. El gerente puede **sobreasumir favorablemente** (reconocimiento por producción colectiva); la sobreasunción no requiere daño, sanción, aceptación de culpa, coacción o sufrimiento.
+3. El reconocimiento recibido o aceptado **no determina** por sí mismo la cantidad ni la clase de contribución causal del gerente. Su papel de diseño, capacitación, dirección, metas o infraestructura debe investigarse separadamente de **quién ejecutó cada venta**.
+4. La sobreasunción **no demuestra** que otro nodo esté en déficit ni identifica a quién corresponden las contribuciones restantes. Tampoco traslada causalidad por aceptación voluntaria de méritos.
+5. Las asunciones de mérito pueden solaparse: el gerente y los vendedores pueden atribuirse simultáneamente el éxito colectivo. **No existe un axioma general de conservación de asunción** ni una suma obligatoria de asunciones igual a uno.
+6. Una contribución de dirección y una de ejecución pueden coexistir sin que sean idénticas. El **tipo de resultado investigado** (ventas ejecutadas individualmente / resultado comercial colectivo / diseño de condiciones que favorecieron el resultado) determina qué propiedad se está contrastando.
+7. La repercusión o asunción efectiva puede ser favorable, desfavorable o neutra; la medición de méritos aceptados, consecuencias impuestas, daños soportados y beneficios recibidos no puede confundirse por compartir la palabra «asunción».
+
+**Ejemplo de control, no axioma:** si hubo 100 ventas, el gerente ejecutó 5 y acepta como propias las 100, la diferencia en el **ámbito de ejecución directa** es $5-100=-95$. El número **no calcula** su contribución a la estrategia comercial de la sucursal y **no identifica** a quienes efectuaron las 95 ventas restantes; eso requiere expediente. Sólo es legítimo realizar la comparación si ambos números se refieren al **mismo atributo** (ventas personalmente realizadas / ventas personalmente asumidas), no a magnitudes heterogéneas.
+
+**Consecuencia para DA-09 y DA-10:** la definición general de sobreasunción es una **comparación relativa al evento y al atributo examinado**, no un mecanismo distributivo. La sobreasunción puede darse por atribución favorable voluntaria o por consecuencias adversas impuestas. Será necesario precisar si la misma letra $\alpha$ puede codificar estas manifestaciones sin perder información, o si el aparato de medición debe distinguirlas como coordenadas/modalidades de un objeto repercusivo más amplio. **No se aprueba todavía una nueva fórmula ni se altera la ontología.**
+
+**Regla de auditoría:** ante cualquier exceso de asunción, no preguntar automáticamente «¿a quién se descargó la responsabilidad?», sino primero «¿qué resultado fue asumido, qué tipo de participación se atribuye y qué participación muestra el expediente?». La eventual distribución de otros nodos pertenece al análisis causal independiente.
