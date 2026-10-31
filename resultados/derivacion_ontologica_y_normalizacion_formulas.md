@@ -35,24 +35,24 @@ El término *contabilidad causal/ontológica*, así como sus usos en imputación
 
 La fórmula canónica de la mediación bis es:
 
-[
-Ego(t)=arphi_2!left(arphi_1(v_t,c_t),I(t)ight).
-]
+$$
+Ego(t)=\varphi_2\!\left(\varphi_1(v_t,c_t),I(t)\right).
+$$
 
 Definimos, como abreviatura de lectura y no como concepto nuevo,
 
-[
-a_t:=arphi_1(v_t,c_t).
-]
+$$
+a_t:=\varphi_1(v_t,c_t).
+$$
 
 Entonces:
 
-[
-Ego(t)=arphi_2(a_t,I(t)).
-]
+$$
+Ego(t)=\varphi_2(a_t,I(t)).
+$$
 
-- (arphi_1) orienta la voluntad en el campo y produce el acto/colapso (a_t).
-- (arphi_2) retorna ese acto al sujeto que lo asume y opera respecto de la trayectoria acumulada (I(t)).
+- \(\varphi_1\) orienta la voluntad en el campo y produce el acto/colapso \(a_t\).
+- \(\varphi_2\) retorna ese acto al sujeto que lo asume y opera respecto de la trayectoria acumulada \(I(t)\).
 - (I(t)) nombra la trayectoria que entra como condición histórica del ciclo; (Ego(t)) nombra el resultado egoico de la operación. No son intercambiables.
 
 **Fuentes canónicas:** *Afrodita Areia I: Sobre la pasión*, fórmula de mediación bis y glosario “Integral del ego” (pp. 190–191); *Ágape*, formulación de la fórmula Ego(t); *Areópago*, cap. V, pp. 36–37.
@@ -61,20 +61,20 @@ Ego(t)=arphi_2(a_t,I(t)).
 
 El marco canónico caracteriza (I(t)) como la acumulación de los colapsos que el sujeto ha asumido como propios. En el apéndice formal de *Sobre la pasión* aparece la expresión esquemática:
 
-[
-Ego(t)=int f(v),dv,
-qquad
-rac{d}{dt}Ego(t)=f(v_t).
+$$
+Ego(t)=\int f(v)\,dv,\qquad \frac{d}{dt}Ego(t)=f(v_t).
+$$
+
 ]
 
-El glosario precisa que (f) representa la contribución de cada ciclo de doble mediación: el acto orientado por (arphi_1) y retornado como propio mediante (arphi_2), en sus circunstancias y desde la trayectoria previa. Por tanto, la integral no acumula sin distinción todo lo que ocurrió: representa la trayectoria constituida por la operación egoica de asunción.
+El glosario precisa que (f) representa la contribución de cada ciclo de doble mediación: el acto orientado por (\vararphi_1) y retornado como propio mediante (\vararphi_2), en sus circunstancias y desde la trayectoria previa. Por tanto, la integral no acumula sin distinción todo lo que ocurrió: representa la trayectoria constituida por la operación egoica de asunción.
 
 Como representación recursiva, la relación puede anotarse así:
 
-[
-I_{t+1}=operatorname{Actualizar}!left(I_t,arphi_2(a_t,I_t)ight),
-qquad a_t=arphi_1(v_t,c_t).
-]
+$$
+I_{t+1}=\operatorname{Actualizar}\!\left(I_t,\varphi_2(a_t,I_t)\right),\qquad a_t=\varphi_1(v_t,c_t).
+$$
+
 
 Esta escritura conserva la estructura canónica. **No impone todavía** una suma lineal, un umbral binario ni una regla numérica para (operatorname{Actualizar}); esas operaciones deben cotejarse con las definiciones canónicas y distinguirse de los supuestos que agreguen los libros posteriores.
 
@@ -85,9 +85,9 @@ Esta escritura conserva la estructura canónica. **No impone todavía** una suma
 *Areópago* separa dos operaciones:
 
 - La pertenencia causal del acto se establece por la primera mediación: el acto ocurrió a través del ego y la cadena causal pasa por él.
-- La asunción ante sí mismo corresponde a la segunda mediación (arphi_2).
+- La asunción ante sí mismo corresponde a la segunda mediación (\vararphi_2).
 
-La imputación desde la alteridad puede identificar la posición causal sin requerir que el sujeto haya asumido internamente el acto. En consecuencia, la evasión o bloqueo de (arphi_2) no borra la producción causal ya atribuida mediante (arphi_1).
+La imputación desde la alteridad puede identificar la posición causal sin requerir que el sujeto haya asumido internamente el acto. En consecuencia, la evasión o bloqueo de (\vararphi_2) no borra la producción causal ya atribuida mediante (\vararphi_1).
 
 Esta distinción impide usar un indicador de asunción como sustituto de la atribución causal. Puede modular una operación posterior que el sistema defina, pero no cambia retrospectivamente quién produjo el acto.
 
@@ -97,13 +97,13 @@ Esta distinción impide usar un indicador de asunción como sustituto de la atri
 
 *Areópago* formula el criterio mínimo:
 
-[
-N	ext{ es nodo necesario del daño }D
-quadLongleftrightarrowquad
+$$N\text{ es nodo necesario para }D\iff\neg N\to\neg D.$$
 
-eg N 	o 
-eg D.
-]
+
+
+
+
+
 
 La flecha expresa un contrafáctico: sin (N), este daño específico no habría ocurrido de esa forma específica. No expresa necesidad metafísica. El análisis se refiere a un resultado y unas condiciones concretas, y reconoce la incertidumbre de reconstruir la alternativa.
 
@@ -115,27 +115,27 @@ El canon también afirma que la responsabilidad se distribuye según la posició
 
 | Fórmula/operación en los libros de trabajo | Relación canónica que pretende expresar | Cotejo y normalización |
 |---|---|---|
-| (I(t)=int_0^t c(	au)w(	au),d	au) | Trayectoria acumulada por los colapsos asumidos | Es una formalización compatible si el integrando representa la contribución que (arphi_2) efectivamente integra. Si (c) contiene todo colapso producido, la fórmula debe distinguir los colapsos asumidos de los rechazados. No declarar esa equivalencia sin fijar el dominio de (c) y la función de (w). |
-| (arphi_2(a,I)=I+delta(a)mathbf{1}_{{operatorname{eval}(a,I)>	heta}}) | Actualización de la trayectoria por segunda mediación | *Axiomatización* introduce una regla binaria de evaluación, umbral e incremento aditivo. Es una operación formal añadida; debe cotejarse con la posibilidad canónica de grados/procesos de asunción. No se obtiene de la fórmula de doble mediación por sustitución algebraica. |
-| (RSC(t)={c(	au):0leq	auleq t}) | Registro de todo lo producido | Compatible como inventario de colapsos, separado de la trayectoria que resulta de asumirlos. |
+| $I(t)=\int_0^t c(\tau)w(\tau)\,d\tau$ | Trayectoria acumulada por los colapsos asumidos | Es una formalización compatible si el integrando representa la contribución que \(\varphi_2\) efectivamente integra. Si \(c\) contiene todo colapso producido, la fórmula debe distinguir los colapsos asumidos de los rechazados. No declarar esa equivalencia sin fijar el dominio de \(c\) y la función de \(w\). |
+| $\varphi_2(a,I)=I+\delta(a)\mathbf{1}\{\operatorname{eval}(a,I)>\theta\}$ | Actualización de la trayectoria por segunda mediación | *Axiomatización* introduce una regla binaria de evaluación, umbral e incremento aditivo. Es una operación formal añadida; debe cotejarse con la posibilidad canónica de grados/procesos de asunción. No se obtiene de la fórmula de doble mediación por sustitución algebraica. |
+| $RSC(t)=\{c(\tau):0\le\tau\le t\}$ | Registro de todo lo producido | Compatible como inventario de colapsos, separado de la trayectoria que resulta de asumirlos. |
 | (RSC(t)setminus I(t)) | Supuesta brecha entre colapsos y trayectoria integrada | No está bien tipada: (RSC(t)) es un conjunto de colapsos e (I(t)) es un vector/estado acumulado. La brecha debe expresarse entre el conjunto de colapsos producidos y el subconjunto/proceso de los integrados; luego, si se requiere una magnitud, definir una operación de agregación sobre esa diferencia. |
-| (R^*=) eigenvector dominante de (W^T), normalizado en el simplex | Distribución cuantitativa de influencia/responsabilidad sobre nodos | *Axiomatización* usa (W^T); otros pasajes de *El cálculo* emplean (W) o describen el vector de forma distinta. El canon sustenta pertenencia causal por (arphi_1), contrafáctico específico y proporcionalidad a la posición causal. El puente entre esa proporcionalidad y eigenvector requiere derivación explícita desde la definición canónica; la elección de (W) o (W^T) es parte de esa operación. |
-| (S_{mathrm{op}}(t)=rac{|c|}{|c|+|a_t|}) | Sustituibilidad del nodo por el campo | Es una razón construida a partir de dos normas. Comparar normas en espacios distintos exige una escala común; la fórmula no equivale por sí misma al contrafáctico canónico de sustitución. Registrar como índice operacional separado hasta demostrar la correspondencia semántica. |
-| (S_{mathrm{est}}(i)=1-rac{D_{KL}(R^*|R^{*(i)})}{log m}) | Efecto de sustituir estructuralmente al nodo | Operación de sensibilidad sobre el grafo: reemplaza una fila y compara distribuciones espectrales. Debe distinguirse de la sustituibilidad contrafáctica del actor y justificar la intervención “promedio de las otras filas”. |
+| $R^*=\operatorname{eigvec}_{dom}(W^T)$, normalizado en el simplex | Distribución cuantitativa de influencia/responsabilidad sobre nodos | *Axiomatización* usa \(W^T\); otros pasajes de *El cálculo* emplean \(W\) o describen el vector de forma distinta. El canon sustenta pertenencia causal por \(\varphi_1\), contrafáctico específico y proporcionalidad a la posición causal. El puente entre esa proporcionalidad y eigenvector requiere derivación explícita desde la definición canónica; la elección de \(W\) o \(W^T\) es parte de esa operación. |
+| $S_{op}(t)=\frac{\|c\|}{\|c\|+\|a_t\|}$ | Sustituibilidad del nodo por el campo | Es una razón construida a partir de dos normas. Comparar normas en espacios distintos exige una escala común; la fórmula no equivale por sí misma al contrafáctico canónico de sustitución. Registrar como índice operacional separado hasta demostrar la correspondencia semántica. |
+| $S_{est}(i)=1-\frac{D_{KL}(R^*\Vert R^{*(i)})}{\log m}$ | Efecto de sustituir estructuralmente al nodo | Operación de sensibilidad sobre el grafo: reemplaza una fila y compara distribuciones espectrales. Debe distinguirse de la sustituibilidad contrafáctica del actor y justificar la intervención “promedio de las otras filas”. |
 | (R^*_{mathrm{neta},i}=R^*_i(1-S_i)) | Parte no sustituible/idiosincrática de la posición causal | Es una descomposición propuesta por los libros de trabajo. Para derivarla, deben fijarse las escalas y establecer qué significa “parte idiosincrática” a partir de la posición causal canónica; no confundirla con el criterio de nodo necesario. |
-| (alpha(t)=rac{int_0^t mathbf{1}_{mathrm{int}}(	au)w(	au)p(	au),d	au}{int_0^t w(	au),d	au}) | Asunción/integración de los actos | La ontología funda (arphi_2) como asunción e integración en la trayectoria. La fórmula incorpora indicador, pesos y grado (p); hay que normalizar si (alpha) mide grado de asunción o fracción de responsabilidad (R^*). No usar ambos sentidos con la misma unidad sin transformación definida. |
+| $\alpha(t)=\frac{\int_0^t \mathbf{1}_{int}(\tau)w(\tau)p(\tau)\,d\tau}{\int_0^t w(\tau)\,d\tau}$ | Asunción/integración de los actos | La ontología funda \(\varphi_2\) como asunción e integración en la trayectoria. La fórmula incorpora indicador, pesos y grado \(p\); hay que normalizar si \(\alpha\) mide grado de asunción o fracción de responsabilidad \(R^*\). No usar ambos sentidos con la misma unidad sin transformación definida. |
 | (Delta_i=R^*_i-alpha_i) | Brecha entre posición causal y asunción | Requiere que (alpha_i) se exprese en la misma escala que (R^*_i). |
-| (Delta_i=R^*_i(1-alpha_i)) | Responsabilidad causal no integrada | Es dimensionalmente coherente si (alpha_iin[0,1]) es una proporción de (R^*_i). No equivale a (R^*_i-alpha_i) cuando (alpha_i) es una magnitud absoluta. La forma canónica se determinará conforme a qué significa (arphi_2) y a cómo *Areópago* distingue imputación externa de asunción interna. |
+| $\Delta_i=R^*_i(1-\alpha_i)$ | Responsabilidad causal no integrada | Es dimensionalmente coherente si \(\alpha_i\in[0,1]\) es una proporción de \(R^*_i\). No equivale a \(R^*_i-\alpha_i\) cuando \(\alpha_i\) es una magnitud absoluta. La forma canónica se determinará conforme a qué significa \(\varphi_2\) y a cómo *Areópago* distingue imputación externa de asunción interna. |
 
 ## 5. Primeras normalizaciones que se desprenden del cotejo
 
-1. Mantener separados el acto producido por (arphi_1), el acto asumido por (arphi_2), el registro de colapsos y la trayectoria (I(t)).
+1. Mantener separados el acto producido por (\vararphi_1), el acto asumido por (\vararphi_2), el registro de colapsos y la trayectoria (I(t)).
 2. No restar conjuntos de eventos y vectores acumulados. Definir primero los objetos y sus tipos.
-3. Tratar la regla de umbral binario de (arphi_2) como formalización añadida, no como consecuencia automática de la fórmula ontológica.
+3. Tratar la regla de umbral binario de (\vararphi_2) como formalización añadida, no como consecuencia automática de la fórmula ontológica.
 4. Derivar la asignación cuantitativa (R^*) desde el criterio canónico de causalidad y distribución proporcional antes de fijar centralidad espectral como cálculo.
 5. Fijar la orientación de (W) y justificar el uso de (W) o (W^T) en relación con esa derivación.
 6. Separar (S) como medida contrafáctica de sustituibilidad de las aproximaciones normativas o estructurales que se usen para calcularlo.
-7. Fijar si (alpha) es grado de asunción de (arphi_2), proporción de (R^*) ya asumida, o una variable de otro dominio; no mezclarlo.
+7. Fijar si (alpha) es grado de asunción de (\vararphi_2), proporción de (R^*) ya asumida, o una variable de otro dominio; no mezclarlo.
 8. Elegir una única definición de (Delta) compatible con la definición de (alpha) resultante y propagar esa convención a los demás libros y al código.
 
 Estas son operaciones de normalización del material existente. No obligan a conservar cada fórmula ni cada libro: cuando una formalización no se desprenda del canon o no resulte necesaria para el método, se podrá sustituir, retirar o dejar para otra línea de trabajo.
@@ -146,7 +146,7 @@ El siguiente análisis desarrollará, en este orden:
 
 1. la fórmula de (R^*) de *El cálculo de la responsabilidad* y la definición 6.1 de *Axiomatización* frente al criterio del nodo necesario y la distribución proporcional de *Areópago*;
 2. la derivación de (S), separando contrafáctico de sustitución y sustitución del grafo;
-3. las versiones de (alpha) como registro de (arphi_2) y su correspondencia con la escala de (R^*);
+3. las versiones de (alpha) como registro de (\vararphi_2) y su correspondencia con la escala de (R^*);
 4. la normalización de (Delta), (R^*_{mathrm{neta}}) y las magnitudes derivadas;
 5. los teoremas de existencia, unicidad, estabilidad, Cramér–Rao y Davis–Kahan de *Axiomatización*, comprobando cada hipótesis y cada paso algebraico desde las definiciones ya normalizadas.
 
@@ -320,7 +320,7 @@ Para conectar una aplicación con E, el Axioma 0 postula `emb: Outputs→E` y pi
 
 ### 10.2. Tipo de φ₁
 
-La fórmula canónica es `φ₁(v_t,c_t)	o a_t`; la historia acumulada aparece como argumento de `φ₂(a_t,I(t))). Axiomatización amplía φ₁ a `φ₁:V×C×H→A` y, además, incluye una referencia a I(t) dentro de v_t. Esa versión puede ser un modelo computacional expandido, pero no es una mera reescritura de la firma canónica: coloca historia en el input de φ₁ y puede contarla dos veces.
+La fórmula canónica es \(\varphi_1(v_t,c_t)\to a_t\); la historia acumulada aparece como argumento de \(\varphi_2(a_t,I(t))\). *Axiomatización* amplía \(\varphi_1\) a \(\varphi_1:V\times C\times H\to A\) y, además, incluye una referencia a \(I(t)\) dentro de \(v_t\). Esa versión puede ser un modelo computacional expandido, pero no es una mera reescritura de la firma canónica: coloca historia en el input de \(\varphi_1\) y puede contarla dos veces.
 
 **Normalización:** conservar como firma ontológica `φ₁:V×C→A`. Si un modelo concreto requiere que la historia afecte la producción del acto, explicitar si esa historia forma parte de v_t o si se introduce una extensión de φ₁; no incluirla en ambos sitios de manera implícita. La actualización egoica posterior sigue pasando por `φ₂`.
 
@@ -415,29 +415,29 @@ La versión `R*_i−α_i` solo es comparable si el símbolo que se resta ya es u
 La Parte VII de *Axiomatización* agrega un modelo estadístico de observación Bernoulli. No se deriva de la ontología: formaliza una hipótesis concreta sobre cómo se observa una de las posiciones (h_k).
 
 Si (X\sim\mathrm{Ber}(p(\theta))), la información de Fisher correcta para el parámetro escalar θ es
-\[
+$
 \mathcal I_1(\theta)=\frac{[p'(\theta)]^2}{p(\theta)[1-p(\theta)]}.
-\]
+$
 La expresión del libro (h_k(1-h_k)/\tau^2) solo coincide bajo el modelo logístico binario (p=h_k=\sigma((\theta-\theta_k)/\tau)), con pendiente (p'=p(1-p)/\tau). No se obtiene de una softmax de seis modos sin especificar el muestreo: tratar cada (h_k) como Bernoulli independiente ignora que las seis probabilidades suman uno y que las categorías son mutuamente excluyentes. Para una observación categórica (K\sim\mathrm{Categorical}(h_1,\ldots,h_6)), debe usarse la matriz de Fisher multinomial del vector de parámetros; sus componentes dependen de los gradientes de todos los logits.
 
 Bajo condiciones regulares, (n) observaciones independientes y el modelo Bernoulli anterior, son correctas las cotas marginales:
-\[
+$
 \mathrm{Var}(\widehat\theta)\ge\frac{1}{n\mathcal I_1(\theta)},\qquad
 \mathrm{Var}(\widehat p)\ge\frac{p(1-p)}n.
-\]
+$
 Al multiplicarlas se obtiene τ²/n² para ese modelo particular, y por tanto
-\[
+$
 \sqrt{\mathrm{Var}(\widehat\theta)\mathrm{Var}(\widehat p)}\ge\frac{\tau}{n}.
-\]
+$
 El libro luego presenta (n(\Delta I\,\Delta h)\ge4\tau^2). Esa desigualdad no se deriva: en la prueba la cota directa es (\tau), no (4\tau^2); el paso que introduce el factor 4 mezcla máximos separados y cambia además la potencia/unidad de τ. La corrección publicable es conservar la cota demostrada (\Delta I\Delta h\ge\tau/n), condicionada al modelo, o retirar la REC fuerte. τ_eff=τ/\sqrt n es una definición de escala compatible con el error de una media muestral, pero no convierte por sí misma (I(t)), una integral acumulativa, en promedio de (n) observaciones.
 
 ## 14. Sustitución estructural y supuesta cota espectral
 
 El índice
-\[
+$
 S_{est}(i)=1-\frac{D_{KL}(R^*\Vert R^{*(i)})}{\log m}
-\]
-es una medida de cambio de distribución al sustituir un nodo/fila. Su rango ([0,1]) no está garantizado: (D_{KL}) puede exceder λog (m), así que (S_{est}<0); KL también exige soporte compatible y una convención cuando hay ceros. El índice no equivale al contra-fáctico canónico “si retiro esta condición, ¿desaparece el daño?”. Debe renombrarse como sensibilidad de centralidad por sustitución, dejando separada la necesidad causal (N_i(D)).
+$
+es una medida de cambio de distribución al sustituir un nodo/fila. Su rango ([0,1]) no está garantizado: (D_{KL}) puede exceder log (m), así que (S_{est}<0); KL también exige soporte compatible y una convención cuando hay ceros. El índice no equivale al contra-fáctico canónico “si retiro esta condición, ¿desaparece el daño?”. Debe renombrarse como sensibilidad de centralidad por sustitución, dejando separada la necesidad causal (N_i(D)).
 
 La cadena del Lema 8.1 no demuestra la cota (R^*(E)\le(1-S_{est})/(m-1)). La cota de Pinsker (con la convención usual) sí relaciona KL con distancia total; sin embargo, el Lema A.3 supone una relación Lipschitz entre cambio de fila y cambio del eigenvector sin probar una cota inferior de estabilidad, y escribe el factor del gap en el sentido incorrecto. Davis–Kahan aplica directamente a matrices simétricas/hermitianas bajo condiciones de separación espectral; (W) es generalmente no simétrica, de modo que ese teorema no se puede invocar tal cual. En A.5 la corrección ε no queda acotada por 0.01 a partir de las hipótesis indicadas, y se pasa de una estimación alrededor de (1/m) a una cota sin ese término. La tabla numérica no remedia el salto.
 
@@ -448,33 +448,33 @@ El Lema 8.2 tampoco se sigue de (R^*(D)>R^*(E)): para inferir (R^*(D)>1/m) hay q
 ## 15. Axiomas de visibilidad, TIC e índice de inversión
 
 Las reglas
-\[
+$
 V(i)=n_{doc}(i)/n_{total},\quad \phi(V)=1-(1-V)^{1.54},\quad
 \psi(x)=0.21x^{-0.55}
-\]
+$
 son operacionalizaciones/ajustes añadidos, no consecuencias de φ₁/φ₂. (V) mide proporción de documentos que mencionan al nodo, no fuerza causal ni evidencia independiente; el conteo es sensible a duplicados y tamaño del expediente. ψ diverge en (x=0) y el coeficiente 0.21 no garantiza que ψ permanezca en ([0,1]). Para uso numérico se necesita una función acotada, dominio explícito, regla de cero y una calibración identificable. Los valores α_vol, β, (h) y límites usados en los teoremas son supuestos de escenario; sin datos y procedimiento de estimación reproducibles, no son resultados demostrados.
 
 El TIC está condicionado por dichas reglas y por cotas que no quedaron probadas; por ello las conclusiones Δ(D)>0 y Δ(E)<0 no son teoremas generales. Pueden presentarse como **proposición condicional del modelo**: si se imponen cotas explícitas (R_D\ge r_D), (R_E\le r_E), α_D\le a_D), α_E\ge a_E), entonces la inversión se sigue exactamente cuando (r_D>a_D) y (r_E<a_E). Esto aísla las condiciones suficientes sin simular que la ontología fija sus números.
 
 La definición
-\[
+$
 I_{inv}=\frac{|\Delta_D|}{|\Delta_E|}
 =\frac{R_D-\alpha_D}{\alpha_E-R_E}
-\]
+$
 solo vale cuando la inversión ya existe (Δ_D>0, Δ_E<0) y el denominador es distinto de cero. Si no, usar el cociente de valores absolutos y etiquetarlo como razón de brechas, no como índice de inversión. La monotonía en (S_{est}) no sale de una cota superior: una cota no determina la derivada del valor real de (R_E). Tampoco “decrece en (V(D)/V(E))” se deduce de ser φ creciente; el cociente introduce dependencia no probada y (V(E)=0) lo hace indefinido. La expresión “fraude annona inevitable” es una definición/diagnóstico condicional, no un teorema ontológico.
 
 ## 16. Modelo predictivo, logits y clausura
 
 La regresión logística
-\[
+$
 P(y=1\mid\Psi,c)=\sigma(\beta^T\Phi(\Psi,c))
-\]
+$
 es un modelo estadístico admisible si se definen observaciones, variables y estimación. La matriz de diseño puede contener Ψ; esto no vuelve a cada coeficiente una medida ontológica ni convierte la predicción en imputación causal.
 
 El Lema 9.1 afirma que (\ell_k=\logit(h_k)) es lineal en (I) cuando cada umbral θ_k es lineal. En softmax,
-\[
+$
 \ell_k=z_k-\log\sum_j e^{z_j};
-\]
+$
 el término log-suma-exp generalmente es no lineal en (I). Además, la afirmación de que ese término “no depende de (I)” contradice (z_j(I)). Solo en casos especiales (por ejemplo, dos modos, o pendientes iguales con cancelación apropiada) se obtiene linealidad. La normalización es retirar esa conclusión general y ajustar Φ explícitamente, usando logits como transformaciones observadas o una base no lineal.
 
 La tabla τ→error mínimo no es fórmula deducida ni cota universal. τ no determina por sí sola el error Bayes: también importan prevalencia, separación de logits, ruido y especificación del predictor. Mantenerla únicamente como calibración empírica con datos, tamaño muestral y protocolo.
@@ -484,9 +484,9 @@ La clausura de (Ego(t)) (Teorema 10) es topología abstracta y no produce una f�
 ## 17. Fórmulas de daño y beneficio: unidad, partición y atribución
 
 El cálculo base del daño es
-\[
+$
 D_{total}=T_{invertido}+T_{impedido}+\Delta T_{trayectoria}.
-\]
+$
 Es una suma admisible solo si los tres términos se expresan en una misma unidad y corresponden a componentes mutuamente excluyentes del contrafáctico. Las etiquetas “daño emergente”, “lucro cesante” y “trayectoria” no demuestran que no haya solapamiento: una pérdida salarial futura puede aparecer en lucro cesante y trayectoria a la vez. Se debe definir cada componente como una partición de la diferencia entre trayectoria sin daño y trayectoria observada, con horizonte, descuento y regla anti doble conteo. La fórmula integral del §6.5 mezcla una diferencia instantánea (X(t_0^-)-X(t_0^+)), una integral de niveles y una integral descontada; sus unidades no coinciden si (D(t)) es nivel de bienestar, y los intervalos escritos tampoco garantizan que los rubros del libro sean disjuntos. Se normaliza como una única integral del déficit de bienestar más un salto inicial, o como una contabilidad por partidas, sin sumar ambos enfoques.
 
 La conversión (D_{vital}=M/w_{ref}) es aritméticamente válida si (w_{ref}) tiene unidades monetarias/hora y se fija periodo, moneda real, población y base temporal. Es una conversión de unidad por convención del libro; no es un número de horas efectivamente sustraídas a una persona ni una consecuencia de φ₁/φ₂. El componente generacional ΣL_esperada(k)p(k|j) exige definir una cohorte contrafáctica finita y evitar contar descendencia potencial de varias víctimas en común; de lo contrario crece sin cota al extender generaciones. El componente supervivientes (L(1-q_{real})) requiere una línea base (q_{sin,daño}): la fórmula adecuada de pérdida relativa sería (L\max(0,q_{sin,daño}-q_{real})), con escalas de calidad definidas.
@@ -510,37 +510,37 @@ La ecuación unificada (\sum_iw_{pos,i}|\Delta_i|f(S_i,t_i,CI_i)) es una familia
 ### Herencia histórica
 
 El operador propuesto
-\[
+$
 PH_i=R^*_{hist,i}\,CI_i\,HB_i(1-RI_i)
-\]
+$
 es un índice multiplicativo de posición heredada. No se deriva del canon ni es una probabilidad/porción de R*: puede sumar más de uno al acumular sucesores, y sus cuatro factores requieren escalas comunes, reglas de atribución y control de doble conteo. Mantenerlo como **score de herencia institucional**. Separar el vector causal del hecho histórico, el beneficio retenido, la continuidad y la reparación en columnas distintas; sumar scores de sucesores solo si su población de beneficiarios no se solapa.
 
 La identidad Δ_total = R*_hist + Σ(PH_i-α_i) combina una cuota causal, posiciones heredadas y asunciones que pueden ser escalas distintas. Además, declarar Δ_hist original = R*_hist permanente como deuda “irreducible” es una convención normativa: no se puede inferir de que el actor histórico murió. Para calcular saldo histórico, expresar las cuentas en unidad común y definir qué pago o reparación reduce cada cuenta. La afirmación Δ_total≥Δ_hist requiere que cada saldo diferido sea no negativo; no queda garantizada por la fórmula, pues PH_i-α_i puede ser negativo.
 
 La trayectoria contrafáctica
-\[
+$
 X_{libre}(t)=X_{real}(t_0)(1+g_{conv})^{t-t_0},\quad
 L=\int_{t_{ind}}^T[X_{libre}(t)-X_{real}(t)]e^{-r(t-t_{ind})}dt
-\]
+$
 es un modelo económico de escenario, no una consecuencia ontológica. Debe fijar (X) (PIB por persona, consumo, riqueza), moneda real, tasa de descuento, grupo comparable, ventana temporal y tratamiento de crecimiento negativo. Si el integrando puede ser negativo, “pérdida” neta no siempre es positiva. Reportar intervalo de escenarios con incertidumbre de (g_{conv}), (r) y contrafáctico; no atribuir el monto a una causa única sin un modelo de identificación causal explícito.
 
 ### Clínica y trayectoria terapéutica
 
-El vector del síntoma ψ_S=(I_S,v_S,c_S,s_S) añade un estado clínico útil como esquema, pero (s_S) (“sesgo narrativo”) y la métrica de integración requieren definiciones operacionales propias. La ecuación (dpsi_S/dt=F(psi_S,G,intervención,phi_2)) es una forma general de modelo dinámico: F no queda especificada por la ontología, por lo que no predice hasta fijar variables, parámetros y datos.
+El vector del síntoma \(\psi_S=(I_S,v_S,c_S,s_S)\) añade un estado clínico útil como esquema, pero \(s_S\) (“sesgo narrativo”) y la métrica de integración requieren definiciones operacionales propias. La ecuación \(\frac{d\psi_S}{dt}=F(\psi_S,G,\text{intervención},\varphi_2)\) es una forma general de modelo dinámico: F no queda especificada por la ontología, por lo que no predice hasta fijar variables, parámetros y datos.
 
-La regla del manuscrito (W(t+Δt)=W(t)(1-ηΔα(t))) necesita redefinición. Si Δα es vectorial, el producto no está definido sin especificar si es elemento a elemento, por fila o matriz; si es escalar, puede volver negativos los pesos cuando ηΔα>1. Tampoco se deriva que integrar internamente reduzca necesariamente la fuerza causal objetiva del antecedente. Como modelo clínico explícito se puede parametrizar, por ejemplo, (W_{ij}(t+Δt)=W_{ij}(t)e^{-eta_{ij}max(0,Deltaalpha_i)}), que conserva no negatividad, pero sigue siendo una hipótesis de cambio a estimar, no fórmula canónica.
+La regla del manuscrito \(W(t+\Delta t)=W(t)(1-\eta\Delta\alpha(t))\) necesita redefinición. Si \(\Delta\alpha\) es vectorial, el producto no está definido sin especificar si es elemento a elemento, por fila o matriz; si es escalar, puede volver negativos los pesos cuando \(\eta\Delta\alpha>1\). Tampoco se deriva que integrar internamente reduzca necesariamente la fuerza causal objetiva del antecedente. Como modelo clínico explícito se puede parametrizar, por ejemplo, \(W_{ij}(t+\Delta t)=W_{ij}(t)e^{-\eta_{ij}\max(0,\Delta\alpha_i)}\), que conserva no negatividad, pero sigue siendo una hipótesis de cambio a estimar, no fórmula canónica.
 
-La entropía (H(p)=-sum_h p_hlog p_h) está bien definida para una distribución de seis posiciones y queda entre 0 y λog 6. Sin embargo, alta entropía no equivale matemáticamente a salud ni la terapia debe necesariamente aumentarla; la distribución depende del contexto y el objetivo terapéutico es clínico, no una propiedad de Shannon. Registrar (P(Harmonía)) y otros modos como métricas del modelo de estado, sin universalizar dirección de cambio. La ecuación publicada (P(h|psi,c)=sigma((
-abla_c v\cdot u_h-	heta_h(I))/T)) da seis sigmoides independientes, que no suman uno; para categorías mutuamente excluyentes usar softmax (p_h=e^{z_h}/sum_j e^{z_j}) y definir los logits.
+La entropía \(H(p)=-\sum_h p_h\log p_h\) está bien definida para una distribución de seis posiciones y queda entre 0 y \(\log 6\). Sin embargo, alta entropía no equivale matemáticamente a salud ni la terapia debe necesariamente aumentarla; la distribución depende del contexto y el objetivo terapéutico es clínico, no una propiedad de Shannon. Registrar \(P(\text{Harmonía})\) y otros modos como métricas del modelo de estado, sin universalizar dirección de cambio.
+La ecuación publicada \(P(h\mid\psi,c)=\sigma((\nabla_c v\cdot u_h-\theta_h(I))/T)\) da seis sigmoides independientes, que no suman uno; para categorías mutuamente excluyentes usar softmax \(p_h=e^{z_h}/\sum_j e^{z_j}\) y definir los logits.
 
 ### Epidemiología
 
-(R_0=ho(K)) es el radio espectral de la matriz de siguiente generación en un modelo epidemiológico especificado. (R_e(t)) en general se calcula con susceptibilidad, contacto, transmisibilidad e intervenciones; (R_0S(t)/N) es solo el caso homogéneo estándar. Ninguno es igual al vector causal (R^*), que depende de otro grafo y convención. La aproximación (R_0=sum_iR_i^*\,transmisibilidad_i) solo funciona si se define la transmisibilidad por nodo en escala compatible y la agregación reconstruye el operador epidemiológico; no se sigue de que (R^*) sume uno.
+\(R_0=\rho(K)\) es el radio espectral de la matriz de siguiente generación en un modelo epidemiológico especificado. \(R_e(t)\) en general se calcula con susceptibilidad, contacto, transmisibilidad e intervenciones; \(R_0S(t)/N\) es solo el caso homogéneo estándar. Ninguno es igual al vector causal \(R^*\), que depende de otro grafo y convención. La aproximación \(R_0=\sum_iR_i^*\,\text{transmisibilidad}_i\) solo funciona si se define la transmisibilidad por nodo en escala compatible y la agregación reconstruye el operador epidemiológico; no se sigue de que \(R^*\) sume uno.
 
-Las igualdades (Var(k)/E(k)\gg1\Rightarrow superpropagación) y (Var(R^*)\propto1/p) son heurísticas/modelos añadidos, no teoremas: (k) de una binomial negativa describe dispersión de contagios, mientras (R^*) del grafo es una centralidad normalizada. Una traducción requiere estimar la relación sobre datos y especificar nodos/unidad. La fórmula
-\[
+Las igualdades \(\operatorname{Var}(k)/\operatorname{E}(k)\gg1\Rightarrow\text{superpropagación}\) y \(\operatorname{Var}(R^*)\propto1/p\) son heurísticas/modelos añadidos, no teoremas: \(k\) de una binomial negativa describe dispersión de contagios, mientras \(R^*\) del grafo es una centralidad normalizada. Una traducción requiere estimar la relación sobre datos y especificar nodos/unidad.
+$
 FA_{epi}=R^*_{Estado}D_{total}(1-alpha_{Estado})
-\]
+$
 sí puede operar como monto imputado de daño no asumido si (R^*_{Estado}) es la suma de cuotas causales del Estado, α es su proporción integrada en la misma base y D_total mide el mismo brote. No es una nueva cantidad de daño ontológico; es una regla de asignación. No multiplicar otra vez por (1-S) si la cuota usada ya es (R^*_{net}).
 
 ### Crédito y sesgo algorítmico
@@ -568,18 +568,18 @@ Las mismas cinco preguntas resuelven la lectura del resto de aplicaciones del li
 ## 21. Apéndice D de Axiomatización: discretización, contrafáctico y estabilidad
 
 La suma discreta
-\[
+$
 I_d(k)=\sum_{i=1}^{k}c(\tau_i)w(\tau_i)
-\]
+$
 aproxima una integral solo si incorpora el ancho temporal, por ejemplo Σ c(τ_i)w(τ_i)Δτ_i, o si (w(τ_i)) ya incluye ese ancho y sus unidades lo declaran. Sin Δτ, al refinar la malla la suma generalmente crece en vez de converger. La convergencia de sumas de Riemann-Bochner a la integral es correcta bajo particiones cuya malla tiende a cero, funciones apropiadas y una regla consistente de muestreo.
 
 La condición (c_k=f_k(I_d(k-1),v_k,C_k)) da una representación de estado reducida, pero la propiedad de Markov probabilística no se sigue hasta especificar el proceso aleatorio y asumir que ((v_k,C_k)) condicionado a (I_d(k-1)) no conserva información adicional de la historia pasada. El libro afirma esa independencia en el paso 2 sin haberla postulado. Normalizar el enunciado como: la secuencia es Markov **si** la distribución condicional de las entradas actuales depende del pasado solo a través del estado acumulado.
 
 La descomposición del apéndice,
-\[
+$
 R^*_{struct,i}=R^{*(i)}_i,\qquad
 R^*_{net,i}=R^*_i-R^{*(i)}_i,
-\]
+$
 es una opción de baseline contrafáctico. (R^*_{net}) puede ser negativa o positiva; “exceso idiosincrático” no garantiza signo ni la cota reclamada, que depende del Lema 8.1 no demostrado. Δ_net = R*_net-α_vol es una definición consistente como brecha de ese baseline y de la asunción voluntaria, si ambas cantidades son fracciones compatibles. No reemplaza la brecha total Δ y no debe llamarse imputación total.
 
 La Proposición D.2 de identificabilidad promete un intervalo de anchura ≤0.10 a partir de pesos de certeza B, sin derivar cómo la escala E0–E8 limita (W) ni propaga incertidumbre al eigenvector. Debe expresarse como requerimiento de entrada (“reportar intervalo obtenido”) hasta especificar regla de pesos e incertidumbre.
@@ -625,10 +625,10 @@ Las brechas de beneficio (\Delta B_{asegurado}=B_{siniestro}-\alpha_{asunción})
 ### Extensión de Shapley en causalidad acumulativa
 
 Para una función característica (v:2^N\to\mathbb R), el valor de Shapley correcto es
-\[
+$
 \phi_i(v)=\sum_{S\subseteq N\setminus\{i\}}
 \frac{|S|!(n-|S|-1)!}{n!}[v(S\cup\{i\})-v(S)].
-\]
+$
 Su eficiencia Σφ_i=v(N)-v(\varnothing) (el libro asume (v(\varnothing)=0)) es teorema del juego cooperativo. No exige superaditividad ni comparabilidad sustantiva; sí exige una función (v) bien definida y el mismo juego/población para todos. No convierte causalidad normativa en hecho: (v(S)) debe representar daño contrafáctico de la coalición S y requiere un procedimiento de identificación. Para los casos acumulativos donde la prueba de nodo necesario da cero a cada fuente individual, Shapley puede servir como **regla alternativa de reparto de contribuciones marginales**, preservando la etiqueta “asignación Shapley” y sin presentarla como la misma medida que (R^*) del canon.
 
 La aproximación por permutaciones Monte Carlo estima el promedio de contribuciones marginales de cada actor en orden aleatorio; converge con muestreo, pero “error inferior al 2% con 10,000 muestras” no es universal. Reportar error estándar y convergencia según dispersión de las contribuciones. El código de Shapley exacto del capítulo tiene un fallo de tipos: la variable sub proviene de itertools.combinations como tupla y la operación sub | {i} no está definida; convertir antes a conjunto/frozenset. El enunciado “2^n−1 coaliciones” describe el orden de magnitud, pero para cada i se visitan (2^{n-1}) subconjuntos y el valor exacto requiere evaluar (v(S)) sobre coaliciones (con reutilización posible).
@@ -670,7 +670,7 @@ Las cuotas (R^*_{diseñador}\propto DI_{métrica}/DI_{total}) etc. necesitan nor
 
 ### Educación
 
-El modelo (A_{ij}=eta_j+gamma X_i+epsilon_{ij}) es una forma lineal de valor agregado, pero estimar β_j como efecto docente requiere asignación/ajuste suficiente de estudiantes, efectos de cohorte, medición previa y supuestos de ausencia de confusión. La corrección propuesta (\beta_{j,cal}=eta_j/(1-S_{j,entorno})) no “compara” automáticamente docentes y diverge cuando S se acerca a 1; además S del entorno y el porcentaje de resultado debido al docente no son intercambiables. Mantener la salida ajustada (Resultado_{real}-Resultado_{esperado|entorno}) como residuo predictivo, reportar error y no llamarlo causal sin identificación.
+El modelo \(A_{ij}=\beta_j+\gamma X_i+\epsilon_{ij}\) es una forma lineal de valor agregado, pero estimar \(\beta_j\) como efecto docente requiere asignación/ajuste suficiente de estudiantes, efectos de cohorte, medición previa y supuestos de ausencia de confusión. La corrección propuesta \(\beta_{j,\mathrm{cal}}=\beta_j/(1-S_{j,\mathrm{entorno}})\) no “compara” automáticamente docentes y diverge cuando S se acerca a 1; además S del entorno y el porcentaje de resultado debido al docente no son intercambiables. Mantener la salida ajustada \(Resultado_{\mathrm{real}}-Resultado_{\mathrm{esperado}\mid\mathrm{entorno}}\) como residuo predictivo, reportar error y no llamarlo causal sin identificación.
 
 (IAS=J_{política,actual}-J_{política,Coleman}) resta dos índices calculados en tiempos/modelos posiblemente distintos. Es indicador interpretable solo si la definición de J, datos, población y escala son invariantes; el signo por sí mismo no demuestra aprendizaje histórico.
 
@@ -731,7 +731,7 @@ El volumen ofrece varios contratos concurrentes; se registra el contrato recomen
 - **IIC:** (IIC=n^{-1}\sum_k corr(declarado_k,observable_k)) da un promedio de correlaciones en ([-1,1]) si los datos tienen varianza; no equivale a “porcentaje de congruencia”. La correlación mide asociación lineal, no grado de operación de φ₂; protocolos con escalas, varianzas o sentidos distintos no deben promediarse directamente. Es un índice organizacional elegido, con protocolos y ponderación explícitos.
 - **Ajuste por IIC:** (w_{ij}^{adj}=w_{ij}(1+k(1-IIC_D))) es una hipótesis de amplificación. Multiplica todas las salidas por el mismo factor si k e IIC son comunes; al normalizar esa fila, el factor cancela y no cambia las proporciones. Si W no se normaliza, cambia la fuerza total de salida, pero también los otros pesos espectrales; no se deduce que la incongruencia aumente causalidad. Sustituir solo tras identificar qué aristas/procesos adicionales expresan la divergencia, o retirar el ajuste general.
 - **Fraude annona:** (F=R_D^*(1-alpha_D)(1-IIC_D)) es un score compuesto escogido. Si IIC puede ser negativo, (1-IIC>1) y F puede exceder (R_D^*) o 1; no es porcentaje y “umbral 0.20” requiere un criterio calibrado. Mantener como score con nombre, no como corolario matemático de la ontología.
-- **Robustez (ho(	heta)=Vol\{w\inPi:R^*_	heta(w)>R^*_j(w),\forall j\ne	heta\}/Vol(Pi)):** es fracción geométrica bien definida para la región Π, pero interpretarla como probabilidad supone medida uniforme/independencia de pesos. Sin esa medida, llamarla volumen relativo de escenarios; con ella, declarar supuestos de distribución, dependencia y muestreo. Los niveles A–D son umbrales editoriales/decisorios, no teoremas.
+- **Robustez:** \(\rho(\theta)=\frac{\operatorname{Vol}\{w\in\Pi:R^*_\theta(w)>R^*_j(w),\ \forall j\ne\theta\}}{\operatorname{Vol}(\Pi)}\) es fracción geométrica bien definida para la región \(\Pi\), pero interpretarla como probabilidad supone medida uniforme/independencia de pesos. Sin esa medida, llamarla volumen relativo de escenarios; con ella, declarar supuestos de distribución, dependencia y muestreo. Los niveles A–D son umbrales editoriales/decisorios, no teoremas.
 
 ### Transformación Formal
 
