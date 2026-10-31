@@ -1,7 +1,7 @@
 # Derivación ontológica y normalización de las fórmulas
 ## Documento de trabajo acumulativo
 
-**Versión:** 0.4  
+**Versión:** 0.5  
 **Fecha de inicio:** 31 de octubre de 2026  
 **Repositorio de trabajo:** `Revision`  
 **Marco normativo:** libros canónicos de ontología de Afrodita Areia y textos ontológicos asociados.
@@ -366,4 +366,47 @@ Axiomatización postula la actualización:
 `φ₂(a,I)=I+δ(a)·1_{eval(a,I)>θ}`.
 
 Esta es una formalización discreta de aceptación/rechazo: si se cumple el umbral, añade δ(a); si no, deja I igual. La aritmética es válida si `δ(a)∈E` y `eval` es una función bien definida. Pero la forma aditiva y la decisión binaria son supuestos de modelo; la ontología canónica presenta φ₂ como integración/asunción y la fórmula general no impone ese umbral binario. Para usarla como instancia, `eval`, `θ` y `δ` deben representar esa operación, y la historia rechazada debe permanecer registrada sin incorporarse a I.
+
+
+
+## 12. Alcance externo de α y lectura de Δ
+
+### 12.1. Evidencia de φ₂ y acceso del tercero
+
+La definición canónica de φ₂ describe una operación interna de asunción. *Areópago* distingue esa operación de la pertenencia causal externa: el tercero puede reconstruir actos y cadenas, pero no observa directamente la asunción interna (cap. V, pp. 36–37, y discusión del acceso asimétrico). Por eso, en una contabilidad externa, los documentos pueden probar actos, expresiones y compromisos observables; no se identifican automáticamente con el estado interno de φ₂.
+
+En la tabla 4.1 de Axiomatización, la profundidad `f) se obtiene del número de documentos que “confirman la integración” y el alcance `g) del número de dominios afectados. La operación es calculable una vez definidos los conteos, pero contar documentos no equivale por definición a medir la integración en I(t): un mismo contenido puede duplicarse entre documentos, y el número de dominios alcanzados no expresa necesariamente la profundidad de asunción. Por su parte, `n_ref` se ancla a niveles E0–E8 mediante intervalos de cantidad documental, lo que mezcla clasificación de evidencia con número de documentos.
+
+**Normalización:** presentar `f) y `g) como reglas operativas de evidencia solo si esa es la magnitud que el expediente quiere medir. Para llamarlas medida de φ₂, la regla debe identificar observables que demuestren la integración del acto y mantener el acceso asimétrico que establece el canon. Los valores `0.3,0.6,1.0` y los intervalos de conteo son anclajes de la operación, no se derivan de la fórmula de la mediación bis.
+
+### 12.2. Separar fracción interna de cuota causal y responsabilidad atribuida
+
+Hay tres cantidades que los libros tienden a escribir con símbolos cercanos:
+
+- `α_i): grado/proporción de integración de los actos propios del nodo i mediante φ₂;
+- `R*_i): cuota relativa de posición/influencia causal calculada por el modelo de grafo;
+- `L_i): cuota de responsabilidad que un tercero, una institución o un tribunal asigna a i.
+
+No son la misma cantidad. El canon hace depender la imputación externa del acto y de la posición causal; la asunción interna de φ₂ es otra operación. Para convertir el grado de integración `α_i∈[0,1]` en una cantidad comparable con `R*_i), puede definirse dentro del modelo:
+
+`A_i := α_i R*_i`  (cuota causal de i integrada por φ₂),
+
+y entonces:
+
+`Δ_i := R*_i − A_i = R*_i(1−α_i)`.
+
+Esta lectura mantiene `Δ_i≥0) y expresa la porción de la cuota causal de i que no ha integrado. Es el contrato coherente si `α_i` es fracción de la cuota propia de i. Debe tratarse como definición de la relación cuantitativa entre R* y α, no como una identidad ontológica independiente del significado de R*.
+
+La versión `R*_i−α_i` solo es comparable si el símbolo que se resta ya es una **cantidad absoluta** `A_i) en la misma escala global, no un grado de integración entre 0 y 1. Si además se quiere medir sobreasignación o carga impuesta a un actor, eso corresponde a comparar `L_i) con `R*_i), por ejemplo `Ω_i:=L_i−R*_i); no debe interpretarse como φ₂ ni como déficit de asunción interna.
+
+### 12.3. Teoremas de Δ bajo cada contrato
+
+- Para `Δ_i=R*_i−α_i), con ambos en [0,1], la cota `Δ_i∈[−1,1]) es correcta. El signo negativo significa únicamente `α_i>R*_i`; llamarlo “sobreasunción” requiere la definición del denominador de α. No demuestra que i haya cargado una responsabilidad que pertenece a otro.
+- Para `Δ_i=R*_i(1−α_i)), con `R*_i,α_i∈[0,1]), se obtiene `0≤Δ_i≤R*_i≤1). El caso negativo queda excluido por construcción, así que no puede usarse para detectar chivo expiatorio ni transferencia de carga.
+- La identidad diferencial `dΔ_i/dt=dR*_i/dt−dα_i/dt) solo corresponde a la primera definición. Para la forma multiplicativa:
+  `dΔ_i/dt=(1−α_i)dR*_i/dt−R*_i dα_i/dt`.
+  Ambas requieren diferenciabilidad; si los nodos/aristas cambian discretamente, se usa la diferencia entre versiones del modelo y no una derivada continua sin especificar interpolación.
+- La Proposición 5.2 de Axiomatización (`Δ_i<0) y grafo completo implican que existe j con `Δ_j>0)) no se sigue de sus propias hipótesis. El libro afirma que `ΣR*=1), pero no impone `Σα=1`; por ello no hay conservación de suma que obligue a que exista otro déficit positivo. Contraejemplo: `R*=(0.5,0.5)), `α=(0.6,0.6)) da `Δ=(-0.1,-0.1)) con ambas componentes negativas. La inferencia “i asumió lo que pertenece a j” necesita una regla de transferencia entre nodos, que no está contenida en `Δ_i=R*_i−α_i).
+
+**Normalización adoptada en este registro:** usar `α_i) para integración interna relativa y `A_i=α_iR*_i) para la cuota integrada global; usar `Δ_i=R*_i(1−α_i)) para residuo causal no integrado; reservar una variable distinta como `L_i) para atribución externa y `Ω_i=L_i−R*_i) si se quiere medir sobreasignación. Estos símbolos separan las operaciones que el canon mantiene separadas.
 
