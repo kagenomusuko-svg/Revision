@@ -166,3 +166,100 @@ Cada nueva propuesta o normalización se agregará con los siguientes campos:
 La primera operación a formalizar será **la discriminación de un acontecimiento y la dependencia respecto de él de la atribución**. A partir de ese objeto, se podrán estudiar la estructura de nodos y aristas y las propiedades que debe satisfacer el cálculo de convergencia. Los ejemplos de expedientes servirán para verificar que las expresiones hacen lo que se pretende, no para imponer valores al libro de axiomas.
 
 **Regla de continuidad:** ningún descubrimiento se trasladará automáticamente al manuscrito publicable. Primero quedará explicado y cotejado en este cuaderno; luego se determinará si corresponde a una definición, axioma, proposición, teorema, corolario, nota editorial o herramienta complementaria.
+
+
+---
+
+## 9. Diagnóstico inicial de deudas para la axiomatización (31-10-2026)
+
+**Estatus general:** inventario razonado de problemas a resolver, no axiomas aprobados. El objetivo no es desautorizar postulados ontológicos sino precisar el tipo matemático, las hipótesis y la deducción de cada instrumento. Esta sección establece la **secuencia de dependencias** para la reconstrucción.
+
+### 9.1. Deudas fundacionales / orden obligatorio
+
+**DA-01 — Especificar qué estructura será axiomatizada. [Prioridad crítica, P]**  
+La entidad primaria del método epistemológico es una **investigación relativa a un evento determinado**. Propuesta de firma provisional (sin adoptar todavía un estimador):
+$$
+\mathcal C_D=(D,N,E,\mathcal E,\mathcal K),
+$$
+donde $D$ es el acontecimiento seleccionado, $N$ contiene posiciones candidatas a intervención, $E$ relaciones de causalidad propuestas, $\mathcal E$ información probatoria y $\mathcal K$ reglas de discriminación, contexto y contrafácticos admisibles. La firma completa será objeto de revisión. Una imputación no calcula la causalidad universal, sino una **atribución condicionada por $D$, por el modelo y por la evidencia disponible**.
+
+Preguntas de tipado: ¿el resultado $D$ es nodo sumidero o un objeto distinguido? ¿Los nodos representan sujetos, roles, condiciones, actos o todos, con clases tipadas? ¿Qué ocurre si dos actos de un mismo sujeto son nodos diferentes? ¿Cuándo un nodo candidato pasa a «acreditado»? ¿Qué representa una omisión? ¿Cómo se registra una atribución como acto ulterior?
+
+**DA-02 — Formular el puente entre doble mediación y atribución exterior. [Crítica, P/V]**  
+*Sobre la pasión* y *Areópago* distinguen $\varphi_1$, $\varphi_2$, $\delta_{\rm int}$ y $\delta_{\rm ext}$. Se necesita una construcción que identifique **qué relación conserva** la atribución interior/exterior, sin exigir que la experiencia egoica, la atribución probatoria y el resultado escalar sean idénticos. La fórmula ontológica
+$$
+\delta_{\rm int}(t)=\varphi_2(\varphi_1(v_t,c_t),I(t))-I(t)
+$$
+y
+$$
+\delta_{\rm ext}(t)=\operatorname{atribución}(\varphi_1(v_t,c_t),\mathrm{Sujeto})
+$$
+no tienen necesariamente el mismo tipo matemático de salida. Para comparar con $>$, $<$ o $=$, formular el morfismo, medida o criterio de comparación **sin identificar** $\delta_{\rm int}$ con $dEgo/dt$ ni imponer que la segunda mediación sea un número.
+
+**DA-03 — Elegir el tipo de integral que realiza el canon. [Crítica, P/V]**  
+La *Axiomatización* existente, Parte II, usa integral de Bochner $\int c(t)w(t)\,dt$ en Hilbert, actualización $\varphi_2$ binaria y, para eventos puntuales, una delta de Dirac tratada como función de peso. *Caelus* utiliza una medida ontológica autorreferente y una representación Lebesgue–Stieltjes con saltos. Es preciso distinguir qué representación preserva las trayectorias asumidas y qué hipótesis concretas requiere cada una. **No se descarta la integral.** Se estudia el espacio de integración, la medida, la dependencia de la historia, la incorporación de saltos y la relación entre incremento por ciclo y derivada temporal. Una delta de Dirac no es una función ordinaria acotada: la formulación discreta requiere tratamiento de medidas/masas puntuales o una representación por sumas.
+
+**DA-04 — Irreversibilidad ontológica vs. no cancelación algebraica. [Crítica, V]**  
+La *Axiomatización*, teorema 2.1, deduce $\|\int_{t_1}^{t_2}c(t)w(t)\,dt\|>0$ de que $c\ne0$ en un conjunto de medida positiva y $w>0$. Eso **no es un teorema válido para integrandos vectoriales generales**: $c(t)=u$ en la primera mitad y $c(t)=-u$ en la segunda produce integral nula. La irreversibilidad del **acontecimiento ocurrido** se conserva como postulado ontológico; corresponde estudiar una formalización matemática que retenga la huella histórica (p. ej. un estado con registro de eventos o una hipótesis demostrada de no cancelación) sin confundir «el hecho no se descolapsa» con «todo valor de estado integrado es inyectivo en el tiempo». Las alternativas son propuestas instrumentales, no cambios al canon.
+
+### 9.2. Deudas relativas a convergencia y sustituibilidad
+
+**DA-05 — Definición axiomática de contribución relativa al resultado. [Crítica, P/V]**  
+Definir qué debe preservar $R_D$ antes de seleccionar Perron–Frobenius, propagación de caminos u otro operador: referencia verificable al resultado, comportamiento bajo nodo acreditadamente irrelevante, invariancia ante renombrar nodos, sensibilidad a intervenciones y condiciones de ordenación o distribución. La igualdad $\sum_i R_i=1$ **sólo** puede adoptarse si existe una masa o puntaje total no nulo cuya distribución se haya definido; no equivale por sí misma a «porcentaje material del daño». Separar **puntaje de convergencia**, **contribución contrafáctica** y **cuota restaurativa** hasta demostrar conexiones.
+
+**DA-06 — Semántica de $W$: prueba y fuerza causal. [Crítica, P/V]**  
+*El cálculo de la responsabilidad*, apéndice B, distingue dirección/intensidad, pero debe resolverse si $w_{ij}$ mide la intensidad causal, la confianza en su existencia, una agregación de ambas o un intervalo. Una orden firmada puede demostrar la existencia de un acto sin fijar su contribución cuantitativa. Formalizar espacio probatorio, niveles de acreditación, relaciones nulas acreditadas y relaciones no observadas; no colapsar desconocimiento en causalidad cero. Exigir distinción explícita entre prueba disponible y causalidad inferida.
+
+**DA-07 — Contrafáctico de sustituibilidad. [Crítica, P/V]**  
+El objeto de la sustitución es el **ocupante de una posición conservando el marco pertinente**, no una eliminación arbitraria de la fila de una matriz. Deben declararse: conjunto de reemplazantes admisibles, invariantes del campo, horizonte, variable de resultado y criterio de «mismo resultado» o «mismo tipo de resultado». La *Axiomatización*, Parte III, ofrece $S_{\rm op}$ mediante razón de normas y $S_{\rm est}=1-D_{\rm KL}(R^*\|R^{*(i)})/\log m$. Estas no miden por definición la misma pregunta contrafáctica; su puente monótono requiere demostración independiente.
+
+**Contraejemplo formal para revisar $S_{\rm est}$ [D]:** no vale en general $D_{\rm KL}(P\|Q)\le\log m$ para distribuciones con $m$ estados. Para $P=(0.9,0.1)$, $Q=(0.01,0.99)$ y $m=2$, $D_{\rm KL}(P\|Q)\approx3.82>\log 2$. Por tanto $1-D_{\rm KL}/\log m$ puede ser negativo. Si $Q_i=0$ donde $P_i>0$, la divergencia es infinita. Se requiere revisar intervalo, normalización y justificación de la divergencia para esta tarea.
+
+**DA-08 — Separar descuento de transferencia estructural. [Alta, D/P]**  
+La fórmula epistemológica $R_{i,\mathrm{neta}}=R_i(1-S_i)$ implica la identidad $R_i=R_i(1-S_i)+R_iS_i$. El segundo término **no se transfiere automáticamente** al nodo de diseño. Requiere regla para identificar receptor(es) y demostrar ausencia de doble conteo, especialmente cuando $R$ original ya contempla caminos desde el diseñador hasta el ejecutor. La conservación de cuotas sería una propiedad candidata **condicionada**, no un supuesto global irreflexivo.
+
+### 9.3. Repercusiones, daños, beneficios y restauración
+
+**DA-09 — Diferenciar $\varphi_2$, $\alpha$ y consecuencias efectivamente soportadas. [Crítica, P/V]**  
+La asunción egoica es reconocimiento constitutivo; las consecuencias materiales pueden recaer sobre un sujeto que no reconoce la imputación. El libro aplicado contempla «asunción forzada». Definir la base cuantitativa de repercusión y separarla de aceptación interior y de reparación voluntaria. Para comparar contribución $C_i(D)$ y carga soportada $A_i(D)$, fijar **el mismo referente, horizonte y escala**; $C_i-A_i$ sólo es interpretable si existe correspondencia comprobable entre magnitudes. No reemplazar silenciosamente la fórmula editorial $\Delta=R^*-\alpha$ por otra: considerar expresiones bruta y neta, determinar el alcance de cada una y tomar una decisión documentada.
+
+**DA-10 — Propiedades de la delta: sobreasunción no implica automáticamente déficit en otro nodo. [Crítica, D/V]**  
+La *Axiomatización*, Proposición 5.2, afirma que $\Delta_i<0$ y un grafo completo implican que existe $j\ne i$ con $\Delta_j>0$; su demostración reconoce que $\sum_i\alpha_i$ **no está restringida a uno**. Contraejemplo: $R^*=(0.5,0.5)$ y $\alpha=(0.8,0.5)$ dan $\Delta=(-0.3,0)$: hay sobreasunción en el primer nodo sin déficit positivo en ningún otro. El paso sólo podría concluirse bajo premisas adicionales de transferencia/conservación de carga, o mediante otro nexo demostrado. **No eliminar la posibilidad ontológica de inversión:** precisar las hipótesis bajo las que la señal realmente identifica un déficit ajeno.
+
+**DA-11 — Propiedades efectivas de $J$. [Alta, D]**  
+En *El cálculo*, cap. 4, la fórmula $J=1-\sum_i|R_i^*-\alpha_i|$ convive con la afirmación «$J<0$ imposible» y ejemplos posteriores con $J<0$. Contraejemplo documentado en N-04. Redefinir intervalo y semántica según las condiciones reales de $\alpha$, sin destruir el indicador sólo porque la cota publicada sea errónea.
+
+**DA-12 — Delta del daño y su dimensionalidad. [Alta, V]**  
+El libro propone $D_{\rm total}=T_{\rm invertido}+T_{\rm impedido}+\Delta T_{\rm trayectoria}$ y una representación contrafáctica por diferencias de trayectorias. Para una suma legítima, cada sumando ha de expresarse en **la misma unidad** o convertirse explícitamente. Si un salto $X(t_0^-)-X(t_0^+)$ mide unidades de $X$ y una integral $\int (X^{(0)}-X^{(1)})\,dt$ mide unidades de $X\cdot\mathrm{tiempo}$, **no se pueden sumar sin definir qué significa $X$ o cómo se convierten**. Separar pérdida inmediata, flujo impedido y futuro no superpuesto; fijar horizonte y descuento con hipótesis declaradas.
+
+**DA-13 — Beneficio, apropiación y *debitor*. [Alta, P/V]**  
+Distinguir el beneficio recibido, el beneficio producido, su procedencia causal y lo efectivamente revertido. Una «delta del aprovechamiento» requiere base de comparación explícita. El ajuste *debitor* necesita regla de correspondencia entre contribución, daño, aprovechamiento y restauración; **no confundir** cálculo de daño con decisión de exigibilidad. La restauración puede ser estructural, y la deducción fiscal un medio complementario, no la definición del ajuste.
+
+### 9.4. Propiedades transversales y de demostración
+
+**DA-14 — Isomorfismos: definir estructura y preservaciones. [Alta, P/V]**  
+Distinguir tres afirmaciones: (i) correspondencia interior/exterior de la atribución; (ii) isomorfismo de los métodos entre dominios; (iii) identidad de algoritmos numéricos. No equivalen. Formalizar funciones de traducción, qué diagramas conmutan, qué propiedades se preservan y bajo qué transformaciones. La recurrencia de un eigenvector en tres ejemplos es evidencia de **mismo procedimiento**, no demostración de isomorfismo de objetos.
+
+**DA-15 — Demostraciones y dominio de herramientas. [Alta, V]**  
+Perron–Frobenius, Banach, Shapley, Itô, Pinsker, Davis–Kahan, softmax y modelos de Markov sólo tendrán lugar donde satisfagan el contrato de la operación. La *Axiomatización*, Parte VI, combina nodo sumidero con fila nula, hipótesis de irreducibilidad y afirmación de estocasticidad global; estas condiciones no coexisten de la forma invocada. No convertir la regularización que agrega aristas ficticias en «evidencia» del expediente. Reexaminar cada hipótesis antes de mantener los enunciados de existencia, unicidad y convergencia.
+
+**DA-16 — Consistencia de tipos y definiciones. [Alta, V]**  
+Evitar $RSC(t)\setminus I(t)$ cuando $RSC(t)$ es un conjunto e $I(t)$ un vector integral, y $A_D\cap I(t)$ con esos mismos tipos. Definir el **conjunto de eventos efectivamente asumidos** por separado de su agregado integral. Para comparar derivadas, valores en espacios funcionales y proporciones, declarar la aplicación de medida que los convierte a una escala comparable. Distinguir identificación de nodos con voluntad de nodos instrumentales sin voluntad.
+
+**DA-17 — Completitud, incertidumbre y grados de resultado. [Alta, P]**  
+La completitud del grafo no es demostrable por mera ausencia de nodos conocidos; especificar criterios de cierre relativos al expediente y la clase de alternativas. Un análisis puede producir: (a) conjunto de relaciones acreditadas, (b) orden parcial de posiciones, (c) intervalos de contribución, (d) cuotas cardinales donde estén justificadas. No forzar valores cuando sólo hay orden, y no llamar «cero» a «desconocido».
+
+## 10. Primera secuencia de reconstrucción recomendada
+
+La estructura de precedencias es:
+
+1. **Bloque A — Lenguaje y objetos:** $D$, tipos de nodos, actos, relaciones, prueba, atribución; relación con $\varphi_1$ y $\delta_{\rm ext}$. Resolver DA-01, DA-02, DA-16.
+2. **Bloque B — Trayectoria y actos:** $\varphi_2$, integral del ego, incrementos por ciclo, huella histórica/irreversibilidad y la distinción de medidas. Resolver DA-03, DA-04 sin confundirlo con el algoritmo de imputación.
+3. **Bloque C — Convergencia y contrafactuales:** propiedades mínimas de $W$, $R_D$, definición contrafáctica de sustitución, tratamiento de instrumentos y transferencias estructurales. Resolver DA-05 a DA-08.
+4. **Bloque D — Repercusión:** identificación matemática de las consecuencias soportadas, asimetría, déficit, exceso, comparabilidad y señales de inversión. Resolver DA-09 a DA-11.
+5. **Bloque E — Daño, beneficio y restauración:** $\Delta D$, $\Delta B$, $AD$, conservación donde proceda, irreversibilidad de daños y exigibilidad separada. Resolver DA-12, DA-13.
+6. **Bloque F — Metateoremas:** isomorfismos, criterios de existencia/consistencia, estabilidad, incertidumbre, selección de herramientas y ejemplos de control. Resolver DA-14, DA-15, DA-17.
+
+**Criterio de salida para una operación:** firma de dominio/codominio; definición ligada al canon; axiomas mínimos; al menos una demostración o construcción correcta; caso que cumple y contraejemplo que detecta una afirmación excesiva; condiciones de uso y límites. Si una operación no posee todavía una realización numérica, puede quedar axiomáticamente caracterizada mediante sus propiedades sin fingir que ya existe una medición cardinal validada.
+
+**Decisión de enfoque:** el primer capítulo de investigación será **evento discriminado, acto, nodo, relación y atribución exterior**, no «Teorema de Perron–Frobenius». El libro final podrá omitir los ejemplos explicativos desarrollados en este cuaderno.
