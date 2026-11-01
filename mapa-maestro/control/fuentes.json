@@ -1,0 +1,84 @@
+{
+  "date": "2026-11-01",
+  "base_commit": "7f5b3c3ca8cb3496c6920237f1dcc1745ddc7eac",
+  "method": "PyMuPDF, extracción página por página; palabras aproximadas por separación en espacios",
+  "books": [
+    {
+      "id": "CAO",
+      "title": "Caos",
+      "file": "Caos - El abismo del ego y la doble mediación(3).pdf",
+      "repo_path": "libros canónicos/Caos - El abismo del ego y la doble mediación.pdf",
+      "sha256": "261306a9a5b1811c47f7e90866db9cd3e3a2817c879b3f7b55ead7d9e6e9f33d",
+      "pages": 282,
+      "words_extracted": 99145,
+      "offset": 7,
+      "report": "01-caos.md"
+    },
+    {
+      "id": "PAS",
+      "title": "Sobre la pasión",
+      "file": "Afrodita Areia - Volumen I - Sobre la pasión(2).pdf",
+      "repo_path": "libros canónicos/Afrodita Areia - Volumen I - Sobre la pasión.pdf",
+      "sha256": "6f47aead52670563fc3091ddfe514908bbb6556c47eef6c95686b37bac907917",
+      "pages": 213,
+      "words_extracted": 71213,
+      "offset": 16,
+      "report": "02-sobre-la-pasion.md"
+    },
+    {
+      "id": "AGA",
+      "title": "Ágape",
+      "file": "Afrodita Areia - Volumen II - Ágape(3).pdf",
+      "repo_path": "libros canónicos/Afrodita Areia - Volumen II - Ágape.pdf",
+      "sha256": "6136579503af897ed9c0f8f269104709688049b12325caf7d91fd7de95a6b1b8",
+      "pages": 177,
+      "words_extracted": 57123,
+      "offset": 21,
+      "report": "03-agape.md"
+    },
+    {
+      "id": "DAM",
+      "title": "Damasén",
+      "file": "Afrodita Areia - Volumen III - Damasén(2).pdf",
+      "repo_path": "libros canónicos/Afrodita Areia - Volumen III - Damasén.pdf",
+      "sha256": "cde9b2fe36a165a162ed50e70df60b59e8c37755d7873f797f7fbcb6116a6338",
+      "pages": 188,
+      "words_extracted": 55395,
+      "offset": 24,
+      "report": "04-damasen.md"
+    },
+    {
+      "id": "ARE",
+      "title": "Areópago",
+      "file": "Afrodita Areia - Volumen IV - Areópago(3).pdf",
+      "repo_path": "libros canónicos/Afrodita Areia - Volumen IV - Areópago.pdf",
+      "sha256": "2f5d53c6d11a41ef85cc0ecdd15c698c7ee82492f65e948a7d02247af6babf3c",
+      "pages": 290,
+      "words_extracted": 98555,
+      "offset": 13,
+      "report": "05-areopago.md"
+    },
+    {
+      "id": "CAE",
+      "title": "Caelus",
+      "file": "Afrodita Areia - Volumen V - Caelus(6).pdf",
+      "repo_path": "libros canónicos/Afrodita Areia - Volumen V - Caelus.pdf",
+      "sha256": "b386d5556778e9b4fb108505a2d19d605ab986fee62d823b80a53c369bc29035",
+      "pages": 219,
+      "words_extracted": 67596,
+      "offset": 16,
+      "report": "06-caelus.md"
+    },
+    {
+      "id": "NIK",
+      "title": "Nikomachos",
+      "file": "Afrodita Areia - Volumen VI - Nikomachos(5).pdf",
+      "repo_path": "libros canónicos/Afrodita Areia - Volumen VI - Nikomachos.pdf",
+      "sha256": "1a12d2e3eb2e582510ec9fead0f5cfc5fb91cd236eb1b306b40017cae207a0e8",
+      "pages": 244,
+      "words_extracted": 80775,
+      "offset": 13,
+      "report": "07-nikomachos.md"
+    }
+  ]
+}
