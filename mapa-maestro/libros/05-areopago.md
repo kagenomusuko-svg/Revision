@@ -38,9 +38,9 @@ El apéndice ocupa pp. 240–254 [PDF 253–267]. Se consultó completo en esta 
 
 Sus fórmulas comparan `δ_int=Ego(t)−I(t)` y `δ_ext=atribución(φ₁(v_t,c_t),Sujeto)`. Los casos son igualdad, exceso y déficit. Esa comparación requiere especificar un referente común para el acto, el sujeto, el momento y la representación. No se presume que cualquier cantidad interior y cualquier cantidad exterior sean directamente restables.
 
-La p. 241 [PDF 254] identifica φ₂ con dolo; las pp. 248–250 [PDF 261–263] lo reiteran. Esa identificación existe en este PDF. Debe revisarse su alcance frente a la definición constitutiva de PAS, y no negarse por apoyarse en una versión recordada del sistema.
+La p. 241 [PDF 254] identifica φ₂ con dolo; las pp. 248–250 [PDF 261–263] lo reiteran. **La relectura corrige la observación anterior:** esta formulación tiene un fundamento en los capítulos 1 y 3 y una función dentro de la crítica al criterio de imputación. El libro muestra cómo exigir reconocimiento interno del resultado puede ocultar una pertenencia causal exterior. La p. 252 [PDF 265] precisa que el diseñador puede asumir el diseño sin asumir ese resultado. No es ausencia global de segunda mediación ni una redefinición de toda asunción como voluntad de dañar. Véase la [relectura](../04-relectura-dolo-normalizacion.md).
 
-Las pp. 242 y 248 [PDF 255, 261] denominan derivada y tasa al incremento. CAE, p. 186 [PDF 202], distingue ese incremento de la variación temporal total. La relación entre diferencia de ciclo, tasa y derivada es un pendiente localizable, no razón para abandonar la comparación de asunción y atribución.
+Las pp. 242 y 248 [PDF 255, 261] denominan derivada y tasa al incremento. CAE, p. 186 [PDF 202], distingue ese incremento de la variación temporal total. Esa precisión de CAE debe incorporarse a la lectura: el conjunto no identifica indiscriminadamente el incremento del ciclo con la variación temporal total. La unidad temporal de una futura implementación se especificará al construirla; no se presenta aquí como una inconsistencia conceptual ya acreditada.
 
 En p. 254 [PDF 267], la causalidad acumulativa sin nodo necesario individual queda expresamente abierta. No es una laguna descubierta fuera del texto: el libro la reconoce y señala la eventual operación colectiva por construir.
 

@@ -25,6 +25,10 @@ El campo `consulta_tematica=sí` indica consulta de al menos un pasaje de esa p�
 
 Las coincidencias léxicas son automáticas. La ausencia de coincidencia no demuestra ausencia de un concepto: puede estar formulado con otro vocabulario, aparecer en notación no extraída o desarrollarse indirectamente. El conteo de palabras también es aproximado y no tiene valor filológico.
 
+## Actualización: relectura focalizada
+
+Se amplió la consulta de Areópago en los capítulos 1, 3, 4, 5, 9 y 10 y su apéndice II, y de Caelus en los desarrollos colectivos, el capítulo 13 y su apéndice. Se revisaron las objeciones sobre dolo/φ₂ y normalización: A-02, A-03 y A-06 se retiran como deudas conceptuales; A-04 incorpora una precisión ya existente. Los argumentos están en [la relectura](../04-relectura-dolo-normalizacion.md). Esto no certifica una lectura integral nueva de ambos volúmenes ni ratifica las restantes observaciones provisionales.
+
 ## Qué falta para cerrar el encargo
 
 1. Leer cada libro de principio a fin en continuidad y registrar contenido, conexiones y dudas también en las páginas sin términos destacados.
@@ -40,7 +44,7 @@ Los próximos recorridos continuos deben mantener el orden CAO, PAS, AGA, DAM, A
 
 `El Contrato Fiscal - Eris`, `El Contrato Fiscal - Kratos`, `El cálculo de la responsabilidad`, `El telar de las Moiras`, `El juego de las máscaras` y los demás manuscritos del repositorio no quedan cubiertos por esta revisión de los siete adjuntos.
 
-Para comprobar una remisión al grafo se consultaron puntualmente las páginas PDF 5, 16 y 59 del Cálculo que está en `libros a revisar`; eso no constituye una lectura ni una auditoría de ese manuscrito. No se adoptan sus conclusiones como demostraciones verificadas en esta entrega.
+En la entrega inicial se consultaron puntualmente las páginas PDF 5, 16 y 59 del Cálculo que está en `libros a revisar`. Al comenzar la relectura hubo una consulta auxiliar adicional de ese manuscrito siguiendo remisiones; tras la precisión del usuario, se limitó el trabajo a Areópago y Caelus. Las conclusiones de la relectura focalizada se fundamentan exclusivamente en estos dos libros. No se presenta una lectura ni auditoría del Cálculo.
 
 Los números de teoremas y referencias a otros títulos que aparecen en CAE se registran como remisiones del propio libro. Afirmar que un libro remite a una prueba no equivale a afirmar que esta revisión ya comprobó esa prueba.
 

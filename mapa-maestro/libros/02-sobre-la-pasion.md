@@ -20,9 +20,9 @@ El núcleo consultado establece que la identidad no nace con el ego, que la pasi
 
 **Historia previa y resultado.** El glosario de pp. 191–192 [PDF 207–208] advierte que `I(t)` es condición histórica y `Ego(t)` resultado del ciclo, y que no son nombres intercambiables de una magnitud dentro de la fórmula canónica. La continuidad entre ciclos no borra esa diferencia funcional.
 
-## Una tensión concreta de responsabilidad
+## Una distinción de responsabilidad ya desarrollada
 
-En pp. 129–130 [PDF 145–146], la responsabilidad se vincula a lo asumido y se exige asunción posterior. ARE, pp. 242–245 [PDF 255–258], permite atribución exterior sin asunción del sujeto. Hay una lectura compatible si se distingue responsabilidad constitutiva ante uno mismo y atribución desde alteridad; ARE, pp. 32–35 [PDF 45–48], ofrece esa distinción.
+En pp. 129–130 [PDF 145–146], la responsabilidad se vincula a lo asumido y se exige asunción posterior. ARE, pp. 242–245 [PDF 255–258], permite atribución exterior sin asunción del sujeto. ARE, pp. 32–42 [PDF 45–55], fundamenta expresamente la distinción entre responsabilidad ante uno mismo y atribución desde alteridad. La relectura corrige la formulación anterior de esta ficha: no es una conciliación que deba introducir el revisor, sino una distinción ya desarrollada por el libro.
 
 Pero la compatibilidad no autoriza a reproducir en un cálculo exterior una regla general de «no asume, por tanto no responde». La propuesta operativa es etiquetar el plano en cada uso de «responsabilidad». Esto es una propuesta de trazabilidad, no una sustitución de las definiciones del libro.
 

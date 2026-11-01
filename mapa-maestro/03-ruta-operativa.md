@@ -8,7 +8,7 @@ La operación inicial es identificar una participación atribuida y una particip
 
 El resultado debe poder decir: qué acontecimiento se investiga, de qué nodo se habla, qué se le atribuye, qué elementos de asunción están disponibles y qué relación se sostiene entre ambos. Si el acceso a una de las operaciones falta, se conserva esa falta. No se presume convergencia porque ambas columnas estén vacías, ni déficit porque no haya confesión.
 
-La comparación no ofrece conocimiento exhaustivo de la causalidad o del ser del agente. Su alcance depende de lo reconstruido, de la evidencia y de la escala declarada. Esta formulación requiere conciliar los usos de «fracción de responsabilidad causal» y suma uno de CAE, p. 192 [PDF 208], antes de presentarla como un método ya cerrado.
+La comparación no ofrece conocimiento exhaustivo de la causalidad o del ser del agente. Su alcance depende de lo reconstruido, de la evidencia y de la escala declarada. CAE, p. 192 [PDF 208], usa la suma uno como escala de coeficientes del reparto del daño. La relectura retira la objeción anterior: ese uso no equivale por sí solo a declarar conocimiento causal exhaustivo. La aplicación debe conservar el dominio de daño y evidencia que ARE ya exige.
 
 ## 2. Conservar G=(N,E,W)
 
@@ -40,7 +40,7 @@ Estos pasos reconstruyen las exigencias localizadas en ARE, pp. 49–53, 123–1
 | Historia previa I(t) | Condición acumulada del ciclo | Representación y alcance; no historial supuesto completo. |
 | Voluntad y circunstancias | Condiciones de φ₁ | Observado, declarado, inferido o indeterminado. |
 | Acto a_t | Colapso específico | Momento y evidencia de producción. |
-| Segunda mediación φ₂ | Incorporación como propia | Indicios y límites de acceso, sin igualarla automáticamente a dolo. |
+| Segunda mediación φ₂ | Incorporación como propia | Indicios y límites de acceso, distinguiendo el acto o resultado específico que se asume. |
 | Resultado del ciclo | Trayectoria modificada | Diferencia respecto de historia previa y convención temporal. |
 
 La tabla operacionaliza la distinción de PAS, pp. 191–192 [PDF 207–208], y CAO, pp. 259–263 [PDF 266–270]. No promete medir íntegramente el ego de una persona a partir de una entrevista.

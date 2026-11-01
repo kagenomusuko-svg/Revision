@@ -81,7 +81,7 @@ La escala colectiva se desarrolla en DAM, pp. 115–117 y 136–138 [PDF 139–1
 
 ### 5.1 El tercero no realiza la asunción por el sujeto
 
-ARE, pp. 32–35 [PDF 45–48], diferencia responsabilidad ante uno mismo e imputación desde fuera. La interioridad de φ₂ no es un requisito de confesión que permita a quien evade bloquear toda atribución externa. El tercero necesita reconstruir hechos, posiciones y relaciones con evidencia revisable.
+ARE, pp. 32–35 [PDF 45–48], diferencia responsabilidad ante uno mismo e imputación desde fuera. La interioridad de φ₂ no es un requisito de confesión que permita a quien evade bloquear toda atribución externa. La relación con el dolo en el apéndice II pertenece a esta crítica del criterio: exigir reconocimiento interno del resultado como condición de atribución. El capítulo 1 sitúa la intención y el capítulo 3 fundamenta la diferencia de planos; no se trata de una conciliación añadida por esta revisión. El tercero necesita reconstruir hechos, posiciones y relaciones con evidencia revisable.
 
 El criterio mínimo es:
 
@@ -103,7 +103,7 @@ $$\delta_{int}(t)=\operatorname{Ego}(t)-I(t),$$
 
 $$\delta_{ext}(t)=\operatorname{atribución}\bigl(\varphi_1(v_t,c_t),\text{Sujeto}\bigr).$$
 
-Convergencia, exceso y déficit comparan estas dos operaciones. El objeto inmediato de la comparación es lo asumido y lo atribuido respecto de un acto o resultado discriminado. La posibilidad de leer esa relación como magnitudes exige declarar una representación común; no se obtiene una unidad numérica solo por escribir `=`, `>` o `<`.
+Convergencia, exceso y déficit comparan estas dos operaciones. El objeto inmediato de la comparación es lo asumido y lo atribuido respecto de un acto o resultado discriminado. ARE, p. 252 [PDF 265], aclara que el diseñador puede asumir su decisión de diseño y no el resultado específico: `δ_int≈0` para este último no significa ausencia general de φ₂. La posibilidad de leer esa relación como magnitudes exige declarar una representación común; no se obtiene una unidad numérica solo por escribir `=`, `>` o `<`.
 
 Tampoco debe confundirse la comparación con un acceso a la causalidad total. ARE, p. 254 [PDF 267], reconoce expresamente el caso abierto de causalidad acumulativa sin nodo necesario individual. El límite ya está identificado por el libro.
 
@@ -143,4 +143,4 @@ La relación con CAE es decisiva. La constitución del Estado, su incumplimiento
 
 Se pueden preparar expedientes que identifiquen el acontecimiento, sus portadores, la historia pertinente, las posiciones del campo, los elementos de asunción disponibles, las atribuciones y su evidencia. Se puede distinguir el daño de la imputación, conservar incertidumbres y declarar la escala.
 
-Todavía no queda validado un algoritmo general que produzca números intercambiables para todos esos registros. CAE introduce decisiones matemáticas concretas —integración con saltos, vector propio, normalización, descomposición del daño— cuyo vínculo con las operaciones ontológicas debe justificarse. Registrar esas decisiones es parte del mapa. Darlas por demostradas por el mero hecho de aparecer en un apéndice impediría la operacionalización que se busca.
+La relectura de ARE y CAE corrige dos observaciones de la entrega inicial. ARE ya fundamenta la relación entre asunción, dolo y atribución exterior; no hace falta añadir esa distinción como si no existiera. CAE, p. 192 [PDF 208], utiliza la suma uno para expresar el reparto proporcional del daño mediante `AD_i=R*_i·Daño_total`; esa escala no afirma por sí sola conocimiento causal exhaustivo. La verificación futura de una implementación es distinta de la función conceptual de normalizar, que no queda impugnada por sí misma. Véase la [relectura focalizada](04-relectura-dolo-normalizacion.md).

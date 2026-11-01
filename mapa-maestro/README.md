@@ -8,10 +8,13 @@ El encargo es reconstruir el sistema desde sus propios libros para preparar su o
 
 ## Entrada al trabajo
 
+**Corrección tras relectura:** las observaciones sobre dolo/φ₂ y normalización se revisaron desde Areópago y Caelus. La distinción interna/externa está fundamentada por el texto, y la suma uno fija una escala proporcional; no acredita por sí sola cierre causal total. Se retiraron esas objeciones como deudas conceptuales. [Argumentos, referencias y correcciones](04-relectura-dolo-normalizacion.md).
+
 1. [Mapa transversal](01-mapa-transversal.md): arquitectura conceptual y relaciones entre los siete libros.
 2. [Registro técnico y de articulaciones](02-registro-tecnico.md): distinciones ya resueltas, tensiones localizadas y pasos de resolución.
 3. [Ruta de operacionalización](03-ruta-operativa.md): datos y verificaciones requeridos antes de calcular.
-4. [Control de lectura y alcance](control/README.md): estado verificable, límites y continuación.
+4. [Relectura de dolo y normalización](04-relectura-dolo-normalizacion.md): respuestas desde los argumentos de los libros y correcciones a esta revisión.
+5. [Control de lectura y alcance](control/README.md): estado verificable, límites y continuación.
 
 ## Corpus principal
 

@@ -38,7 +38,7 @@ En pp. 161–163 [PDF 177–179], la operación es reconocimiento de deuda, cuan
 
 Las pp. 184–195 [PDF 200–211] reúnen integración con medida, espacio de fases, Aego, ego estatal, eutaxia y daño. La p. 186 [PDF 202] ya distingue `δ_int` de `dEgo/dt`; este avance debe incorporarse al cotejo con ARE.
 
-La p. 192 [PDF 208], verificada visualmente, propone vector propio dominante de `W` y suma de componentes igual a uno. No es una exigencia nueva de esta revisión: está en el libro. Si la operacionalización preserva una investigación abierta y evita representar la causalidad total como unidad cerrada, esta formulación requiere conciliación expresa. Tampoco está validado que centralidad espectral y participación necesaria sean equivalentes.
+La p. 192 [PDF 208], verificada visualmente, propone vector propio dominante de `W` y suma de componentes igual a uno, junto con `AD_i=R*_i·Daño_total`. **La relectura retira la objeción de cierre ontológico:** la normalización fija coeficientes relativos de reparto y conserva por separado la magnitud del daño; no afirma por esa sola operación haber reconstruido toda la causalidad. ARE ya delimita daño específico, reconstruibilidad y proporcionalidad. La [relectura focalizada](../04-relectura-dolo-normalizacion.md) desarrolla esta respuesta. La evaluación de una implementación espectral es una tarea distinta, no un motivo para mantener la objeción conceptual retirada.
 
 Las pp. 191–192 [PDF 207–208] presentan una descomposición del daño cuyos términos tienen soportes y unidades por precisar antes de sumarlos. Los porcentajes y factores cuantitativos que se enuncian allí remiten a otro manuscrito: su respaldo queda pendiente, sin que esta ficha los convierta en resultados comprobados.
 

@@ -38,29 +38,33 @@ Se distinguen tres estados: **aclaración ya presente**, **articulación pendien
 
 ## A-02 · φ₂, lucidez y dolo
 
-**Localización.** PAS, p. 105 [PDF 121], define integración constitutiva y niega reducción a reflexión posterior. AGA, pp. 109–110 [PDF 130–131], presenta lucidez operativa. ARE, pp. 241 y 248–250 [PDF 254, 261–263], identifica explícitamente φ₂ con dolo.
+**Estado corregido: vínculo entre φ₂ y dolo fundamentado en Areópago. Se retira la clasificación anterior como conciliación conceptual pendiente.** Véase la [relectura focalizada](04-relectura-dolo-normalizacion.md).
 
-**Problema.** Integrar un acto, reconocer las propias posiciones y querer o aceptar un resultado no son operaciones que deban presumirse coextensivas. La definición central de φ₂ puede tener manifestaciones distintas sin quedar reducida a cada una.
+**Fundamento.** ARE, pp. 7–8 y 12–13 [PDF 20–21, 25–26], distingue asunción interna, atribución exterior y gradación posterior de la respuesta. El capítulo 3, pp. 32–42 [PDF 45–55], desarrolla esa diferencia de planos; la nota de pp. 42–43 [PDF 55–56] precisa que el criterio del dolo requiere ambas mediaciones, mientras la atribución causal no depende de que el sujeto asuma.
 
-**Resolución propuesta.** Conservar φ₂ como operación constitutiva y declarar las condiciones bajo las que una modalidad de intención o reconocimiento funciona como indicio de ella. La identificación jurídica de ARE debe examinarse como tesis del pasaje y delimitarse; no borrarse mediante una paráfrasis que diga lo contrario del PDF.
+**Función del apéndice II.** ARE, pp. 240–248 [PDF 253–261], traduce el criterio examinado al vocabulario de la doble mediación. Su identificación del dolo con φ₂ debe leerse en esa función argumentativa: el criterio hace depender la imputación de la relación interna del sujeto con el resultado. El libro muestra por qué esa condición no puede decidir por sí sola la pertenencia causal atribuida desde fuera. No está suprimiendo la integración constitutiva ni postulando que toda φ₂ produzca necesariamente voluntad de dañar.
 
-**Prueba de aceptación.** Explicar un acto no deliberado pero asumido, uno deliberado cuya consecuencia se evade y una asunción posterior sin reducir los tres a una misma intención de dañar. Esta revisión no ha verificado externamente la dogmática jurídica citada por ARE.
+**Precisión decisiva.** ARE, p. 252 [PDF 265], explica que el diseñador puede tener φ₂ sobre la decisión de diseño y no sobre el resultado específico del ejecutor. Por tanto, `δ_int≈0` respecto de ese resultado no significa ausencia global de φ₂. El capítulo 10, pp. 157–165 [PDF 170–178], desarrolla las separaciones de intención, acto, sujeto y tiempo que producen esa disociación.
+
+**Corrección de la auditoría.** Se había convertido en propuesta del revisor una distinción que el cuerpo del libro ya establece. Esa objeción no se mantiene. La articulación de la lucidez operativa de AGA no fue reexaminada en esta lectura de ARE y CAE; no se la usa para reabrir por otra vía la observación retirada.
 
 ## A-03 · Responsabilidad interna, atribución y consecuencia normativa
 
-**Localización.** PAS, pp. 129–130 [PDF 145–146], liga responsabilidad a lo asumido; ARE, pp. 242–245 [PDF 255–258], sostiene atribución sin asunción; NIK, pp. 186–191 y 207 [PDF 199–204, 220], añade condiciones de destinatario y jurisdicción.
+**Estado corregido: distinción interna/externa expresamente fundamentada; no es una conciliación nueva propuesta por el revisor.**
 
-**Lectura conciliadora propuesta.** Distinguir responsabilidad constitutiva ante sí, atribución exterior y consecuencia normativa. ARE, pp. 32–35 [PDF 45–48], ya fundamenta los dos primeros planos.
+ARE, pp. 7–8 [PDF 20–21], sitúa primero la investigación de la pertenencia causal y después la intención como criterio de gradación. ARE, pp. 32–42 [PDF 45–55], diferencia asunción ante sí y atribución desde la alteridad, incluido el límite de acceso del tercero. ARE, pp. 242–248 [PDF 255–261], formaliza que la segunda puede operar sin la primera.
 
-**Prueba de aceptación.** La evasión interna no puede cancelar una atribución acreditada; una causa natural no se convierte por eso en destinataria de sanción; un resultado de cálculo debe declarar el sistema de consecuencias aplicable. No se introduce un nuevo operador: se explicitan planos que los libros distinguen.
+La lectura anterior acertaba al distinguir los planos, pero se equivocaba al presentarlos como un puente que todavía había que añadir. El propio libro lo construye: la evasión de la asunción no cancela la pertenencia causal; que el sujeto asuma sí importa para su trayectoria y para la respuesta pertinente. Se mantiene la referencia de NIK, pp. 186–191 y 207 [PDF 199–204, 220], como correspondencia transversal de la entrega inicial, sin afirmar haber releído ese volumen en esta pasada.
+
+**Consecuencia operativa.** Cada atribución debe identificar el acto o resultado al que se refiere. No se toma el estado global del agente como sustituto de su relación con ese acontecimiento. La separación de planos se aplica como fundamento ya existente, no como corrección al canon.
 
 ## A-04 · Incremento, tasa y derivada
 
-**Localización.** ARE, pp. 241–242 [PDF 254–255], define `δ_int=Ego(t)−I(t)` y lo denomina derivada puntual o tasa. CAE, p. 186 [PDF 202], distingue expresamente ese incremento de `dEgo/dt`.
+**Estado precisado: CAE ya distingue el incremento de asunción y la variación temporal total.**
 
-**Problema operativo.** Una diferencia de estados no es por sí sola una derivada temporal. Una tasa necesita intervalo; una derivada requiere un límite y regularidad pertinente. La actualización puede seguir siendo válida sin imponerle diferenciabilidad clásica.
+ARE, pp. 241–242 [PDF 254–255], define `δ_int=Ego(t)−I(t)` como contribución del ciclo y emplea los términos derivada puntual y tasa. CAE, pp. 186 y 194 [PDF 202, 210], conserva esa escritura y declara expresamente que no designa `dEgo/dt`.
 
-**Resolución propuesta.** Conservar primero `δ_int` como incremento del ciclo. Si se necesita tasa, declarar duración y cociente. Si se usa derivada, declarar representación temporal y condiciones. El término «derivada exterior» tampoco identifica por sí solo el operador de formas diferenciales: en ARE nombra atribución desde fuera.
+La revisión debe leer ARE junto con esa precisión y no atribuir al conjunto del sistema una identificación indiscriminada entre las dos cantidades. Para la reconstrucción conceptual, la distinción está disponible y se incorpora al mapa. Si posteriormente una implementación necesita cocientes por tiempo físico, habrá que declarar su unidad; esa tarea de implementación no se registra aquí como una contradicción conceptual ya demostrada.
 
 ## A-05 · Comparabilidad de δ interna y externa
 
@@ -74,19 +78,23 @@ Se distinguen tres estados: **aclaración ya presente**, **articulación pendien
 
 ## A-06 · Convergencia observada y causalidad total
 
-**Localización.** ARE, pp. 50–51 [PDF 63–64], reconoce límites contrafácticos y revisabilidad; p. 254 [PDF 267] deja abierto el caso acumulativo sin nodo necesario individual. CAE, p. 192 [PDF 208], normaliza `R*` para que sus componentes sumen uno.
+**Estado corregido: se retira la objeción de incompatibilidad ontológica basada en la suma uno. La normalización tiene una función de representación proporcional.**
 
-**Problema.** Una normalización algebraica de un vector sobre nodos investigados no acredita que la investigación contenga toda la causalidad ni que el resultado mida responsabilidad qua responsabilidad. Si el objeto buscado es convergencia entre asunción y atribución, hay que explicitar ese alcance frente a las formulaciones de «fracción de responsabilidad causal» que CAE sí utiliza.
+ARE, pp. 49–55 y 61 [PDF 62–68, 74], delimita el daño específico, la reconstruibilidad y la distribución por posición causal. No promete una reconstrucción causal ilimitada; además, p. 55 [PDF 68], admite una ordenación de posiciones sin exigir precisión numérica en todos los casos.
 
-**Resolución propuesta.** Mantener el expediente abierto a nodos y relaciones no reconstruidos; declarar alcance de cada peso. No presentar suma uno como ley ontológica de cierre. Una eventual escala convencional debe distinguirse de totalidad causal. El mapa registra la formulación existente y su deuda de articulación, sin imponer un reparto alternativo.
+CAE, p. 192 [PDF 208], presenta conjuntamente `Σ_i R*_i=1` y `AD_i=R*_i·Daño_total`. La primera fija la escala de los coeficientes de reparto; la segunda conserva por separado la magnitud del daño al que se aplica el reparto. La suma uno no establece por sí sola ni un límite del daño real ni conocimiento de todos los antecedentes del mundo. La restricción a daño específico y evidencia reconstruible ya forma parte del fundamento de ARE.
+
+La [relectura focalizada](04-relectura-dolo-normalizacion.md) explicita algebraicamente que una normalización positiva preserva razones y orden. Esto desarrolla la operación de escala presente en CAE; no introduce una nueva arquitectura ni un reparto alternativo.
+
+**Corrección de la auditoría.** Se había inferido de una convención numérica una tesis de cierre ontológico que no se sigue de ella. Se retira esa inferencia y se conserva como condición de aplicación declarar el grafo, el daño y la evidencia pertinentes. Esa declaración aplica los límites ya formulados por el libro; no le exige una justificación ontológica nueva para usar coeficientes normalizados.
 
 ## A-07 · Vector propio y necesidad causal
 
-**Localización.** CAE, p. 192 [PDF 208], usa el vector propio dominante de `W` para `R*` y lo aplica al ajuste por nodo.
+**Estado: no dictaminado en la relectura focalizada. Se separa expresamente de la objeción sobre normalización retirada en A-06.**
 
-**Problema operativo.** Que un vector resuma conexiones de una matriz no demuestra que mida la necesidad del nodo respecto de un daño específico. Deben establecerse semántica de entradas, dirección, condiciones de la matriz y relación entre la operación espectral y el criterio contrafáctico de ARE. La necesidad de investigar diseño y sustituibilidad no desaparece dentro de la matriz.
+CAE, p. 192 [PDF 208], sitúa el vector propio de `W` en el cálculo del reparto por nodo. ARE, pp. 54–55 y 69–79 [PDF 67–68, 82–92], fundamenta la proporcionalidad por posición y la prioridad del diseño bajo condiciones específicas. La entrega inicial había formulado preguntas sobre la implementación espectral; no había revisado su demostración técnica y, por tanto, no debe presentar esas preguntas como fallos comprobados.
 
-**Resolución propuesta.** Conservar `G=(N,E,W)` como estructura de trabajo; no sustituirlo por otro modelo. Antes de implementar el reparto, contrastar qué debe responder ante un nodo de diseño, ejecutores sustituibles, evidencia faltante y causas acumulativas. No se valida ni se descarta por preferencia un autovector sin esa prueba de correspondencia.
+Esta pasada responde exclusivamente desde ARE y CAE a la objeción conceptual planteada por el revisor. No usa la necesidad de una evaluación posterior del algoritmo para mantener indirectamente la acusación de cierre causal total. Normalizar el vector, identificar el significado de sus coeficientes y verificar una implementación son cuestiones distinguibles. El primer punto queda respondido en A-06; aquí no se añade un nuevo reparo para sustituirlo.
 
 ## A-08 · El cero del Aego y el cero del expediente
 
@@ -134,6 +142,6 @@ Se distinguen tres estados: **aclaración ya presente**, **articulación pendien
 
 ## Prioridad de resolución
 
-Primero: A-02 a A-05, porque fijan el objeto y la comparación. Después: A-01, A-08 y A-09, porque evitan errores de plano, cero y acontecimiento. Luego: A-06 y A-07 para probar el alcance de `W` y cualquier resultado distributivo. En paralelo: A-10 a A-13 para cuantificar daño y aplicación fiscal sin confundir nivel, tasa, incumplimiento y consecuencia normativa.
+**Actualización de prioridad:** A-02, A-03 y A-06 dejan de figurar como deudas conceptuales abiertas; A-04 incorpora la precisión ya existente en CAE. A-07 no constituye un fallo verificado. Las restantes entradas conservan el carácter provisional de la entrega inicial y no quedan ratificadas por esta relectura focalizada. La continuación debe contrastarlas con los desarrollos completos antes de convertir preguntas del revisor en deudas del texto.
 
 Esta prioridad es una propuesta de trabajo. Ninguna observación autoriza a reemplazar el canon, reescribir los originales o dar por construida una axiomatización alternativa.
